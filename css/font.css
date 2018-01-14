@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/Pacifico-Regular.woff2") format('woff2'), url("../fonts/Pacifico-Regular.ttf") format('ttf');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face{
+  font-family:'tt-regular';src:url("../fonts/tt-regular-webfont.woff2") format("woff2"),url("../fonts/tt-regular-webfont.woff") format("woff");font-weight:normal;font-style:normal
+}
+@font-face{
+  font-family:'tt-medium';src:url("../fonts/tt-medium-webfont.woff2") format("woff2"),url("../fonts/tt-medium-webfont.woff") format("woff");font-weight:normal;font-style:normal
+}
+
+
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url("../fonts/Merriweather.woff2") format('woff2'), url("../fonts/Merriweather-Regular.ttf") format('ttf');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url("../fonts/Raleway.woff2") format('woff2'), url("../fonts/Raleway-ExtraBold.ttf") format('ttf');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url("../fonts/Roboto-Black.woff2") format('woff2'), url("../fonts/Roboto-Black.ttf") format('ttf');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}

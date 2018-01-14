@@ -1,0 +1,274 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #333;
+}
+
+a,
+a:hover,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f52777;
+}
+
+
+    .thickRaleway {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+    }
+
+.cover-image {
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+
+    .cover-image-text-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .cover-image-text {
+            color: #111;
+            justify-content: center;
+            align-items: stretch;
+            height: 160px;
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+
+    .stayCool {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+    }
+
+    #zeroDegreeLogo {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+        padding: 0 22px;
+        font-weight: 800;
+    }
+
+    #degreeDot {
+        top: -1em;
+        font-size: 0.5em;
+    }
+
+    #zeroDegreeNameAndDescription {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        #zeroDegreeName {
+            font-weight: 800;
+        }
+
+        #zeroDegreeDescription {
+            background-color: rgba(0,0,0,0.72);
+            color: #fff;
+            padding: 19px 20px;
+            font-weight: 600;
+            line-height: 1.6;
+            font-size: 13px;
+            font-weight: normal;
+            font-family: 'Merriweather', sans-serif;
+        }
+    }
+}
+
+#menu {
+    text-align: right;
+    .menu-item {
+        margin: 0 20px;
+        font-size: 19px;
+        padding-bottom: 3px;
+        border-bottom: 3px rgba(0,0,0,0) solid;
+    }
+
+    .menu-item-selected {
+        border-bottom: 3px rgba(0,0,0,1) solid;
+    }
+}
+
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h2,
+h3 {
+    line-height: 1.1;
+}
+
+.social-icon {
+    font-size: 0.6em;
+    margin-left: 5px;
+}
+
+.show-iff-mobile {
+    display: none;
+}
+
+.centerFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.centerDiv {
+    margin: 0 auto;
+}
+
+#content {
+    margin-top: 63px;
+    font-family: 'tt-regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #333;
+    line-height: 1.45;
+    font-size: 16px;
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .sessionContainer {
+        margin: 0 auto;
+        overflow: hidden;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .sessionTitle {
+        font-family: 'Pacifico', cursive;
+        margin-bottom: 60px;
+        font-size: 20px;
+    }
+
+    .sessionTimeWindow {
+        font-size: 11px;
+    }
+
+    .third {
+        width: 33.33333333%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .row {
+        margin-left: -17px;
+        margin-right: -17px;
+    }
+
+    .ArchyItem {
+        margin-bottom: 74px;
+
+        .ArchyItemImg {
+            width: 100%;
+            display: block;
+            padding: 0;
+            margin-bottom: 0;
+            line-height: 1.42857143;
+            background-color: #fff;
+            border: 0;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ArchyItemTitle {
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 13px;
+            font-weight: 900;
+            line-height: 1.2em;
+        }
+
+        .ArchyItemDate {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+    }
+
+    .pacificoText {
+        font-family: 'Pacifico', cursive;
+        margin-left: 2px;
+        margin-right: 3px;
+    }
+
+    #footer {
+        font-size: 13px;
+        padding-top: 47px;
+        padding-bottom: 37px;
+    }
+
+    .footerItem {
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+
+    .eassyContainer {
+        padding-top: 28px;
+        margin: 0 auto;
+    }
+
+    .eassyTitle {
+        font-family: 'Pacifico', cursive;
+        font-size: 27px;
+        line-height: 1.1;
+    }
+
+    .eassyDate {
+        font-family: 'Pacifico', cursive;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .eassyContent {
+        margin-bottom: 20px;
+    }
+}
+
+.whiteOverlay{
+    background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%
+}
+#footer{
+
+}
