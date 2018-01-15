@@ -1,0 +1,50 @@
+[
+    {
+    "startDate": "01-01",
+    "location": "Singapore"
+    },
+    {
+    "startDate": "09-01",
+    "location": "Guangzhou"
+    },
+    {
+    "startDate": "22-01",
+    "location": "Hong Kong"
+    },
+    {
+    "startDate": "28-01",
+    "location": "Singapore"
+    },
+    {
+    "startDate": "08-02",
+    "location": "Kho Chang"
+    },
+    {
+    "startDate": "17-02",
+    "location": "Guangzhou"
+    },
+    {
+    "startDate": "28-02",
+    "location": "Singapore"
+    },
+    {
+    "startDate": "17-03",
+    "location": "Osaka"
+    },
+    {
+    "startDate": "23-03",
+    "location": "Tokyo"
+    },
+    {
+    "startDate": "30-03",
+    "location": "Hong Kong"
+    },
+    {
+    "startDate": "04-04",
+    "location": "Guangzhou"
+    },
+    {
+    "startDate": "04-20",
+    "location": "Singapore"
+    },
+]

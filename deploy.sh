@@ -1,3 +1,4 @@
+stack exec site build
 rsync --progress -r -u _site/* ../zer0.degree-raw
 cd ../zer0.degree-raw
 git add .

@@ -1,9 +1,65 @@
+$mobile-device-small: 425px;
+$mobile-device: 575px;
+$mobile-device-large: 800px;
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+.show-iff-nonmobile {
+    display: block;
+    @media (max-width: $mobile-device) {
+        display: none !important;
+    }
+}
+
+.show-iff-mobile {
+    display: none;
+    @media (max-width: $mobile-device) {
+        display: block !important;
+    }
+}
+
+.show-if-smaller-than-mobile-device-large {
+    display: none;
+    @media (max-width: $mobile-device-large) {
+        display: block !important;
+    }
+}
+
+.show-if-not-smaller-than-mobile-device-large {
+    display: block;
+    @media (max-width: $mobile-device-large) {
+        display: none !important;
+    }
+}
+
+#body-wrapper {
+    background-color: #222;
+    width: 100%;
+}
+
+#body {
+    max-width: 1739px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+html {
+    font-size: 16px;
+    @media (max-width: $mobile-device-large) {
+        font-size: 14px;
+    }
+    @media (max-width: $mobile-device) {
+        font-size: 11px;
+    }
+    @media (max-width: $mobile-device-small) {
+        font-size: 9px;
+    }
 }
 
 body {
@@ -21,99 +77,6 @@ a:hover {
     color: #f52777;
 }
 
-
-    .thickRaleway {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 800;
-    }
-
-.cover-image {
-    color: #fff;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-
-    img {
-        width: 100%;
-    }
-
-    .cover-image-text-wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .cover-image-text {
-            color: #111;
-            justify-content: center;
-            align-items: stretch;
-            height: 160px;
-            display: flex;
-            font-family: 'Roboto', sans-serif;
-        }
-    }
-
-    .stayCool {
-        position: absolute;
-        bottom: 10px;
-        right: 15px;
-    }
-
-    #zeroDegreeLogo {
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: right;
-        padding: 0 22px;
-        font-weight: 800;
-    }
-
-    #degreeDot {
-        top: -1em;
-        font-size: 0.5em;
-    }
-
-    #zeroDegreeNameAndDescription {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-
-        #zeroDegreeName {
-            font-weight: 800;
-        }
-
-        #zeroDegreeDescription {
-            background-color: rgba(0,0,0,0.72);
-            color: #fff;
-            padding: 19px 20px;
-            font-weight: 600;
-            line-height: 1.6;
-            font-size: 13px;
-            font-weight: normal;
-            font-family: 'Merriweather', sans-serif;
-        }
-    }
-}
-
-#menu {
-    text-align: right;
-    .menu-item {
-        margin: 0 20px;
-        font-size: 19px;
-        padding-bottom: 3px;
-        border-bottom: 3px rgba(0,0,0,0) solid;
-    }
-
-    .menu-item-selected {
-        border-bottom: 3px rgba(0,0,0,1) solid;
-    }
-}
-
-
 h1,
 h2,
 h3 {
@@ -126,13 +89,15 @@ h3 {
     line-height: 1.1;
 }
 
+.container {
+    @media (max-width: $mobile-device-large) {
+        max-width: $mobile-device-large - 50px;
+    }
+}
+
 .social-icon {
     font-size: 0.6em;
     margin-left: 5px;
-}
-
-.show-iff-mobile {
-    display: none;
 }
 
 .centerFlex {
@@ -149,12 +114,156 @@ h3 {
     margin: 0 auto;
 }
 
-#content {
+.thickRaleway {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+.cover-image {
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+    @media (max-width: 1133px) {
+        height: 400px;
+    }
+    @media (max-width: 970px) {
+        height: 350px;
+    }
+    @media (max-width: 850px) {
+        height: 320px;
+    }
+    @media (max-width: $mobile-device-large) {
+        height: 310px;
+    }
+    @media (max-width: $mobile-device-large - 40) {
+        height: 290px;
+    }
+    @media (max-width: $mobile-device) {
+        height: 380px;
+    }
+    @media (max-width: $mobile-device-small + 77) {
+        height: 320px;
+    }
+    @media (max-width: $mobile-device-small) {
+        height: 300px;
+    }
+    @media (max-width: $mobile-device-small - 20) {
+        height: 250px;
+    }
+    @media (max-width: 330px) {
+        height: 230px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .cover-image-text-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .cover-image-text {
+            color: #111;
+            justify-content: center;
+            align-items: stretch;
+            height: 160px;
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+            @media (max-width: $mobile-device-large) {
+                height: 140px;
+            }
+            @media (max-width: $mobile-device) {
+                height: 120px;
+            }
+            @media (max-width: $mobile-device-small) {
+                height: 100px;
+            }
+        }
+    }
+
+    .stayCool {
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        text-align: right;
+    }
+
+    .zeroDegreeLogo {
+        background-color: #fff;
+        text-align: right;
+        padding: 0 26px;
+        font-weight: 800;
+    }
+
+    .degreeDot {
+        top: -1em;
+        font-size: 0.5em;
+    }
+
+    .zeroDegreeNameAndDescription {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .zeroDegreeName {
+            font-weight: 800;
+        }
+
+        .zeroDegreeDescription {
+            background-color: rgba(0,0,0,0.72);
+            color: #fff;
+            padding: 19px 20px;
+            font-weight: 600;
+            line-height: 1.6;
+            font-size: 0.75em;
+            font-weight: normal;
+            font-family: 'Merriweather', sans-serif;
+            @media (max-width: $mobile-device-large) {
+                padding: 15px 14px;
+            }
+        }
+    }
+
+        @media (max-width: 735px) {
+    .ipadDescription {
+            display: none !important;
+    }
+    .iPhoneMenu{
+        display: block
+    }
+}
+}
+
+.menu {
+    text-align: right;
+    padding-top: 8px;
+
+    .menu-item {
+        margin: 0 20px;
+        font-size: 0.7em;
+        padding-bottom: 3px;
+        border-bottom: 3px rgba(0,0,0,0) solid;
+    }
+
+    .menu-item-selected {
+        border-bottom: 3px rgba(0,0,0,1) solid;
+    }
+}
+
+.content {
     margin-top: 63px;
     font-family: 'tt-regular','Helvetica Neue',Helvetica,Arial,sans-serif;
     color: #333;
     line-height: 1.45;
-    font-size: 16px;
+    font-size: 1em;
 
     p {
         margin-bottom: 20px;
@@ -163,18 +272,17 @@ h3 {
     .sessionContainer {
         margin: 0 auto;
         overflow: hidden;
-        padding-top: 20px;
         padding-bottom: 40px;
     }
 
     .sessionTitle {
         font-family: 'Pacifico', cursive;
         margin-bottom: 60px;
-        font-size: 20px;
+        font-size: 1.3em;
     }
 
     .sessionTimeWindow {
-        font-size: 11px;
+        font-size: 0.6em;
     }
 
     .third {
@@ -208,7 +316,7 @@ h3 {
         }
 
         .ArchyItemTitle {
-            font-size: 18px;
+            font-size: 1.2em;
             font-family: 'Roboto', sans-serif;
             margin-top: 13px;
             font-weight: 900;
@@ -217,7 +325,7 @@ h3 {
 
         .ArchyItemDate {
             font-family: 'Roboto', sans-serif;
-            font-size: 12px;
+            font-size: 0.75em;
             margin-top: 3px;
         }
     }
@@ -226,12 +334,6 @@ h3 {
         font-family: 'Pacifico', cursive;
         margin-left: 2px;
         margin-right: 3px;
-    }
-
-    #footer {
-        font-size: 13px;
-        padding-top: 47px;
-        padding-bottom: 37px;
     }
 
     .footerItem {
@@ -246,13 +348,13 @@ h3 {
 
     .eassyTitle {
         font-family: 'Pacifico', cursive;
-        font-size: 27px;
+        font-size: 2em;
         line-height: 1.1;
     }
 
     .eassyDate {
         font-family: 'Pacifico', cursive;
-        font-size: 20px;
+        font-size: 1.5em;
         margin-bottom: 30px;
     }
 
@@ -261,14 +363,29 @@ h3 {
     }
 }
 
-.whiteOverlay{
-    background-color: rgba(255,255,255,0.3);
+.whiteOverlay {
+    background-color: rgba(255,255,255,0.4);
     position: absolute;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
-#footer{
+.footer-info-block{
+    background-color:rgba(255,255,255,0.8); padding: 40px; text-align:right;
+    @media (max-width: $mobile-device-small) {
+        padding: 20px
+    }
+    @media (max-width: $mobile-device) {
+        padding: 30px
+    }
+}
 
+.blackOverlay {
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }

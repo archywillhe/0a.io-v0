@@ -36,6 +36,7 @@ main = hakyll $ do
             >>= relativizeUrls
     match "posts/other/*" $ do
         compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/simple-archy-item.html" timedCtx
             >>= loadAndApplyTemplate "templates/page-session.html" timedCtx
             >>= relativizeUrls
     createRowOf3Session "2018-01-01-chapter2.html" "posts/chapter2/*" "Chapter 2" "jan 2018 ~" "1001"
@@ -126,7 +127,8 @@ rowsOf3od _ [] (r0,r1,r2)         = (reverse r0, reverse r1, reverse r2)
 rowsOf3 :: [Item String] -> String -> Context String
 rowsOf3 list identifier = foldl mappend defaultContext contexts
   where
-    contexts = [listField (identifier ++ show num) timedCtx (return items) | (items,num) <- [(r0,0),(r1,1),(r2,2)]]
+    contexts = [listField (identifier ++ show num) timedCtx (return items) | (items,num) <- [(r0,0),(r1,1),(r2,2)]] ++
+        [listField "everything" timedCtx (return list)]
     (r0,r1,r2) = rowsOf3od 0 list ([],[],[])
 
 --------------------------------------------------------------------------------
