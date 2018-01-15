@@ -1,7 +1,9 @@
 <div class="ArchyItem">
-  <img class="ArchyItemImg" src="img/covers/$coverPainting$.jpg"/>
+  <a href="$if(customForwardUrl)$$customForwardUrl$$else$$url$$endif$">
+      <img class="ArchyItemImg" src="img/covers/$coverPainting$.jpg"/>
+  </a>
   <div class="ArchyItemTitle">
-    $title$
+    <a href="$if(customForwardUrl)$$customForwardUrl$$else$$url$$endif$">$title$</a>
   </div>
   $if(hideDate)$
   $else$

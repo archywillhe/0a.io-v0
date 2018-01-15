@@ -30,6 +30,7 @@ main = hakyll $ do
 
     match ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/*") $ do
         route $ setExtension "html"
+            `composeRoutes` gsubRoute "(posts/|[0-9]+-[0-9]+-[0-9]+-|featured/|more/)" (const "") 
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    timedCtx
             >>= loadAndApplyTemplate "templates/default.html" timedCtx

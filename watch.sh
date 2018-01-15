@@ -1,0 +1,1 @@
+stack exec site watch
