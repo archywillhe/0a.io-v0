@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Giving a phony some great search results when her name is Googled"
-coverPainting: "The Horse Mug 1991, Mary Fedden"
+coverPainting: "The Horse Mug, 1991, Mary Fedden"
 
 extract: |
     Phonies. The human species is full of them. I don't hate or abhor them really. I just feel sorry for them that they have to put up with their own bullshit and live such hollow existence. They can be pretty amusing too sometimes.

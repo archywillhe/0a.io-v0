@@ -1,4 +1,5 @@
 ---
+coverPainting: Man in a Bowler Hat, 1964, Rene Magritte
 layout: post
 title: "<i>The Observer</i> Paradox"
 extract: |

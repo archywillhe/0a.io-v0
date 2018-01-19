@@ -2,7 +2,7 @@
 layout: post
 title: "to \\aleph 1 and beyond"
 containMaths: true
-coverPainting: "L'Ora X Clock 1945, Bruno Munari"
+coverPainting: "L'Ora X Clock, 1945, Bruno Munari"
 extract: |
     Today's lecture was on code abstraction. In one part Professor Danvy gave an example on how recursion can be viewed from a more mathematical point of view through demonstrating the <span class="MathJax" id="MathJax-Element-1-Frame"><nobr><span class="math" id="MathJax-Span-1" role="math" style="width: 0.911em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.751em; height: 0px; font-size: 117%;"><span style="position: absolute; clip: rect(1.765em 1000em 2.727em -999.997em); top: -2.561em; left: 0.003em;"><span class="mrow" id="MathJax-Span-2"><span class="texatom" id="MathJax-Span-3"><span class="mrow" id="MathJax-Span-4"><span class="mi" id="MathJax-Span-5" style="font-family: STIXGeneral-Regular;">ℕ</span></span></span></span><span style="display: inline-block; width: 0px; height: 2.567em;"></span></span></span><span style="border-left-width: 0.003em; border-left-style: solid; display: inline-block; overflow: hidden; width: 0px; height: 0.878em; vertical-align: -0.059em;"></span></span></nobr></span>-bijective nature of some set of procedures. Here is the idea:
 

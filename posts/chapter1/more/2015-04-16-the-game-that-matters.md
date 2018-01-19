@@ -1,4 +1,5 @@
 ---
+coverPainting: Mu, XVII-XVIII cent., Hakuin Ekaku
 font: garamond
 layout: post
 title: "The Game That Matters"

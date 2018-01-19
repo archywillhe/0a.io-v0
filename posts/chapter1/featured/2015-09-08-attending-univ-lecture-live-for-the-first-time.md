@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Attending univ lecture live for the first time"
-coverPainting: "The Costume Party 1972, George Segal"
+coverPainting: "The Costume Party, 1972, George Segal"
 extract: |
     For anthropic machines of my age, I have gone through a good number of papers and undergrad & grad texts, (some of which I'm still struggling to decipher) - I am fortunate to have a sister currently in NUS, whose student ID can be used to gain access to databases of publishing firms around the world - and sat through a good number of video lectures - once again, I am fortunate to have been born into the era of Open Course Ware, a point in time in human history when it is possible to learn everything taught in undergrad classes by yourself without the necessity of spending a tremendous sum of money. Nonetheless, I have never physically attended a univ lecture before, until yesterday. It was a lecture on computer vision and pattern recognition, or to be more precise, that was the name of the module, CS4243, and one of the topics in CS that I am least bit familiar with and not especially passionate about. (There are pretty few modules with first digit n &ge;4 whose lecture is on Monday so I ended up taking that). The professor was a man in his forties. He was not particularly charismatic but neither was he a bore. He did a great job making the lecture as interesting as possible, and it was really fun.
 ---

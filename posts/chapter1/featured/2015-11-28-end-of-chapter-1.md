@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "End of Chapter 1"
-coverPainting: "Fraction _hash8295 2000, Larry Bell"
+coverPainting: "Fraction _hash8295, 2000, Larry Bell"
 extract: |
   I used to be afraid of waking up one day and realising that everything I had experienced was a construct of the mind and the reality that I knew of did not exist, and that I was the equivalence of a deaf, blind, and anosmic person with the inability to sense anything - resembling that of a function which takes in no argument, in a sense an I/O of [0-arity](https://en.wikipedia.org/wiki/0A) - in the actual reality wherein, as such, I have no way of knowing or interacting with the outside world. So I mentally constructed the current reality and deluded myself into thinking that it is real, and that I am a member of the most dominant species on a gigantic sphere, and that I have friends and first-degree relatives I can count on, and that things make sense here, and that it is natural for there to be consistency in the way stuff behave in this universe, which, comes to think about it, is bloody str
 ---

@@ -2,7 +2,7 @@
 layout: post
 font: garamond
 title: "Still trying to understand the true nature of <i>understanding</i>: the etymologies (summary)"
-coverPainting: "Every Brushstroke Has A Name 2005, Analia Saban"
+coverPainting: "Every Brushstroke Has A Name, 2005, Analia Saban"
 extract: |
     To truly understand the nature of a particular human concept, it is often useful to first take a look into the etymologies of the words that are used to convey the concept.
 

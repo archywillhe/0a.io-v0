@@ -1,4 +1,5 @@
 ---
+coverPainting: Personal Values, 1952, Rene Magritte
 layout: post
 title: "Fear and Loathing for libraries and frameworks"
 permalink: the-framework-library-phobia

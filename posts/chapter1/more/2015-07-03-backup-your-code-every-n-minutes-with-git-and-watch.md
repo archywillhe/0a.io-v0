@@ -1,4 +1,5 @@
 ---
+coverPainting: The Dog, 1819~1823, Francisco Goya
 layout: post
 title: "Making backup for each line of code in your project every n minutes in case your code editor decides to revert some file back to its state x hours ago"
 extract: |

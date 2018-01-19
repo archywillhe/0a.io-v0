@@ -2,7 +2,7 @@
 font: garamond
 layout: post
 title: "And by you I mean <i>you</i> who is me"
-coverPainting: "Not to Be Reproduced 1937, Rene Magritte"
+coverPainting: "Not to Be Reproduced, 1937, Rene Magritte"
 
 ---
 Something is <i>off</i>.

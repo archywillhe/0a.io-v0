@@ -2,7 +2,7 @@
 layout: post
 title: "The Boolean Satisfiability Problem [S<small>AT</small>] and S<small>AT</small> solvers in 5 mins* (or&nbsp;more)"
 containMaths: true
-coverPainting: "Untitled 1962, Larry Bell"
+coverPainting: "Untitled, 1962, Larry Bell"
 footBlock: |
     <script>
     (function(){
@@ -328,7 +328,7 @@ You may have already imagined, DPLL is basically a [depth-first search](https://
 >
 > 3. check if it makes sense to go on adding more numbers into this set of 3 numbers.
 >
->In our case $14394>14000$, so it makes no sense to go on and we abandon the last number, 8744, in our set, makes a new set of 3 numbers $4015,1635,1236$, and do the same thing to check if it makes sense to go on (in this case $4015+1635+1236=6886$). Since it did not exceed the limit of 14000, we continue to
+>In our case $14394>14000$, so it makes no sense to go on and we abandon the last number,, 8744, in our set, makes a new set of 3 numbers $4015,1635,1236$, and do the same thing to check if it makes sense to go on (in this case $4015+1635+1236=6886$). Since it did not exceed the limit of 14000, we continue to
 >
 > 1. add a new number into the the set
 >

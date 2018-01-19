@@ -3,7 +3,7 @@ layout: post
 title: "Jekyll 2 in 3 minutes - a quick tour for those who plan to make a customized Github Page"
 metaDescription: |
     This post aims to provide a quick sum-up for anyone who is unfamiliar with Jekyll.
-coverPainting: "Capri Battery 1985, Joseph Beuys"
+coverPainting: "Capri Battery, 1985, Joseph Beuys"
 reddit: https://www.reddit.com/r/Jekyll/comments/394u0r/jekyll_in_3_minutes_a_quick_tour_for_those_who/
 
     Artwork is <a href="http://www.wikiart.org/en/joseph-beuys/capri-battery-1985-1">Capri Battery</a> by <a href="https://en.wikipedia.org/wiki/Joseph_Beuys">Joseph Beuys</a>, 1985.

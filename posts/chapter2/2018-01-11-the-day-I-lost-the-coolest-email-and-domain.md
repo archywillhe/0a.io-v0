@@ -1,9 +1,10 @@
 ---
+readingTime: 10min
 layout: post
 title: "The Day I Lost the Coolest Email and Domain in The World"
 Title: "The Day I Lost the Coolest Email and Domain in The World (Arguably)"
 date:   2018-01-12 19:57:33 +0800
-coverPainting: Volumi (blue) 1964, Paolo Scheggi
+coverPainting: Volumi (blue), 1964, Paolo Scheggi
 ---
 
 The more you age the more you realise how easy it is to screw up.
@@ -104,7 +105,7 @@ After ~600 POST requests to mail.hover.com attempting all possible combinations 
 
 They replied. Not very helpful though. To make the situation worst my 16 years old self didn’t register the Hover account under my legal name. So things got complicated.
 
->#### Dec 27, 09:41 EST
+>##### Dec 27, 09:41 EST
 >Hi Archy
 >
 >Thanks for reaching out.
@@ -115,7 +116,7 @@ They replied. Not very helpful though. To make the situation worst my 16 years o
 
 <div></div>
 
-> #### Dec 27, 13:21 EST
+> ##### Dec 27, 13:21 EST
 >Hi Archy,
 >
 >I'm very sorry to hear that. I understand that this is an inconvenience to you to have an affidavit, but we only do it for security purposes. In this case when we receive an account access request from another email address that's not listed on file, there's no way for us to know whether you are the account holder or if someone else is trying to social engineer into the account to get access to your domains. To prevent anyone else from accessing your Hover account, and thus the domains, we'd need to verify that you are the account holder. Since the email address on file isn't valid, the only way for us to do that, is for you too visit a notary public and obtain an affidavit.
@@ -126,7 +127,7 @@ They replied. Not very helpful though. To make the situation worst my 16 years o
 
 <div></div>
 
-> #### Dec 28, 11:32 EST
+> ##### Dec 28, 11:32 EST
 >Hi Archy,
 >
 >When it comes to domain registration and account ownership, the ownership belongs to the person whose name is on the account and the domain registration. In some cases, if the organization field is filled in on a domain registration, the organization supersedes the ownership of the domain. That's why it's important to use real and valid information on domain registrations. For example, if you used John Smith on the domain registration and the account name, in that case John Smith is the owner of the domain and the account. If the email on the hover management account is no longer valid, or you no longer have access to it, then we have nothing else to verify you on other than the name on the account, which should be your real name.

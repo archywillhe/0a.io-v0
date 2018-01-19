@@ -2,7 +2,7 @@
 layout: post
 title: "NDTM vs DTM"
 containMaths: true
-coverPainting: "Cataract 3 1967, Bridget Riley"
+coverPainting: "Cataract 3, 1967, Bridget Riley"
 extract: |
   From a set-theorical point of view, non-deterministic Turing machines (NDTM) and deterministic Turing machines (DTM) are pretty similar objects. Actually, all deterministic Turing machines are non-deterministic Turing machines, since all functions are relations, and the only difference between these two objects lies in that a deterministic Turing machine is defined in terms of a function, while a non-deterministic Turing machine is defined in terms of a relation.
 ---

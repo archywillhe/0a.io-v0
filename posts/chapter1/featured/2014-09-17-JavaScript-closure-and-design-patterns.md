@@ -3,7 +3,7 @@ layout: post
 title: "JavaScript Closure and Design Patterns in 3 minutes"
 metaDescription: "JavaScript closure and design patterns explained in a comprehensible way."
 containsCode: true
-coverPainting: "Church Street El 1920, Charles Sheeler"
+coverPainting: "Church Street El, 1920, Charles Sheeler"
 reddit: https://www.reddit.com/r/javascript/comments/2i3zj4/javascript_closure_and_design_patterns_for_those/
 ---
 

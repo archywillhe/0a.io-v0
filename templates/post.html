@@ -1,11 +1,34 @@
-<article>
-    <section class="header">
-        Posted on $date$
-        $if(author)$
-            by $author$
-        $endif$
-    </section>
-    <section>
-        $body$
-    </section>
+$if(customForwardUrl)$
+<script>
+window.location = window.location.hostname + "$customForwardUrl$"
+</script>
+$else$
+<div class="show-iff-nonmobile">
+  <h2 class="thickRaleway menu">
+    <!-- <a href="/" class="menu-item">Back to Home Page</a> -->
+</h2>
+</div>
+<div class="container content">
+<article style="$if(width)$width:$width$px;$endif$">
+    <div class="coverPainting">
+        <img src="/img/covers/$coverPainting$.jpg"/>
+    </div>
+    <div class="everythingElse">
+        <div class="info">
+            <i class="ion-calendar"></i>
+            <span class="date">$date$</span>
+            $if(readingTime)$
+            <i class="ion-clock"></i>
+            <span class="readingTime">$readingTime$ read</span>
+            $endif$
+        </div>
+        <h2 class="title">
+            $title$
+        </h2>
+        <div class="text">
+            $body$
+        </div>
+    </div>
 </article>
+</div>
+$endif$

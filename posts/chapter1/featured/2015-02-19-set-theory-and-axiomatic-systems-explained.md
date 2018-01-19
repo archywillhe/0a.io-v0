@@ -8,7 +8,7 @@ containMaths: true
 containCode: true
 hnlink: https://news.ycombinator.com/item?id=9074412
 reddit: https://www.reddit.com/r/math/comments/2wfom3/set_theory_and_axiomatic_systems_explained_with/
-coverPainting: "Untitled (Lettres) 1998, Moon Pil Shim"
+coverPainting: "Untitled (Lettres), 1998, Moon Pil Shim"
 footBlock: |
     <div class="loading_maths">
     You may experience lag <br>while maths is being rendered (LaTeX).

@@ -1,7 +1,8 @@
 ---
+coverPainting: Flame Nebula, 2014, Chandra NASA
 font: garamond
 layout: post
-title: "Sometime, somewhere, in this world in which we live: a poem, with a sum-up on the black hole information paradox"
+title: "Sometime, somewhere, in this world in which we live: a poem plus a sum-up on the black hole information paradox"
 metaDescription: |
     A poem and a sum-up of what the black hole information paradox is about.
 ---

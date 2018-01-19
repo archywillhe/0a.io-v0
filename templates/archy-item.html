@@ -1,14 +1,32 @@
 <div class="ArchyItem">
-  <a href="$if(customForwardUrl)$$customForwardUrl$$else$$url$$endif$">
-      <img class="ArchyItemImg" src="img/covers/$coverPainting$.jpg"/>
+  <a href="$if(customForwardUrl)$$customForwardUrl$$else$$url$$endif$"
+    $if(newTab)$ target="_blank" $endif$
+  >
+     $if(coverPainting)$
+     <img class="ArchyItemImg" src="/img/covers/$coverPainting$.jpg"/>
+     $else$
+     $if(lazyload)$
+     <img class="ArchyItemImg" data-src="$displayImg$" width="$imageWidth$" height="$imageHeight$"/>
+     $else$
+     <img class="ArchyItemImg" src="$displayImg$"/>
+     $endif$
+     $endif$
   </a>
   <div class="ArchyItemTitle">
-    <a href="$if(customForwardUrl)$$customForwardUrl$$else$$url$$endif$">$title$</a>
+    <a href="$if(customForwardUrl)$$customForwardUrl$$else$$url$$endif$"
+    $if(newTab)$ target="_blank" $endif$
+    >$title$</a>
   </div>
+  $if(subtitle)$
+  <div class="ArchyItemSubtitle">
+    $subtitle$
+  </div>
+  $else$
   $if(hideDate)$
   $else$
   <div class="ArchyItemDate">
     $date$
   </div>
+  $endif$
   $endif$
 </div>

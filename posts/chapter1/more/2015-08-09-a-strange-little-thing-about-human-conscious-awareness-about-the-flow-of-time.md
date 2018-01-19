@@ -1,4 +1,5 @@
 ---
+coverPainting: Snow Fall at Kiyomizu Temple_comma Kyoto, 1932, Hasui Kawase
 layout: post
 title: "A strange little thing about the human conscious awareness about the flow of time"
 extract: |

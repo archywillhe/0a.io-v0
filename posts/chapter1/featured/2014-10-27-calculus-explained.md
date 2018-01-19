@@ -3,7 +3,7 @@ layout: post
 title: "Calculus Explained"
 metaDescription: |
     Calculus explained with images and animations. For anyone who is new to limit, differentiation and integration.
-coverPainting: "Moonlit Night 1914, Emil Nolde"
+coverPainting: "Moonlit Night, 1914, Emil Nolde"
 containsMaths: true
 hn: https://news.ycombinator.com/item?id=8523150
 reddit: https://www.reddit.com/r/math/comments/2kmx1k/calculus_explained_with_pics_and_gifs/
