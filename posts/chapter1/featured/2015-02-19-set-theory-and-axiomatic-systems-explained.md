@@ -1,7 +1,7 @@
 ---
 font: garamond
 layout: post
-title: "Set Theory and Axiomatic Systems (with pics and gifs)"
+title: "Set Theory and Axiomatic Systems explained with pics and gifs"
 metaDescription: |
     Set Theory and Axiomatic Systems explained. For anyone who is new to axiomatic set theory.
 containMaths: true
@@ -9,53 +9,27 @@ containCode: true
 hnlink: https://news.ycombinator.com/item?id=9074412
 reddit: https://www.reddit.com/r/math/comments/2wfom3/set_theory_and_axiomatic_systems_explained_with/
 coverPainting: "Untitled (Lettres), 1998, Moon Pil Shim"
-footBlock: |
-    <div class="loading_maths">
-    You may experience lag <br>while maths is being rendered (LaTeX).
-    </div>
-
-    <div class="fixed_top_nav">
-    <div class="nav1">
-    <div>
-    <div class="inlineblock">1. Prologue + Intro </div>
-    <div class="inlineblock">2. Axiomatic systems and axioms</div>
-    <div class="inlineblock">3. Set theory and sets</div>
-    <div class="inlineblock">4. Axiom of extensionality (AoE)</div>
-    <div class="inlineblock">5. More on AoE</div>
-    </div>
-    <div>
-    <div class="inlineblock">6. Set defined with statement</div>
-    <div class="inlineblock">7. Set operators</div>
-    <div class="inlineblock">8. Subset</div>
-    <div class="inlineblock">9. Axiom of specification (AoS)</div>
-    <div class="inlineblock">10. AoS in Cantor's paradise</div>
-    <div style="margin: 10px;cursor: pointer;color: #aaa; display: inline-block;" class="pretendToBeInlineBlock">......</div>
-    </div>
-    </div><div class="nav2 hiding">
-    <div>
-    <div class="inlineblock">11. Russell Paradox</div>
-    <div class="inlineblock">12. Author's Note</div>
-    <div class="inlineblock">13. Order pair & Tuple</div>
-    <div class="inlineblock">14. Relation</div>
-    <div class="inlineblock">15. Function</div>
-    </div>
-    <div>
-    <div class="inlineblock">16. Cardinal number</div>
-    <div class="inlineblock">17. "Countable" sets</div>
-    <div class="inlineblock">18. Cantor's diagonal argument</div>
-    <div class="inlineblock">19. Power sets</div>
-    <div class="inlineblock">20. Aleph number & Beth number</div>
-    </div>
-    </div></div>
 ---
-><p class="_index"></p><p class="text-center"><b>PROLOGUE </b> (abridged)</p>
+
+<p class="_index"></p>
+
 >
-><a href ="/prologue-for-0a-explains-set-theory-and-axiomatic-systems">...</a> At the moment I'm still reading up on general topology and working on the article, <i>0a explains: general topology</i>. At some point in time I decided to have set theory, which initially was one of its segments, in a separate article instead. And just to make things more interesting, I figured I should "dive in" slightly deeper and give an axiomatic view on some of the concepts.
+>I’ve never imagined that [writing an essay](http://zer0.degree/chapter1/calculus-explained.html) on calculus and making some animated gifs can have such a huge impact in my life.
+>
+>I left school at the age of 16 to pursue what I wanted to do in life. I had ambitious dreams. But throughout the years I learnt to be conscious of my naivety and ignorance. I understand that it is perfectly normal if it turns out that all this time I have been living in a delusional state. So far every project I started had failed. Things have not once gone as planned.
+>
+>Now and then I wondered if everything I’d done was just one of the tricks I played to make me feel better about myself, that I was nothing more than a pathetic idealist, kidding himself along on a senseless odyssey. So I was greatly surprised when I learnt that 30 thousand people had visited my website in a day because of something I wrote. The link to the essay had got good number of upvotes on both [Reddit](http://0a.io/0a-explains-calculus) and [HackerNews](https://news.ycombinator.com/item?id=8523150). Some commented and told me it was good. Certainly this was nothing comparing to, say, getting into MIT, but I think I had never been this happy in my life before. The joy I felt - that could not be described in words.
+>
+>Once again, thank you all for the support. You had brightened my days up. And with a positive mind, gradually, I made the decision to be less of a shut-in and start going for meet-ups and conferences. I got to know many cool people and made some new friends.
+>
+> At the moment I'm still reading up on general topology and working on the article, <i>0a explains: general topology</i>. At some point in time I decided to have set theory, which initially was one of its segments, in a separate article instead. And just to make things more interesting, I figured I should dive in slightly deeper and give an axiomatic view on some of the concepts.
 >
 >So here you go.
 >
 >Enjoy!
 >
+> Archy,<br/>
+> Jan 2015
 
 <p class="_index">We can't be absolutely certain that anything is real. Did the past actually exist? That may appear to be an absurd question to ask. But how can you be so sure that events you remember really did occur? You can argue that you are able see their consequences in the present, or other people would agree with you that they happened. But that is based on the assumption that reality did not just come into existence a moment ago in a predefined state, together with memory of a non-existed past implanted in your mind.</p>
 
@@ -69,7 +43,7 @@ We do that too in mathematics. An axiomatic system is made up of a collection of
 >
 >This is an axiom in <a target="_blank" href ="http://en.wikipedia.org/wiki/Frege's_propositional_calculus">Frege's axiomatic system on propositional calculus</a>.
 >
-><div class="row d_shortcuts">"$\Rightarrow$" means <i><a target="_blank" href ="http://en.wikipedia.org/wiki/Material_conditional">imply</a></i>.
+><div class="row block-of-grey">"$\Rightarrow$" means <i><a target="_blank" href ="http://en.wikipedia.org/wiki/Material_conditional">imply</a></i>.
 "$\neg$" means <i><a target="_blank" href ="http://en.wikipedia.org/wiki/Negation">not</a></i>.</div>
 >
 >We can read it as:
@@ -99,7 +73,7 @@ Set theory is considerably the heart of modern mathematics. As suggested by its 
 
 A set can be thought as a collection of things. We refer to these things as the elements of the set.
 
-<p class="text-center"><img src="/assets/img/set.png"></p>
+<p class="text-center"><img src="/img/from-chapter-1/set.png"></p>
 
 When talking about the elements in a set, our only concern is their existence. So we don't really care about the number of identical elements. It either exists, or it doesn't. The concept of quantity is not important to us.
 
@@ -118,7 +92,7 @@ $$\forall A \, \forall B \, (\forall x \ (x \in A \Leftrightarrow x \in B) \, \R
 
 To understand the symbolism, just keep in mind that
 
-<div class="row d_shortcuts">
+<div class="row block-of-grey">
 "$\in$" means <a target="_blank" href ="https://proofwiki.org/wiki/Definition:Element"><i>is an element of</i> (or <i>in</i>)</a>.
 "$\forall$" means <a target="_blank" href ="http://en.wikipedia.org/wiki/Universal_quantification"><i>for any</i> (or <i>for all</i>, or <i>for every</i>, etc)</a>.
 "$\Leftrightarrow$" is the "two-ways imply", it means <a target="_blank" href ="http://mathworld.wolfram.com/Iff.html"><i>if and only if</i></a>.
@@ -128,7 +102,7 @@ Thus the axiom can be read as:
 
 $$\text{for any } A \text{ and } B \\ \text{ if it is true for every } x \text{ that } x \text{ is in } A \text{ if and only if } x \text{ is also in } B \\ \text{then it would imply that } A = B \text{.}$$
 
-Basically what it's saying is that two sets ($$A$$ and $$B$$) are equivalent as long as every element in $$A$$ is in $$B$$, and every element in $$B$$ is also in $$A$$. This appears to be a rather obvious thing to say. But it is necessary to have an axiom like this serving as a foundation for the mathematical idea of set.
+Basically what it's saying is that two sets ($A$ and $B$) are equivalent as long as every element in $A$ is in $B$, and every element in $B$ is also in $A$. This appears to be a rather obvious thing to say. But it is necessary to have an axiom like this serving as a foundation for the mathematical idea of set.
 
 > With this axiom, we can prove that $$\{a,b,c\} = \{b,c,a\}$$ by stating that each element in $$\{a,b,c\}$$ is also in $$\{b,c,a\}$$, and vice versa: so by the axiom, the ordering of elements does nothing to how we perceive a set.
 >
@@ -144,7 +118,7 @@ An interesting consequence of <i>the axiom of extensionality</i> is that it impl
 ><h4>What is a urelement?</h4>
 > A <b>urelements</b> (also called "atom") is a mathematical objects that is an element of some set, but is not a set itself.
 >
-><p class="text-center"><img src="/assets/img/urelements.png"></p>
+><p class="text-center"><img src="/img/from-chapter-1/urelements.png"></p>
 >
 > For example, natural numbers are often considered to be urelements. (Provided that you don't define natural numbers to be sets of certain structure.) Since urelements are not sets, they contain no elements. But they can still be different from one another by their properties:
 >
@@ -185,7 +159,7 @@ We can say that this is the universe <i> the axiom of extensionality </i> has be
 
 > "It is said that the world is empty, the world is empty, lord. In what respect is it said that the world is empty?" The Buddha replied, "Insofar as it is empty of a self or of anything pertaining to a self: <a target="_blank" href ="http://en.wikipedia.org/wiki/%C5%9A%C5%ABnyat%C4%81">Thus it is said, Ānanda, that the world is empty</a>."
 >
-><p class="text-center"><img src="/assets/img/mindexplosion.gif"></p>
+><p class="text-center"><img src="/img/from-chapter-1/mindexplosion.gif"></p>
 >
 ><i>I was exposed to ideas in Buddhism when I was young. Just pointing out an interesting resemblance here.</i>
 
@@ -239,11 +213,11 @@ $$A \subseteq B \Leftrightarrow \forall x ( x \in A \Rightarrow x \in B)$$
 >
 > $$ \{x \in \mathbb{R}    x \not\in \mathbb{Q}\} \subset \mathbb{R} \\ Y \subset \mathbb{R} $$
 >
-><p class="text-center"><img src="/assets/img/set2.png"></p>
+><p class="text-center"><img src="/img/from-chapter-1/set2.png"></p>
 
 A subset of a set can be viewed as a set we obtain from selecting elements from another set satisfying some statement.
 
-<p class="text-center"><img src="/assets/img/subset.gif"></p>
+<p class="text-center"><img src="/img/from-chapter-1/subset.gif"></p>
 
 <p class="_index">In ZF, <i>the axiom of specification</i> states that a set of such selection alway exists.</p>
 
@@ -257,7 +231,7 @@ $$\text{or}$$
 
 $$\text{for any set } A \text{ , there exists a set } B \\ \text{ that are made up of } \text{precisely the elements in } A \text{ each satisfying } \phi(x)$$
 
-<div class="row d_shortcuts">
+<div class="row block-of-grey">
 $\exists$ means <a target="_blank" href ="http://en.wikipedia.org/wiki/Existential_quantification"><i>there exists</i></a>.
 $\land$ means <i>and</i>.
 $\phi(x)$ here is known as a <a target="_blank" href ="http://en.wikipedia.org/wiki/Metavariable">meta-variable</a> to indicate some statement about $x$.
@@ -268,7 +242,7 @@ $\phi(x)$ here is known as a <a target="_blank" href ="http://en.wikipedia.org/w
 >
 > In programming, you can visualize an axiom schema as a simply function that returns an axiom:
 >
-> {% highlight JavaScript %}
+> ```JavaScript
 function make_an_axiom(phi){
      return "Forall A, there exists B such that for all x, if x is in B, then x is in A and " + phi;
  }
@@ -277,11 +251,11 @@ function make_an_axiom(phi){
  // axiom1 would be: "Forall A, there exists B such that for all x, if x is in B, then x is in A and x is a negative number"
  var axiom2 = axiom_schema("x is a prime number");
  // axiom1 would be: "Forall A, there exists B such that for all x, if x is in B, then x is in A and x is a prime number"
-{% endhighlight %}
+```
 >
 > In the previous example, $$\phi(x)$$ is the statement $$x \not\in \mathbb{Q} $$. So elements satisfying this statement, namely the irrational numbers, would be selected.
 >
-><p class="text-center"><img src="/assets/img/specification.gif"></p>
+><p class="text-center"><img src="/img/from-chapter-1/specification.gif"></p>
 
 A set is always a subset of itself. Selecting all elements from a set gives us back the original set.
 
@@ -289,7 +263,7 @@ $$\forall A (A \subseteq A)$$
 
 > $$\subseteq$$ is the general notation for subset. It can be used for all subsets, while $$\subset$$ can only be used when the subset is not the set itself.
 >
-><p class="text-center"><img src="/assets/img/ss_vs_properss.png"></p>
+><p class="text-center"><img src="/img/from-chapter-1/ss_vs_properss.png"></p>
 
 Empty set is the subset of all sets. Selecting no elements from a set and we would get an empty set.
 
@@ -327,7 +301,7 @@ So we conclude that $$V$$ shouldn't contain itself. And that would mean $$V$$ is
 
 $$V \text{ is not a normal set} \Rightarrow V \not\in V \\ V \not\in V \Rightarrow V \text{ is a normal set}$$
 
-<p class="text-center"><img src="/assets/img/russell.gif"></p>
+<p class="text-center"><img src="/img/from-chapter-1/russell.gif"></p>
 
 We would end up having this absurd statement about $$V$$:
 
@@ -357,7 +331,7 @@ We can't just "squeeze" $$U$$ into $$A$$ before $$U$$ is defined. So $$A$$ can't
 
 ><i>Von Neumann–Bernays–Gödel set theory (NGB)</i> extended ZF by introducing the concept of <b>class</b>. Class is basically a collection of things, just like sets in ZF. Sets in NGB are defined to be classes that are elements of other classes. So we end up having two types of classes: set and <b>"proper class"</b>. A "proper class" is simply a class that is not an element of any class. "Proper classes" can contain all sets that satisfy some statement. This would not result in Russell Paradox becaues "proper class" is by definition not a set. Just as we can't define a set to contain all sets in the universe which satisfy some statement, we can't define a class to contain all classes which satisfy some statement.
 >
-><p class="text-center"><img src="/assets/img/properclass.png"></p>
+><p class="text-center"><img src="/img/from-chapter-1/properclass.png"></p>
 
 <p class="text-center"> ● ● ● </p>
 
@@ -391,7 +365,7 @@ As you can see, $$(a,b) = (b,a)$$ only when $$\{\{a\},\{a,b\}\} =\{\{b\},\{b,a\}
 
 > The set of all possible ordered pairs between two sets is known as the <b>Cartesian Product</b>.
 >
-><p class="text-center"><img src="/assets/img/cartesian.png"></p>
+><p class="text-center"><img src="/img/from-chapter-1/cartesian.png"></p>
 >
 > It is often denoted with a cross $$\times$$ (like the one used for multiplication).
 
@@ -436,7 +410,7 @@ $$R_{AB}= \{(1,a),(2,c)\} \\[10px] \begin{align} A&=\{1,2,3,4\} \\ B&=\{a,b,c\} 
 
 > Here, $$R_{AB}$$ is a binary relation between $$A$$ and $$B$$. We call it a binary relation when it's between 2 sets.
 
-<p class="text-center"><img src="/assets/img/relation.gif"></p>
+<p class="text-center"><img src="/img/from-chapter-1/relation.gif"></p>
 
 > A Cartesian Product, for example, is also a binary relation. Actually, any binary relation between 2 sets is a subset of their Cartesian Product. $$R_{AB}$$ above is a subset of the Cartesian Product of $$A$$ and $$B$$.
 >
@@ -448,7 +422,7 @@ Here is an example of relation between 3 sets.
 
 $$R_{ABC}= \{(1,a,-1),(2,c,-4)\} \\[10px] \begin{align} A&=\{1,2,3,4\} \\ B&=\{a,b,c\} \\ C&=\{-1,-2,-3,-4,-5\} \end{align}$$
 
-<p class="text-center"><img src="/assets/img/relation3.png"></p>
+<p class="text-center"><img src="/img/from-chapter-1/relation3.png"></p>
 
 <h3 class="_index">What is a function?</h3>
 A function is a relation in which no two $$m$$-tuples have their first $$m-1$$ element(s) the same.
@@ -456,7 +430,7 @@ A function is a relation in which no two $$m$$-tuples have their first $$m-1$$ e
 $$\begin{align} R_1&= \{(1,a),(2,c)\} \text{, } R_1 \text{ is a function}  \\ R_2&= \{(1,a),(1,c)\} \text{, } R_2 \text{ is not a function} \end{align}$$
 
 
-<p class="text-center"><img src="/assets/img/function.gif"></p>
+<p class="text-center"><img src="/img/from-chapter-1/function.gif"></p>
 
 $$R_1$$ above is a 1-ary (or single-input) function. For any 1-ary function, the first element (which plays the role of "input") has to be unique.
 
@@ -522,7 +496,7 @@ When a function $$f:X \mapsto Y$$ is injective, each element in X is mapped to a
 
 $$\forall a \forall b (a\not=b \Leftrightarrow f(a)\not=f(b)) \text{ where } a \text{ and } b \text{ is in the domain}$$
 
-<p class="text-center"><img src="/assets/img/injective.png"></p>
+<p class="text-center"><img src="/img/from-chapter-1/injective.png"></p>
 
 >We often refer to the set of elements being mapped to as image. (An image is always a subset of the codomain)
 
@@ -530,13 +504,13 @@ When a function $$f:X \mapsto Y$$ is surjective, <b>each element in Y</b> is map
 
 $$\forall x (x\in Y \Leftrightarrow\exists a ( f(a)=x) )$$
 
-<p class="text-center"><img src="/assets/img/surjective.png"></p>
+<p class="text-center"><img src="/img/from-chapter-1/surjective.png"></p>
 
 >For a surjective function, the codomain is equivalent to the image.
 
 If a function is both subjective and injective, we call it <b>bijective</b>. In a bijective function, each element in $$X$$ is mapped to a unique element in $$Y$$ and no element in $$Y$$ is "unmapped".
 
-<p class="text-center"><img src="/assets/img/bijective.png"></p>
+<p class="text-center"><img src="/img/from-chapter-1/bijective.png"></p>
 
 >A function only has an inverse (often devoted as $$f^{-1}$$ of $$f$$) if it is bijective.
 
@@ -560,7 +534,7 @@ $$\forall A ( \exists V (  A   =   V   \Leftrightarrow V \subseteq \mathbb{N}) \
 
 Or, to put it another way, a set is countable when there is an injective function from it to $$\mathbb{N}$$.
 
-<p class="text-center"><img src="/assets/img/countable.png"></p>
+<p class="text-center"><img src="/img/from-chapter-1/countable.png"></p>
 
 It's pretty obvious that all finite sets (sets with finite number of elements) are countable.
 
@@ -594,19 +568,19 @@ Infinite sets with a bigger cardinal number than $$\mathbb{N}$$ are "uncountable
 >
 > Let's say we have an infinite set $$A$$ which contains all the different binary (every digit is either 0 or 1) strings of infinite length.
 >
-><p class="text-center"><img src="/assets/img/infinite_strings.png"></p>
+><p class="text-center"><img src="/img/from-chapter-1/infinite_strings.png"></p>
 >
 > Now let's say we have another set, $$B$$, that contains all binary strings of infinite length enumerated by a function like this:
 >
 > $$f(n) = \left\{ \begin{array}{ll} \text { a string that repeats base-2 version of } (n - 1) \text{ with a 0 behind if n is odd } \\ \text{ a string that's bitwise NOT of } f(n-1) \text{ if n is even} \end{array} \right. \\ B = \{x    x = f(a), a \in \mathbb{N}\}$$
 >
-><p class="text-center"><img src="/assets/img/infinite_strings_b.png"></p>
+><p class="text-center"><img src="/img/from-chapter-1/infinite_strings_b.png"></p>
 >
 > Apparently, this is a bijective function from $$\mathbb{N}$$ to $$B$$. $$B$$ has the cardinal number $$\aleph_0$$.
 >
 > Now we can take the 1st digit of the 1st element, $$f(1)$$, flip it to a different value (0 to 1 or 1 to 0), take the 2nd digit of the 2nd element, $$f(2)$$, does the same thing to it ... and get the $$n$$-th digit from every element to construct a binary string. We would end up with an infinitely long binary string that is different from every infinitely long string in $$B$$.
 >
-><p class="text-center"><img src="/assets/img/cantor-diagonal-argument.gif"></p>
+><p class="text-center"><img src="/img/from-chapter-1/cantor-diagonal-argument.gif"></p>
 > .
 > And the same thing can be done to every set whose element is enumerated by $$\mathbb{N}$$. So we conclude that no matter how these binary strings are listed (using a bijective function with domain $$\mathbb{N}$$), we would always be able to construct a new permutation that's not in the list. In other words, enumeration (using $$\mathbb{N}$$) cannot capture every permutation of infinitely long strings. We can't list down every element in $$A$$, the set of all possible binary strings of infinite length.
 >

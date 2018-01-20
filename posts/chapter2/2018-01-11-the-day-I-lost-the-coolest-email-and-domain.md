@@ -3,8 +3,8 @@ readingTime: 10min
 layout: post
 title: "The Day I Lost the Coolest Email and Domain in The World"
 Title: "The Day I Lost the Coolest Email and Domain in The World (Arguably)"
-date:   2018-01-12 19:57:33 +0800
 coverPainting: Volumi (blue), 1964, Paolo Scheggi
+containsCode: true
 ---
 
 The more you age the more you realise how easy it is to screw up.
@@ -15,9 +15,9 @@ Perhaps I should get back to [Emacs](http://emacs.sexy/) [/w Vi](https://www.ema
 
 As I was doing so it didn’t even occur to me the slightest to back up passwords as well. Somewhere down the subconscious rabbit hole lazed the idea of how simple the recovery process would be in the case of losing a password. You see, I lost passwords all the time and resetting password had become some sort of a routine. Sun Tzu once said, "When you confuse yourself you confuse the enemy."
 
-I was a huge fan of the domain registrar [Hover](https://en.wikipedia.org/wiki/Hover_(domain_registrar) and I used it to set up both my domains and emails. There was this unsettling symmetry in the recovery relation between my email a@0a.io and Hover account: just like the password of a@0a.io which can only be reset by my Hover account, the password of my Hover account can only be reset by a@0a.io. A recursive and logically flawed design indeed, one that I will never allow to exist in programs I write. Nonetheless I had kept it this way for as long as I could remember. It was still somewhat a stable system since the probability of losing access to both accounts concurrently was pretty low.
+I was a huge fan of the domain registrar [Hover](https://en.wikipedia.org/wiki/Hover_(domain_registrar)) and I used it to set up both my domains and emails. There was this unsettling symmetry in the recovery relation between my email <a>a@0a.io</a> and Hover account: just like the password of <a>a@0a.io</a> which can only be reset by my Hover account, the password of my Hover account can only be reset by <a>a@0a.io</a>. A recursive and logically flawed design indeed, one that I will never allow to exist in programs I write. Nonetheless I had kept it this way for as long as I could remember. It was still somewhat a stable system since the probability of losing access to both accounts concurrently was pretty low.
 
-Years had passed and I hadn’t run into any problem, expect this time. Hover had become hyper-sensitive with security over the years. It decided to lock my account after two failed attempts to log in as I fumbled for the right key. Normally I could just gracefully recover the account through a@0a.io. With a brand new OS I would need to rely on this short-term memory of mine to get the right password to access the inbox, and it just so happened I had recently changed the password in a variation experiment. I ended up writing a [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) script in hopes of brute-forcing my way in.
+Years had passed and I hadn’t run into any problem, expect this time. Hover had become hyper-sensitive with security over the years. It decided to lock my account after two failed attempts to log in as I fumbled for the right key. Normally I could just gracefully recover the account through <a>a@0a.io</a>. With a brand new OS I would need to rely on this short-term memory of mine to get the right password to access the inbox, and it just so happened I had recently changed the password in a variation experiment. I ended up writing a [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) script in hopes of brute-forcing my way in.
 
 ```js
 // ==UserScript==
@@ -87,7 +87,7 @@ if (document.getElementById("rcmloginuser") != null) {
     let pw = passwords[count]
     await GM.setValue('count', count + 1)
 
-    document.getElementById("rcmloginuser").value = "a@0a.io"
+    document.getElementById("rcmloginuser").value = "<a>a@0a.io</a>"
     document.getElementById("rcmloginpwd").value = pw
     console.log("submitting form... for the " + count + " times")
     console.log("of password" + pw)
@@ -101,7 +101,7 @@ After ~600 POST requests to mail.hover.com attempting all possible combinations 
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hover?ref_src=twsrc%5Etfw">@hover</a> Hi there. Please get back to me asap. I need your help. My account is locked &amp; I can&#39;t access to my recovery account.</p>&mdash; Archy Wilhes 魏何 (@archywilhes) <a href="https://twitter.com/archywilhes/status/945929498201006081?ref_src=twsrc%5Etfw">December 27, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-[img]()
+<img src="../img/hover-can-you-help.png" style="max-width:300px">
 
 They replied. Not very helpful though. To make the situation worst my 16 years old self didn’t register the Hover account under my legal name. So things got complicated.
 
@@ -135,7 +135,7 @@ They replied. Not very helpful though. To make the situation worst my 16 years o
 >In this case, after reviewing the domains you mentioned previously in your email, to claim ownership of the individual domains:
 > ...
 
-Apparently I wouldn't be able to claim ownership for 0a.io since my 17 years old self [had decided to put only half my legal name in the WHOIS record during registration](https://www.whois.com/whois/0a.io). I could now further reassure myself that my domain 0a.io and email a@0a.io were gone forever, unless I could somehow snatch the domain away from domain merchants right after it expires. And that would highly likely be pretty damn hard considering I would either be competing with bots or Hover itself.
+Apparently I wouldn't be able to claim ownership for 0a.io since my 17 years old self [had decided to put only half my legal name in the WHOIS record during registration](https://www.whois.com/whois/0a.io). I could now further reassure myself that my domain 0a.io and email <a>a@0a.io</a> were gone forever, unless I could somehow snatch the domain away from domain merchants right after it expires. And that would highly likely be pretty damn hard considering I would either be competing with bots or Hover itself.
 
 On the bright side work wasn't affected by this screw-up since I hadn't been doing anything email-intensive lately. I just needed to get a new email address and update my contacts about it, and probably losing some weak ties along the way.
 
@@ -143,4 +143,4 @@ Well, it wasn't really that much of a loss overall.
 
 Despite telling myself that, I had been having quite a hard time getting over this whole incident. The realisation I would never in my life use this email and domain again hurt. One can indeed argue that losing things is a large part of what life is about. But it would always take a while to get used to. At some point in time the email and domain had become somewhat an identity to me. And while I was grieving over the bygone domain I recalled how it had been two years since I last updated 0a.io.
 
-Perhaps it’s time that I start [a new site](http://zer0.degree), migrate everything to it, and get back to writing again, I thought.
+Perhaps it’s time that I start [a new site](http://zer0.degree), migrate everything to it, and get back to writing again.

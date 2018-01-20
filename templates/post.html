@@ -3,13 +3,13 @@ $if(customForwardUrl)$
 window.location = window.location.hostname + "$customForwardUrl$"
 </script>
 $else$
-<div class="show-iff-nonmobile">
+<div class="hide-if-bigger-than-mobile-device-regular">
   <h2 class="thickRaleway menu">
     <!-- <a href="/" class="menu-item">Back to Home Page</a> -->
 </h2>
 </div>
 <div class="container content">
-<article style="$if(width)$width:$width$px;$endif$">
+<article style="$if(width)$max-width:$width$px;$endif$">
     <div class="coverPainting">
         <img src="/img/covers/$coverPainting$.jpg"/>
     </div>
@@ -30,5 +30,10 @@ $else$
         </div>
     </div>
 </article>
+</div>
+<div>
+  <h2 class="thickRaleway menu-bottom">
+    <a class="menu-item" href="/">Back to Home Page</a>
+</h2>
 </div>
 $endif$

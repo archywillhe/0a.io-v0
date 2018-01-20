@@ -2,7 +2,10 @@
 maintitle: "Random stuff"
 subtitle: ""
 width: 665
+date: 2018-01-02
 ---
-1. Something I did worth mentioning when I was 19: [a formal reduction a conjecture in combinatorics to a UNSAT problem](https://arxiv.org/abs/1511.02334) and somehow [come up with a new proof for the Moessner's theorem](https://arxiv.org/abs/1602.01903).
+1. Here are some stuff I did when I was 19 that are worth mentioning: formally reducing the Erdös-Szekeres conjecture into a constraint unsatisfiability problem [[pdf on arxiv](https://arxiv.org/abs/1511.02334)] && coming up with a new proof the Moessner's theorem [[pdf on arxiv](https://arxiv.org/abs/1602.01903)] && completing a Ph.D. module in Programming Language Theory.
 
-2. I can speak English, Cantonese, and Mandarin fluently. Currently I’m picking up Japanese as my forth language. Looking to live in Japan for a good few years.
+2. I can speak English, Cantonese, and Mandarin fluently. Currently I’m studying Japanese as a hobby, thinking about picking it up as my forth language. Looking to live in Tokyo for a good few years in the near future.
+
+3. I can be reached on Twitter [\@archywilhes](http://twitter.com/archywilhes) or via email at [archy@zer0.degree](mailto://archy@zer0.degree).

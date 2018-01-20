@@ -19,7 +19,7 @@ I just want to write my own code and be minimalistic.
 
 It turns out this is a very naive way of thinking. It is highly impractical. I'm not going to get anywhere with such ideology, if I'm concerned with getting things done. As [Eric S. Raymond](http://en.wikipedia.org/wiki/Eric_S._Raymond) put it in [*The Cathedral and the Bazaar (1999)*](http://www.amazon.com/gp/product/0596001088/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0596001088&linkCode=as2&tag=0aarhe-20&linkId=DEAUNS2X7QMF2LS7):
 
-<div class="rows d_shortcuts">
+<div class="rows block-of-grey">
 Good programmers know what to write. Great ones know what to rewrite (and reuse) ... An important trait of the great ones is constructive laziness. They know that you get an A not for effort but for results, and that it's almost always easier to start from a good partial solution than from nothing at all.
 </div>
 

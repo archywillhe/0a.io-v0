@@ -1,4 +1,4 @@
-<div class="show-iff-nonmobile">
+<div class="hide-if-smaller-than-mobile-device-regular">
 <div class="row">
     <div class="third">
       $for(row0)$
@@ -17,7 +17,7 @@
     </div>
 </div>
 </div>
-<div class="show-iff-mobile">
+<div class="show-if-smaller-than-mobile-device-regular">
     $for(everything)$
       $partial("templates/archy-item.html")$
     $endfor$

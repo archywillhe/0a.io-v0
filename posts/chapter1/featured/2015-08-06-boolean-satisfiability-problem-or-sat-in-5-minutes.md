@@ -3,6 +3,7 @@ layout: post
 title: "The Boolean Satisfiability Problem [S<small>AT</small>] and S<small>AT</small> solvers in 5 mins* (or&nbsp;more)"
 containMaths: true
 coverPainting: "Untitled, 1962, Larry Bell"
+containMaths: true
 footBlock: |
     <script>
     (function(){
@@ -30,7 +31,7 @@ footBlock: |
     </script>
 ---
 
-<div class="row d_shortcuts">This is a quick sum-up on (and a beginner guide to) the Boolean Satisfiability Problem.</div>
+<div class="row block-of-grey">This is a quick sum-up on (and a beginner guide to) the Boolean Satisfiability Problem.</div>
 
 <small><sup>*</sup>In 5 minutes if one skips the introduction and the words in <i>the Blocks of Grey Text</i>.<br>
 <a id="blockquoteToggle">Click here to hide the introduction and all <i> Blocks of Grey Text</i>.</a>
@@ -46,14 +47,14 @@ Word count includes only words <u>not</u> in <i>the Blocks of Grey Text</i>.</sm
 
 <p>The <strong>Boolean Satisfiability Problem</strong> is also the first problem proven<sup>{2}</sup> to be NP-complete. A problem is <b>NP-complete</b> if it belongs to the set (or <a href="https://en.wikipedia.org/wiki/Class_(set_theory)">“class”</a> if you prefer) of the hardest problems in <strong>NP</strong> - hardest in the sense that every problem ever exists in NP can be <a href="https://en.wikipedia.org/wiki/Polynomial-time_reduction">reduced</a> to them. (Thus being able to solve a NP-complete problem is equivalent to being able to solve every problem in NP). </p>
 
-<p class="text-center"><img style="max-width:400px" src="/assets/img/SAT.jpg"></p>
+<p class="text-center"><img style="max-width:400px" src="/img/from-chapter-1/SAT.jpg"></p>
 
 <blockquote>
   <p><strong>NP</strong> is the set of decision problems for which there exists a non-deterministic Turing machine that would output a value 1, or 0, after at most O(n<sup>k</sup>) steps where k is some constant and n is the complexity of the input. We often refer to such number of steps (or running time) as polynomial, hence Non-deterministic Polynomial time, or NP. </p>
 
   <p>A Turing machine is basically a mathematical object that formalizes that idea of algorithm (<a href="http://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf">in Turing model’s of computation</a>). A non-deterministic Turing machine (NDTM) is, in simple words, a theoretical Turing machine that can, in a sense, engage in all possible computations while taking the same time/step as a deterministic Turing machine. (<a href="http://www.encyclopediaofmath.org/index.php/Probabilistic_Turing_machine">Note: nondeterministic doesn’t mean probabilistic.</a>) <b>One way I like to think about a non-deterministic Turing machine is that it can only exist in a universe where time is a 2 dimensional plane.</b> A deterministic Turing machine (DTM) on the other hand computes in one-dimension time (and is defined in terms of a <strong>transition function</strong>, unlike NDTM which relies on a <strong>transition relation</strong>).</p>
 
-  <p>Besides the Boolean Satisfiability Problem, the prime factorization problem, “Given $X$ and $N$, where $1&lt; X &lt; N$, is there a $d$ where $X &lt; d &lt; N$ and $d$ a prime factor of $N$?”, is also a problem in <strong>NP</strong>.</p>
+  <p>Besides the Boolean Satisfiability Problem, the prime factorization problem, “Given $X$ and $N$, where $1 < X < N$, is there a $d$ where $X < d < N$ and $d$ a prime factor of $N$?”, is also a problem in <strong>NP</strong>.</p>
 
   <p>Decision problems<sup>{1}</sup> are problems concerning only with the "trueness" of some statement. That is to say that algorithms for solving decision problems would output either <code>True</code> or <code>False</code> (often in binary value). The problem above is a decision problem, and so is the problem “Is X a prime number?”</p>
 
@@ -102,13 +103,13 @@ Word count includes only words <u>not</u> in <i>the Blocks of Grey Text</i>.</sm
 </blockquote>
 </div>
 
-###<small>1st minute</small>: What is the Boolean Satisfiability Problem? <small class="wordCount">334&nbsp;words</small>
+#### What is the Boolean Satisfiability Problem? <small class="wordCount">334&nbsp;words</small>
 
 The **Boolean Satisfiability Problem** (or S<small>AT</small>) is the problem of determining if a proposition statement<sup>*</sup> is **satisfiable**. A propositional statement is satisfiable when it is possible to assign some true-false values for the variables in the statement such that the statement yields `True`. Otherwise the statement is unsatisfiable.
 
 A propositional statement is simply a string made up of variables, brackets and these 3 symbols:
 
-<div class="row d_shortcuts text-center">
+<div class="row block-of-grey text-center">
 $\neg$ with the meaning <i>not</i>.<br> $\neg True = False $<br>
 $\land$ with the meaning <i>and</i>.<br> $ False \land True = False $<br>
 $\lor$ with the meaning <i>or</i>.<br> $ False \lor True = True $ <br>
@@ -124,7 +125,7 @@ $$\text{Is }d \lor (a \land b \land (c \lor d \land \neg a)) \text{ satisfiable?
 
 The answer is yes, it is satisfiable. One solution:
 
-<div class="row d_shortcuts">
+<div class="row block-of-grey">
 $a$ assigned: Any value<br>
 $b$ assigned: Any value<br>
 $c$ assigned: Any value<br>
@@ -147,7 +148,7 @@ is no, it is unsatisfiable. That is because there is no value we can assign to $
 >
 >p.s. Often in proposition logic, you would encounter these symbols as well:
 >
-> <div class="row d_shortcuts text-center"> $\Rightarrow$ with the meaning <i>imply (if .. then ..) </i>. [$\Leftarrow$ for different direction]<br> $ (False \Rightarrow True) = True $<sup>{4}</sup><br>
+> <div class="row block-of-grey text-center"> $\Rightarrow$ with the meaning <i>imply (if .. then ..) </i>. [$\Leftarrow$ for different direction]<br> $ (False \Rightarrow True) = True $<sup>{4}</sup><br>
 $\Leftrightarrow$ with the meaning <i>if and only if (two-way implication)</i>.<br>$ (False \Leftrightarrow True) = False $ </div>
 >
 > They are omitted because statements that use these symbols can be rewritten using the basic Boolean operations: $\lor$, $\land$, and $\neg$.
@@ -182,7 +183,7 @@ It is, however, unsatisfiable if we define $\mathbb{Z}$, the set of integers, to
 
 <p class="text-center"> ● ● ● </p>
 
-###Extra <small class="wordCount">(skip this if you want) 213&nbsp;words</small>
+#### Extra <small class="wordCount">(skip this if you want) 213&nbsp;words</small>
 
 When a satisfiable statement always yields `True` no matter what the value the variables take (every set of true-false assignments to the variables is a solution), we call it a **tautology**. Here is one:
 
@@ -213,7 +214,7 @@ From the 2nd minute on we'd be
 
 2. using **S<small>AT</small>** as the abbreviation for the Boolean Satisfiability Problem
 
-###<small>2nd minute:</small> Classifying S<small>AT</small> <small class="wordCount">354&nbsp;words</small>
+#### Classifying S<small>AT</small> <small class="wordCount">354&nbsp;words</small>
 
 We can classify instances of S<small>AT</small> based on what form the formulas are in.
 
@@ -256,7 +257,7 @@ Lastly, we shall talk about **HORN-S<small>AT</small>**, instances of S<small>AT
 $$( a \lor \neg b) \land ( c \lor \neg d ) \land (\neg a \lor \neg c \lor \neg b) \land \neg x \\ x \land y \land z \land (\neg d \lor \neg x \lor \neg i \lor \neg y) \\ ( a \lor \neg b ) \land c$$
 
 <div class="text-center">
-<img style="max-width:300px" src="/assets/img/such horn.jpg">
+<img style="max-width:300px" src="/img/from-chapter-1/such horn.jpg">
 </div>
 
 Not only is Horn-S<small>AT</small> in P (just like 2S<small>AT</small>), it is also [P-complete](https://en.wikipedia.org/wiki/P-complete), and [solvable in linear time](http://www.sciencedirect.com/science/article/pii/0743106684900141). ([That doesn't mean P = LIN though.](http://cs.stackexchange.com/questions/45002/is-horn-sat-in-lin-if-so-why-is-that-not-an-indication-that-p-lin))
@@ -291,7 +292,7 @@ This pretty much sums up generally how instances of S<small>AT</small> are class
 Perhaps you've also heard of problems with names like [MAXS<small>AT</small>](https://en.wikipedia.org/wiki/MAX-3SAT) and [#S<small>AT</small>](https://en.wikipedia.org/wiki/Sharp-SAT). Instances of these problems are not really instances of S<small>AT</small>; it'd be more accurate to say that they are variations of S<small>AT</small>. MAXS<small>AT</small> is the problem of finding a boolean assignment satisfying most clauses in a CNF formula, and #S<small>AT</small> is the problem of counting the number of satisfying assignments.
 
 
-###<small>3rd minute :</small> S<small>AT</small> Solvers - General Overview <small class="wordCount">337&nbsp;words</small>
+#### </small> S<small>AT</small> Solvers - General Overview <small class="wordCount">337&nbsp;words</small>
 
 There are many known algorithms capable of solving some (but not all) instances of S<small>AT</small> pretty efficiently. We often refer to them as <b>S<small>AT</small> solvers</b>. In general they can be classified into **complete** or **incomplete**.
 
@@ -312,7 +313,7 @@ Many modern S<small>AT</small> solvers are based on the original **DPLL** algori
 
 2. No matter what boolean values a set of variables are assigned to, it would break the overall satisfiability, and hence the formula is unsatisfiable.
 
-###<small>4th and 5th minutes :</small> S<small>AT</small> Solvers - DPLL and More <small class="wordCount">613&nbsp;words</small>
+#### </small> S<small>AT</small> Solvers - DPLL and More <small class="wordCount">613&nbsp;words</small>
 
 You may have already imagined, DPLL is basically a [depth-first search](https://www.youtube.com/watch?v=bkROCj-BTWE), and that means at its heart it uses **backtracking**, a brute-force-like technique that, rather than checking every single possible solution one by one (which is what's known as brute-force), it checks possible solutions by compositing part by part in a combinatorial fashion [e.g. building a solution variable by variable as described above], discarding sets of solutions that are deemed invalid by parts.
 
@@ -359,7 +360,7 @@ The other 2 techniques classical DPLL uses are
     >
     >    In the formula above, $a$ and $c$ are both pure, so we can give $a = True$ and $c = False$, and delete all the clauses that contain them. After that we'd end up with no clauses. And that means the formula is satisfiable with
     >   
-    >    <div class="row d_shortcuts">
+    >    <div class="row block-of-grey">
     >    $a$: True<br>
     >    $b$: Any value<br>
     >    $c$: False<br>
@@ -386,7 +387,7 @@ The other 2 techniques classical DPLL uses are
     >
     >And here we have it, the original formula is satisfiable with
     >
-    >    <div class="row d_shortcuts">
+    >    <div class="row block-of-grey">
     >    $a$: True<br>
     >    $b$: False<br>
     >    $c$: False<br>
@@ -407,7 +408,7 @@ More technically, we would say that unit propagation and pure literal eliminatio
 
 Here is a simple implementation of classical DPLL in Haskell:
 
-{% highlight Haskell %}
+```Haskell
 import Data.List
 
 data Satisfiability = SAT | UNSAT deriving (Eq, Show)
@@ -485,7 +486,7 @@ up ((vs,cnf),as)
 
 dpllStart :: ([Variable], [Clause]) ->(Satisfiability,[VariableAssignement])
 dpllStart (vs,cnf) = do_up_and_ple (vs, cnf) []
-{% endhighlight %}
+```
 
 To run it, simply invoke `dpllStart` with a parameter in the form `([Int], [[Int]])`
 
@@ -501,7 +502,7 @@ and it would return either `UNSAT` with an empty list or `SAT` with a list of bo
 
 Below is DPLL in pseudo-code with JavaScript-like syntax. (I have omitted the array that stores variable assignments.)
 
-{% highlight JavaScript %}
+```JavaScript
 function dpll(formula){
     if(formula.has(empty_clause)){
         return "UNSAT";
@@ -530,7 +531,7 @@ function doUPandPLE(f){
 
     return dpll(f);
 }
-{% endhighlight %}
+```
 
 <p class="text-center"> ● ● ● </p>
 
@@ -572,7 +573,7 @@ Other ways of improving performance of DPLL-based algorithms include
 
 and many and many more.  
 
-###End Note - Further reading:
+#### End Note - Further reading:
 
 1. [Boolean Satisfiability: Theory and Engineering (2014)](http://cacm.acm.org/magazines/2014/3/172516-boolean-satisfiability/fulltext) <small class="wordCount">755 words</small>
 

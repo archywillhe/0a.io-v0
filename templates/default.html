@@ -4,12 +4,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+                <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+                <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
+                <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
+                <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
+                <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
+                <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
+                <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
+                <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
+                <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
+                <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicons/android-icon-192x192.png">
+                <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+                <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
+                <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+                <link rel="manifest" href="/img/favicons/manifest.json">
+                <meta name="msapplication-TileColor" content="#ffffff">
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+                <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="/css/bootstrap.4.0.0-beta3.min.css" />
 <link href="/css/ionicons.2.0.1.min.css" rel="stylesheet">
 <link href="/css/main.css" rel="stylesheet">
 <link href="/css/fonts.css" rel="stylesheet">
-<title> $title$ | Zer0 Degree</title>
+$if(containsCode)$
+<link href="/css/highlight.css" rel="stylesheet">
+$endif$
+<meta property="og:url" content="http://zer0.degree/$url$" />
+$if(coverPainting)$
+<meta property="og:type" content="article" />
+$endif$
+$if(coverPainting)$
+<meta property="og:title" content="$title$" />
+$else$
+<meta property="og:title" content="The Website of Archy Wilhes 魏何" />
+$endif$
+$if(coverPainting)$
+<meta property="og:image" content="http://zer0.degree/img/covers/$coverPainting$.jpg" />
+$else$
+<meta property="og:image" content="http://zer0.degree/img/zer0_degree.png" />
+$endif$
+<title> $title$ - Zer0 Degree, The Website of Archy Wilhes 魏何</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?class=UA-112409544-1"></script>
 <script>
@@ -20,70 +53,92 @@
   gtag('config', 'UA-112409544-1');
 </script>
 <script src="/js/main.js"></script>
+$if(containMaths)$
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$$$','$$$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<script type="text/javascript"
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+$endif$
   </head>
   <body><div id="body-wrapper"><div id="body">
     <div class="cover-image">
-    <img class="show-iff-nonmobile" src="/img/backgrounds/willian-justen-de-vasconcellos-430007.jpg" />
-    <img class="show-iff-mobile" src="/img/backgrounds/willian-justen-de-vasconcellos-430007-full.jpg" />
+    <img class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/willian-justen-de-vasconcellos-430007.jpg" />
+    <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/willian-justen-de-vasconcellos-430007-full.jpg" />
     <div class="cover-image-text-wrapper">
     <div class="cover-image-text">
       <h1 class="zeroDegreeLogo centerFlex">
         <div><a href="/">Zer0<br/>Degree</a></div><div><sup class="degreeDot">o</sup><br/>&nbsp;</div>
       </h1>
 
-      <div class="zeroDegreeNameAndDescription show-if-not-smaller-than-mobile-device-large" style="margin-left:20px">
+      <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
       <h2 class="zeroDegreeName">
-        The Website of <br/><a href="/about">Archy Wilhes 魏何</a>
+        The Website of <br/><a href="/about.html">Archy Wilhes 魏何</a>
         <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
         <a target="_blank" href="http://github.com/archywilhes"><i class="social-icon ion-social-octocat"></i></a>
         <a target="_blank" href="http://instagram.com/archywilhes"><i class="social-icon ion-social-instagram"></i></a>
         <a target="_blank" href="http://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
       </h2>
       <div class="zeroDegreeDescription">a comp sci fanatic in his early twenties doing start-up stuff<br/>
-        (since the age of sixteen) instead of going to univ</div>
+        (on and off since the age of sixteen) instead of going to univ</div>
       </div>
     </div>
-    <h2 class="stayCool thickRaleway show-if-not-smaller-than-mobile-device-large">
+    <h2 class="stayCool thickRaleway hide-if-smaller-than-mobile-device-large">
       Stay cool.
     </h2>
-    <h3 class="stayCool thickRaleway show-if-smaller-than-mobile-device-large ipadDescription">
-      The Website of<br/> Archy Wilhes 魏何
+    <h3 class="stayCool thickRaleway show-iff-mobile-device-large">
+      The Website of<br/> <a href="/about.html">Archy Wilhes 魏何</a>
   </h3>
-  <h2 class="stayCool thickRaleway show-iff-mobile iPhoneMenu">
-    About
+  <h2 class="stayCool thickRaleway show-if-smaller-than-mobile-device-medium">
+    <a href="/about-zer0-degree.html">About</a>
   </h2>
     </div>
   </div>
 
   $body$
   <div class="cover-image">
-  <img class="show-iff-nonmobile" src="/img/backgrounds/maarten-van-den-heuvel-346883.jpg" />
-  <img class="show-iff-mobile" src="/img/backgrounds/maarten-van-den-heuvel-346883-full.jpg" />
+  <img class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/maarten-van-den-heuvel-346883.jpg" />
+  <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/maarten-van-den-heuvel-346883-full.jpg" />
 
   <div class="whiteOverlay"></div>
   <div class="cover-image-text-wrapper">
   <div class="cover-image-text">
-    <h1 class="zeroDegreeLogo centerFlex show-iff-nonmobile">
-      <div>Zer0<br/>Degree</div><div><sup class="degreeDot">o</sup><br/>&nbsp;</div>
+    <h1 class="zeroDegreeLogo centerFlex hide-if-smaller-than-mobile-device-regular-but-flex">
+        <div><a href="/">Zer0<br/>Degree</a></div><div><sup class="degreeDot">o</sup><br/>&nbsp;</div>
     </h1>
-    <div class="show-iff-mobile">
+    <div class="show-if-smaller-than-mobile-device-regular">
     <div class="centerFlex footer-info-block">
         <div>
-        <h3>A Website of Archy Wilhes 魏何<br/>
-            Handcrafted by Archy Wilhes 魏何
-        </h3>
-        <h1>
+        <h5 class="hide-if-smaller-than-mobile-device-small">
+            A Website of <a href="/about-zer0-degree.html">Archy Wilhes 魏何</a><br/>
+            Handcrafted by <a href="/about-zer0-degree.html">Archy Wilhes 魏何</a>
+        </h5>
+        <h5 class="show-if-smaller-than-mobile-device-small">
+            A Website of<br/>
+            <a href="/about-zer0-degree.html">Archy Wilhes 魏何</a><br/>
+
+        </h5>
+        <h3>
             <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
             <a target="_blank" href="http://github.com/archywilhes"><i class="social-icon ion-social-octocat"></i></a>
             <a target="_blank" href="http://instagram.com/archywilhes"><i class="social-icon ion-social-instagram"></i></a>
             <a target="_blank" href="http://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
-        </h1>
+        </h3>
         </div>
 </div>
 </div>
-    <div class="zeroDegreeNameAndDescription show-iff-nonmobile" style="margin-left:20px">
+    <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
     <h3 class="zeroDegreeName">
-      Handcarfted by Archy Wilhes 魏何<br />
+      Handcarfted by <a href="/about.html">Archy Wilhes 魏何</a><br />
       <a style="margin-left:7px" href="https://github.com/archywilhes/zer0.degree">
           <small>vi3w_s0urce <i class="ion-beer"></i></small>
       </a>
@@ -94,12 +149,17 @@
     </div>
     </div>
   </div>
-  <h2 class="stayCool thickRaleway" style="color:rgba(0,0,0,0.9)">
+  <h3 class="stayCool thickRaleway" style="color:rgba(0,0,0,0.9)">
         See you around.
-  </h2>
+  </h3>
   </div>
   </div>
 
 
-</div></div></body>
+</div></div>
+$if(footBlock)$
+$footBlock$
+$endif$
+</body>
+
 </html>

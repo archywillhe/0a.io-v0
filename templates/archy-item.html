@@ -1,7 +1,10 @@
 <div class="ArchyItem">
+    $if(noURL)$
+    $else$
   <a href="$if(customForwardUrl)$$customForwardUrl$$else$$url$$endif$"
     $if(newTab)$ target="_blank" $endif$
   >
+  $endif$
      $if(coverPainting)$
      <img class="ArchyItemImg" src="/img/covers/$coverPainting$.jpg"/>
      $else$
@@ -11,11 +14,18 @@
      <img class="ArchyItemImg" src="$displayImg$"/>
      $endif$
      $endif$
+     $if(noURL)$
+     $else$
   </a>
+    $endif$
   <div class="ArchyItemTitle">
+      $if(noURL)$
+      $title$
+      $else$
     <a href="$if(customForwardUrl)$$customForwardUrl$$else$$url$$endif$"
     $if(newTab)$ target="_blank" $endif$
     >$title$</a>
+    $endif$
   </div>
   $if(subtitle)$
   <div class="ArchyItemSubtitle">

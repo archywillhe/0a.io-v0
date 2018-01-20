@@ -66,7 +66,7 @@ It managed to gain quite some interest and [more people got into the investigati
 >
 >Update: Yup, I'm blocked.
 >
-> ![proof](/assets/img/blocked.jpg)
+> ![proof](/img/from-chapter-1/blocked.jpg)
 >
 >Simply tweet this article and mention [@manahelthabet](https://twitter.com/manahelthabet) if you'd like to be blocked too :D
 

@@ -7,12 +7,13 @@ coverPainting: "Capri Battery, 1985, Joseph Beuys"
 reddit: https://www.reddit.com/r/Jekyll/comments/394u0r/jekyll_in_3_minutes_a_quick_tour_for_those_who/
 
     Artwork is <a href="http://www.wikiart.org/en/joseph-beuys/capri-battery-1985-1">Capri Battery</a> by <a href="https://en.wikipedia.org/wiki/Joseph_Beuys">Joseph Beuys</a>, 1985.
+containsCode: true
 ---
 
-<div class="row d_shortcuts">This post aims to provide a quick sum-up for anyone who is unfamiliar with Jekyll. To learn more about Jekyll, check the <a href="http://jekyllrb.com/docs/home/">doc</a> & <a href="https://github.com/jekyll/jekyll">source</a> out.</div>
+<div class="row block-of-grey">This post aims to provide a quick sum-up for anyone who is unfamiliar with Jekyll. To learn more about Jekyll, check the <a href="http://jekyllrb.com/docs/home/">doc</a> & <a href="https://github.com/jekyll/jekyll">source</a> out.</div>
 
 
-###1st minute: General Overview <small class="wordCount">267&nbsp;words</small>
+### General Overview <small class="wordCount">267&nbsp;words</small>
 
 [Jekyll](https://github.com/Jekyll/Jekyll) is a tool to build static website that exists as merely a directory of files. That said, you can only use it to create websites that don’t have run-time logic in the backend. (such as [a simple content-based website or a blog](http://0a.io/)) In other words, it is a web-pages generator.
 
@@ -26,14 +27,13 @@ To sum up, GitHub Pages&trade; does not execute server-side code. It helps you g
 
 <p class="text-center"> ● ● ● </p>
 
-###2nd minute: What you need to know when working with Jekyll <small class="wordCount">314&nbsp;words</small>
+### What you need to know when working with Jekyll <small class="wordCount">314&nbsp;words</small>
 
 Jekyll is made in [Ruby](https://www.ruby-lang.org/en/) (with [Cucumber](https://cucumber.io)). Since all it does is generate static website, there is no [Rails](http://rubyonrails.org) in it.Jekyll puts all the pieces (of html, [md](http://daringfireball.net/projects/markdown/), [textile](http://en.wikipedia.org/wiki/Textile_(markup_language))) you give it together, and that's all. The way Jekyll works relies mainly on [Liquid (a templating language)](http://Liquidmarkup.org) and [YAML Front Matter Block, or <i>Front Matter</i>](http://Jekyllrb.com/docs/frontmatter/) for short.
 
 <i>Front Matter</i> is the starting session of each file where you put down meta-information in [YAML format](http://yaml.org).  
 
-{% highlight html %}
-{% raw %}
+```html
 ---
 layout: post
 title: "0a: About "
@@ -45,8 +45,7 @@ extraClasses: ['aboutPage']
 <h2> {{site.data.author.bioTitle}}</h2>
 {{site.data.author.bio}}
 </div>
-{% endraw %}
-{% endhighlight %}
+```
 
 YAML is like a sister of [JSON](http://json.org). YAML to JSON is, syntax-wise, like what [Less](http://en.wikipedia.org/wiki/Less_(stylesheet_language)) is to [Sass](http://en.wikipedia.org/wiki/Sass_(stylesheet_language)).
 
@@ -60,30 +59,28 @@ For every HTML file you'd be dealing with in Jekyll, it'd either be
 
 Include Files, as its name suggested, are to be included in other files with this one-liner:
 
-{% highlight Django %}
-{% raw %}
+```html
 {% include includeFileName.html %}
-{% endraw %}
-{% endhighlight %}
+```
 
 while Layout Files, obvious enough, are the layouts, to be used by other files:
 
-{% highlight YAML %}
+```YAML
 ---
 layout: post
 ---
-{% endhighlight %}
+```
 
 Every file can contain multiple Include Files but can use only one Layout File. Each Layout File is located in `_layouts/` folder while each Include File is located in `_includes/` folder.
 
 A serving file on the other hand can be in any folder except the reserved ones (e.g. `_includes/`). Normally people put them in the root directory. A serving file will be served by its name (e.g. `about.html` will be served at `http://domainName/about.html`) unless you specify the url in <i>Front Matter</i>.
 
-{% highlight YAML %}
+```YAML
 ---
 permalink: /about
 ---
 #this file would be served at http://domainName/about
-{% endhighlight %}
+```
 
 
 Lastly, I would like to introduce 2 very special types of files: [*Post* file](http://jekyllrb.com/docs/posts/) and [*Data* file](http://jekyllrb.com/docs/datafiles/). Post files are located in `_posts/` while Data Files in `_data/`. All Post files of a site can be accessed as an array using the variable `site.posts` in your Liquid html files, while all Data Files can be accessed as `site.data.filename`.
@@ -92,65 +89,61 @@ Lastly, I would like to introduce 2 very special types of files: [*Post* file](h
 
 <p class="text-center"> ● ● ● </p>
 
-###3rd minute: on the Liquid templating language <small class="wordCount">336&nbsp;words</small>
+### on the Liquid templating language <small class="wordCount">336&nbsp;words</small>
 
 Liquid is a Templating languages [ written in Ruby](https://github.com/Shopify/Liquid) and can be [easily extended by exporting methods from your modules to the list of "filters"](https://github.com/Shopify/Liquid/wiki/Liquid-for-Programmers). If you would like to stick to the Jekyll that is supported by GitHub Pages&trade;, you can't extend Liquid ([or Jekyll](http://jekyllrb.com/docs/plugins/)) by yourself . That is to say, there would be some limitation on the Liquid that you are working with, data-manipulation-wise. This is why if the website you want to build consists of a lot of data-manipulating, you are advices to use frameworks like [Angular](https://angularjs.org) to have a better architecture (e.g. [MVC](http://stackoverflow.com/tags/model-view-controller/info)) and it would make your life easier too.
 
 There are basically 3 things in Liquid: Variable, Logic Blocks and Filter. Variables defined in Front Matter is accessed as `page.variableName`, while in `/_config.yml` it is as `site.variableName`. A variable can be either a primitive (e.g. an integer), an array, or a object. Pretty standard. Variables can be printed/echoed out as string, much the same way as [Handlebar](http://handlebarsjs.com) & [mustache](http://mustache.github.io):
 
-{% highlight Django %}
-{% raw %}{{site.title}}
-{% endraw %}
-{% endhighlight %}
+```html{{site.title}}
+```
 
 Or it can also be assigned using this one-liner:
 
-{% highlight Django %}
-{% raw %}{% assign catName = "Nyanchan" %}
-<p>The cat name is {{catName}}!</p>{% endraw %}
-{% endhighlight %}
+```html
+{% assign catName = "Nyanchan" %}
+<p>The cat name is {{catName}}!</p>
+```
 
 You can check if some statement is true before deciding what to do with Conditions Blocks.
 
-{% highlight Django %}
-{% raw %}{% if site.name == "0a: Arch Here" %}
+```html
+{% if site.name == "0a: Arch Here" %}
    This is 0a.io
 {% else %}
    You are on some other site.
-{% endif %}{% endraw %}
-{% endhighlight %}
+{% endif %}
+```
 
 There is also a For loop block for going though an array.
 
-{% highlight Django %}
-{% raw %}{% for post in site.posts %}
+```html
+{% for post in site.posts %}
 {{ post.title }}
-{% endfor %}{% endraw %}
-{% endhighlight %}
+{% endfor %}
+```
 
 Every logic block starts and ends with a corresponding start/end tag. To learn more about logic blocks you can [read the doc here](https://github.com/Shopify/Liquid/wiki/Liquid-for-Designers#tags).
 
 The last thing to introduce is [Filter](https://github.com/Shopify/Liquid/wiki/Liquid-for-Designers#standard-filters). It is the only thing you can use for data-manipulation. Let's say you have a variable `x = 1` and you want to add 10 to it, you can't just write `x + 10`, the only way to do it is to use the `plus` Filter:
 
-{% highlight Django %}
-{% raw %}{% assign x = 1 %}
+```html
+html{% assign x = 1 %}
 {% assign x = x | plus: 10 %}
-{{x}}{% endraw %}
-{% endhighlight %}
+{{x}}
+```
 
 You can also apply filter before it is printed/echoed.
 
-{% highlight Django %}
-{% raw %}{{x | plus: 10}}
-{% endraw %}
-{% endhighlight %}
+```html
+html{{x | plus: 10}}
+```
 
 You can also apply filter after filter
 
-{% highlight Django %}
-{% raw %}{% assign x = 2 | plus: 3 | times: 100 %}
-{% endraw %}
-{% endhighlight %}
+```html
+{% assign x = 2 | plus: 3 | times: 100 %}
+```
 
 The flow of operations moves from left to right, so you would expect the `x` above to be 500 (instead of 302 or 203).
 
@@ -158,7 +151,7 @@ Aside from the default [Liquid Filters](https://github.com/Shopify/Liquid/wiki/L
 
 <p class="text-center"> ● ● ● </p>
 
-###End Note <small class="wordCount">500-600&nbsp;words</small>
+### End Note <small class="wordCount">500-600&nbsp;words</small>
 
 Hope it didn't take you longer than 3 minutes to read through this article! If you still have a bit more time to spare, here are a few tips you may find useful:
 
@@ -179,30 +172,28 @@ The Jekyll server reads <code>_config.yml</code> only once (when it is starting)
 <p>
 There seems to no way to create array or object declaratively on the fly. <code>{%raw%}{% assign %}{%endraw%}</code> is only capable of assigning primitive values to variables unless things are done in this way:
 </p>
-{% highlight Django %}
-{% raw %}{% assign x = b %}
-{% endraw %}
-{% endhighlight %}
+```html
+{% assign x = b %}
+```
+
 <p>
 where <code>b</code> is an array or object already defined in Front Matter. So the line below <b>would not work</b> at all:
 </p>
-{% highlight Django %}
-{% raw %}
+```html
 {% assign x = [1,2,3] %}
-{% endraw %}
-{% endhighlight %}
+```
 
 </li>
 <li>
-<p>Apparently, every variable can be overwritten locally with <code>{% raw %}{%assign%}{% endraw %}</code>.
+<p>Apparently, every variable can be overwritten locally with <code>```html{%assign%}```</code>.
 </p>
-{% highlight Django %}
-{% raw %}{{site.url}}
+```html
+{{site.url}}
 {% assign site = 2 %}
 {{site}}
-{% endraw %}
-{% endhighlight %}
-<p>Initially <code>site</code> is an object, after the <code>{% raw %}{%assign%}{% endraw %}</code> tag, <code>site</code> is <code>2</code>. This only has effect in a local scope.
+```
+
+<p>Initially <code>site</code> is an object, after the <code>```html{%assign%}```</code> tag, <code>site</code> is <code>2</code>. This only has effect in a local scope.
 </p>
 </li>
 <li>
@@ -219,15 +210,16 @@ Having a <a href="https://github.com/ruby/rake)">Rake</a> file is a good way to 
 </p>
 </li>
 <li>
-<p><small>This is added on 7th July</small> When working with angular in your Jekyll site, remember that liquid and Angular both uses the <code>{% raw %}{{}}{% endraw %}</code> syntax for templating and any <code>{% raw %}{{}}{% endraw %}</code> in your .html will be evaluated before it is servered. So you'd need to do it like this
-{% highlight Django %}
+<p><small>This is added on 7th July</small> When working with angular in your Jekyll site, remember that liquid and Angular both uses the <code>```html{{}}```</code> syntax for templating and any <code>```html{{}}```</code> in your .html will be evaluated before it is servered. So you'd need to do it like this
+
+```html
 <div>
-{% raw %}{% raw %}
 {{ angular.stuff }}
-{% endraw %}{{ "{%" }} endraw %}
+{{ "{%" }} endraw {{ "%}" }}
 </div>
-{% endhighlight %}
-in order for <code>{% raw %}{{}}{% endraw %}</code> to show up when the broswer downloads the html. Also, consider using <code>ng-bind</code> instead of <code>{% raw %}{{}}{% endraw %}</code>. <a href="https://docs.angularjs.org/api/ng/directive/ngBind">It's a lot neater this way.</a> (If necessary, <code>ng-bind-html</code>).
+```
+
+in order for ```html{{}}``` to show up when the broswer downloads the html. Also, consider using <code>ng-bind</code> instead of <code>```html{{}}```</code>. <a href="https://docs.angularjs.org/api/ng/directive/ngBind">It's a lot neater this way.</a> (If necessary, <code>ng-bind-html</code>).
 </p>
 </li>
 <li>

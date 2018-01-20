@@ -11,7 +11,7 @@ extract: |
 
     To yourself, on the other hand, you are what that constitutes the idea of self. Apparently you possess a body, but the body is not what you identify you with when you think about you at a deeper level. You may incline to think that you are what that controls the body, makes decision, etc, that is, the conscious mind. But let's for a moment remember that the brain is responsible for the construction of thoughts and it governs how the mind processes, similar to how [the computation performed by a Turing machine is governed by its transition function in relation to its states](http://www.cs.umd.edu/~jkatz/complexity/f11/all.pdf). So a question arises:
 
-    <div class="d_shortcuts rows">
+    <div class="block-of-grey rows">
     What determines you to be the mind A that's constructed by brain A, instead of the mind B constructed by brain B, where A ≠ B?
     </div>
 
@@ -26,7 +26,7 @@ To people around you, you are a concept they conceived in their mind based on th
 
 To you, you are what that constitutes the idea of self. Apparently you possess a body, but the body is not what you identify you with when you think about you. You may incline to think that you are what that controls the body, makes decision, etc, that is, the mind. But let's for a moment remember that the brain is responsible for the construction of thoughts and it governs how the mind processes, similar to how [the computation performed by a Turing machine is governed by its transition function in relation to its states](http://www.cs.umd.edu/~jkatz/complexity/f11/all.pdf). So a question arises:
 
-<div class="d_shortcuts rows">
+<div class="block-of-grey rows">
 What determines you to be the mind A that's constructed by brain A, instead of the mind B constructed by brain B, where A ≠ B?
 </div>
 

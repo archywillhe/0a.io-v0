@@ -64,17 +64,19 @@ main = do
             compile $ pandocCompiler
                 >>= relativizeUrls
 
-        createRowOf3Session "2018-01-01-chapter2.html" "posts/chapter2/*" "Chapter 2" "jan 2018 ~" "1001"
+        createRowOf3Session "2018-01-02-chapter2.html" "posts/chapter2/*" "Chapter 2" "jan 2018 ~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" "1001"
         createRowOf3Session "2014-09-01-chapter1.html" "posts/chapter1/featured/*" "Chapter 1" "sep 2014 ~ nov 2015" "1001"
         createRowOf3Session "2014-09-01-more-from-chapter1.html" "posts/chapter1/more/*" "More Posts from Chapter 1" "posts that didn't make it to the home page" "1001"
         createRowOf3SessionWithoutTimeCtx "2018-01-01-artwork.html" "artwork-info/*" "Artwork Info" "" "1040"
 
-        create ["index.html"] $ page "home" "isBlog" ["2018-01-01-chapter2.html","posts/other/gap-year.md", "2014-09-01-chapter1.html"]
-        create ["chapter1/index.html"] $ page "home" "isBlog" ["2014-09-01-chapter1.html","2014-09-01-chapter1.html"]
-        create ["chapter2/index.html"] $ page "home" "isBlog" ["2018-01-01-chapter2.html"]
-        create ["more-from-chapter1/index.html"] $ page "home-sub" "" ["2014-09-01-more-from-chapter1.html"]
-        create ["artwork.html"] $ page "home"  "isArtworkInfo" ["2018-01-01-artwork.html"]
-        createPageOfSessionsBasedOnDirectoryStructure "home" "isMusicForWork" "music-for-work" musicInnerDirs
+        create ["index.html"] $ page "home" "isBlog" "Blog" ["2018-01-02-chapter2.html","posts/other/gap-year.md", "2014-09-01-chapter1.html"]
+        create ["chapter1/index.html"] $ page "home" "isBlog" "Chapter 1" ["2014-09-01-chapter1.html","2014-09-01-chapter1.html"]
+        create ["chapter2/index.html"] $ page "home" "isBlog" "Chapter 2" ["2018-01-01-chapter2.html"]
+        create ["more-from-chapter1/index.html"] $ page "home-sub" "" "More FromChapter 1" ["2014-09-01-more-from-chapter1.html"]
+        create ["artwork-info.html"] $ page "home"  "isArtworkInfo" "Artwork Info" ["2018-01-01-artwork.html"]
+        createPageOfSessionsBasedOnDirectoryStructure "home" "isMusicForWork" "music-for-work" "Music For Work" musicInnerDirs
+        create ["about.html"] $ page "home-sub" "" "About Me" ["posts/other/letter.md","posts/other/other-stuff.md"]
+        create ["about-zer0-degree.html"] $ page "home-sub" "" "About Zer0 Degree" ["posts/other/about-zer0-degree.md", "posts/other/letter.md","posts/other/other-stuff.md"]
 
         match "templates/*" $ compile templateBodyCompiler
 
@@ -100,25 +102,28 @@ createRowOf3Session_ ctx postPossessing identifer filePath maintitle subtitle wi
 
 -----
 
-createPageOfSessionsBasedOnDirectoryStructure pageType isX dirPath innerDirs= do
+createPageOfSessionsBasedOnDirectoryStructure pageType isX dirPath title innerDirs= do
     let createSessionByDir subdir = createRowOf3Session (fromFilePath (subdir++".html")) (fromGlob (dirPath++"/"++subdir++"/*")) (drop 11 subdir) "" "900"
     mapM_ createSessionByDir innerDirs
-    create [fromFilePath (dirPath ++ ".html")] $ page pageType isX [subdir++".html" | subdir <- innerDirs]
+    create [fromFilePath (dirPath ++ ".html")] $ page pageType isX title [subdir++".html" | subdir <- innerDirs]
 
 ------
-page pageType isX sessions = do
+page = page_ (\a -> return)
+page_ moreTemplating pageType isX title sessions = do
   route idRoute
   compile $ do
       sessions <- recentFirst =<< loadAll (fromList $ [fromFilePath s | s <- sessions])
       let indexCtx =
               listField "sessions" timedCtx (return sessions) `mappend`
               constField isX "true" `mappend`
+              constField "title" title `mappend`
               constField "pageType" pageType `mappend`
               defaultContext
       makeItem ""
           >>= applyAsTemplate indexCtx
           >>= loadAndApplyTemplate "templates/session-loop.html" indexCtx
           >>= loadAndApplyTemplate (fromFilePath ("templates/"++pageType++".html")) indexCtx
+          >>= moreTemplating indexCtx
           >>= loadAndApplyTemplate "templates/default.html" indexCtx
           >>= relativizeUrls
 
@@ -141,7 +146,7 @@ makeArtworkYaml (title:year:author:paintingURL:[]) = "---\n" ++
     "title: \"" ++ title ++ " (" ++ year ++ ")\"\n" ++
     "subtitle: \"" ++ author ++ "\"\n" ++
     "displayImg: \"" ++ paintingURL ++ "\"\n" ++
-    "customForwardUrl: \"\"\n" ++
+    "noURL: true\n" ++
     "---"
 makeArtworkYaml wrongformat = show wrongformat
 

@@ -15,7 +15,7 @@ extract: |
 
 I just reinstalled my OS X recently, which not only enabled me to re-experience the joy of owning a new Mac, but also fixed problems like waking up into a partially slumber stage with a black screen and a movable cursor that is practically useless. Since I was going to [`brew cask install`](http://stackoverflow.com/questions/27381531/how-to-install-sublime-text-3-using-homebrew) a brand new [Sublime Text Editor](http://www.sublimetext.com/), I decided to spend a bit more effort customizing it. After some googling and experimentation, these are my settings:
 
-{% highlight JSON %}
+```JSON
 
 {
     "bold_folder_labels": true,
@@ -53,11 +53,11 @@ I just reinstalled my OS X recently, which not only enabled me to re-experience 
     "word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?_",
     "word_wrap": true
 }
-{% endhighlight %}
+```
 
 (For the record Source Code Pro can be grabbed [here](https://github.com/adobe-fonts/source-code-pro); Spacegray [here](https://github.com/kkga/spacegray); and Blackboard [here](https://github.com/cfletcher1856/Theme-Blackboard))
 
-<p class="text-center"><img src="/assets/img/sublime.png" alt="oh"></p>
+<p class="text-center"><img src="/img/from-chapter-1/sublime.png" alt="oh"></p>
 
 This looked like a great environment to code in (I enabled [vintage mode](http://www.sublimetext.com/docs/2/vintage.html) too so there are vim magic in it ;3 ) until I learnt that sometimes the text editor would revert some file back to its state x hours ago with no reason at all.
 
@@ -70,19 +70,19 @@ Here is a simple system that uses [`watch`](http://linux.die.net/man/1/watch) wi
 > `watch` can execute a line of code periodically in the terminal. The nice thing is that you can watch the outputs as it does.
 
 Let's say this is the directory containing projects you want to back up
-{% highlight bash %}
+```bash
 /Users/a/_/_
-{% endhighlight %}
+```
 1) Make a directory to keep the back up files
-{% highlight bash %}
+```bash
 mkdir /Users/a/_/timeMachine    #or any directory of your choice
-{% endhighlight %}
+```
 2) Make it into a git repo.
-{% highlight bash %}
+```bash
 cd /Users/a/_/timeMachine
 git init    #this would create a .git folder in /Users/a/_/timeMachine
             #now /Users/a/_/timeMachine is a git repo
-{% endhighlight %}
+```
 3) Write a bash script that
 
 1. Copy everything in the directory to the backup directory
@@ -93,39 +93,39 @@ and save it as `script.sh`.(You can save it at anywhere you want)
 
 Here is my `script.sh`.
 
-{% highlight bash %}
+```bash
 cd /Users/a/_                       #replace this with the directory you want to back up
 cp -rf _/* timeMachine              #replace this with the directory to back up to
 rm -rf timeMachine/*/.git           #remove all .git folders in each project
 cd timeMachine
 git add .                           #add any changes
 git commit -am "`date +%F-%T`"      #commit to store the changes
-{% endhighlight %}
+```
 
 4) Simply run this script periodically using `watch` (You can install it with [brew](http://brew.sh/) if you don't have it).
 
-{% highlight bash %}
+```bash
 brew install watch          #brew is a package manager for OSX. http://brew.sh/
 watch -n 90 'bash script.sh'
-{% endhighlight %}
+```
 
 That's it. Now every 90 seconds, the changes you made in your project (e.g. `/Users/a/_/0a-.github.com`) would be recorded in the backup directory. You can view changes of the file using [`git log`](http://git-scm.com/docs/git-log):
 
-{% highlight bash %}
+```bash
 cd /Users/a/_/timeMachine/0a-.github.com
 git log -p myFile.js
-{% endhighlight %}
+```
 
 or do it in [a GUI Client](https://mac.github.com/). (They would show up in the Unsynced tab because all we are doing is just [committing](http://git-scm.com/docs/git-commit) and there is no [pushing](http://git-scm.com/docs/git-push) involved.)
 
-<p class="text-center"><img src="/assets/img/timeMachine.jpg" alt="such time much machine"></p>
+<p class="text-center"><img src="/img/from-chapter-1/timeMachine.jpg" alt="such time much machine"></p>
 
 The backup directory is going to take more and more disk space as time passes (as long as you remember to `watch -n 90 'bash script.sh'` before you start to code each time). When you want to clean everything up, simply remove everything (including the `.git` folder) and do a `git init` again.
 
-{% highlight bash %}
+```bash
 cd /Users/a/_/timeMachine   #replace it with your backup repo
 rm -rf *        #this can be deadly if used unwisely
 git init
-{% endhighlight %}
+```
 
 The great thing about using git is that only the changes of the files would be saved. So rather than having 10 backup copies of a project that are slightly different from one another, you'd only have one copy of it, and 9 indications of the different changes you made at different times.
