@@ -11,7 +11,11 @@ $else$
 <div class="container content">
 <article style="$if(width)$max-width:$width$px;$endif$">
     <div class="coverPainting">
+    $if(coverPainting)$
         <img src="/img/covers/$coverPainting$.jpg"/>
+    $else$
+        <img src="$coverImg$"/>
+    $endif$
     </div>
     <div class="everythingElse">
         <div class="info">

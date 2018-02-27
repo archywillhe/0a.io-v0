@@ -1,7 +1,7 @@
 ---
 font: garamond
 layout: post
-title: "And by you I mean <i>you</i> who is me"
+title: "And by you I mean you who is me"
 coverPainting: "Not to Be Reproduced, 1937, Rene Magritte"
 
 ---

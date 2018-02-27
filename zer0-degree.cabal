@@ -11,5 +11,6 @@ executable site
                   , text
                   , split
                   , regex-compat
+                  , pandoc
   ghc-options:      -threaded
   default-language: Haskell2010

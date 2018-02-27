@@ -5,7 +5,6 @@ metaDescription: |
     Calculus explained with images and animations. For anyone who is new to limit, differentiation and integration.
 coverPainting: "Moonlit Night, 1914, Emil Nolde"
 containsMaths: true
-containMaths: true
 width: "1100"
 hn: https://news.ycombinator.com/item?id=8523150
 reddit: https://www.reddit.com/r/math/comments/2kmx1k/calculus_explained_with_pics_and_gifs/
@@ -32,32 +31,35 @@ footBlock: |
 ---
 
 <blockquote class="_index">
-<p class="text-center"><b>PROLOGUE </b></p><p class="text-center"><i>skip this if you want</i></p>
 
-One of the things I managed to teach myself after dropping out of school is calculus. Before I knew what calculus is, merely hearing its name gave me the impression that it is one of the hardest topics in maths, and that I could not possibly learn it by looking into the freely-available resources online. <br>
+<p class="text-center"><b>PROLOGUE </b></p>
+
+One of the things I managed to teach myself at 16 after dropping out of school was calculus. Before I knew what calculus is, merely hearing its name gave me the impression that it is one of the hardest topics in maths, and that I could not possibly learn it by looking into the freely-available resources online. <br>
 <br>
 I was wrong. <br>
 <br>
 It turned out that back then I was having a rather naive view of what mathematics is about. Understanding calculus is not hard at all. It is just a matter of whether you have stumbled upon the right resources to learn it. If you have difficulty understanding it, you are probably learning it the wrong way.<br>
 <br>
-I am nowhere near being an "expert" in calculus (or anything like that). I have yet to allocate a vast amount of time working on sophisticated calculus puzzles and I don't really apply calculus to solve problems on a daily basis. I am nothing more than a kid who writes about the knowledge she or he acquired so that it may be used as a guidance for those who want to have a deep understanding in what they are learning or trying to learn.<br>
+I am nowhere near being an "expert" in calculus (or anything like that). I have yet to allocate a vast amount of time working on sophisticated calculus puzzles and I don't really apply calculus to solve problems on a daily basis. I am merely a kid who writes about the knowled he acquired so that it may be used as a guidance for those who want to have a deep understanding in what they are learning or trying to learn.<br>
 <br>
 Archy,<br>
 Oct 2014<br>
 
 </blockquote>
-<div class="containing-images-of-max-half-width">
-Calculus is just a fanciful name for the study of change in maths. Calculus in general refers to the branch of maths that was made famous by Newton (considered one of the founders of calculus) in the 17th century. Don't confuse it with <a target="_blank" href="http://en.wikipedia.org/wiki/Lambda_calculus">Lambda calculus</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Propositional_calculus">propositional calculus</a>, <a target="_blank" href="https://en.wikipedia.org/wiki/Situation_calculus">Situation calculus</a> and <a target="_blank" href="http://www.amazon.com/gp/product/0385375557/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0385375557&linkCode=as2&tag=0aarhe-20&linkId=G75NU4TLDFAYKFK2">unicorns</a>, which are completely different things.
+<div class="containing-images-of-max-80precent-width">
+Calculus is just a fanciful name for the study of change in maths. Calculus in general refers to the branch of maths that was made famous by Newton in the 17th century. Don't confuse it with <a target="_blank" href="http://en.wikipedia.org/wiki/Lambda_calculus">Lambda calculus</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Propositional_calculus">propositional calculus</a>, and <a target="_blank" href="http://www.amazon.com/gp/product/0385375557/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0385375557&linkCode=as2&tag=0aarhe-20&linkId=G75NU4TLDFAYKFK2">unicorns</a>, which are completely different things.
 
-To understand calculus, one needs to be able to visualize the concepts of <a class="go_click">function</a>, <a class="go_click">limit</a>, <a class="go_click">differentiation</a>, and <a class="go_click">integration</a>.
+To understand calculus, one needs to be able to visualize the concepts of <u class="go_click">function</u>, <u class="go_click">limit</u>, <u class="go_click">differentiation</u>, and <u class="go_click">integration</u>.
 
 <p class="text-center"> ● ● ● </p>
-<span class="_index to_function">What is a function?</span>
+
+<br/>
+<h3 class="_index to_function">What is a function?</h3>
 A <u>function</u> can be seen as a machine that takes in value and gives you back another value. It is what we use in maths to map numbers (input) to other numbers (output).
 
 <p class="text-center"><img src="/img/from-chapter-1/f_machine.png"></p>
 
-$$f(input) = output$$
+$$ f(input) = output $$
 
 A function is normally defined by an equation like this:
 
@@ -67,9 +69,10 @@ Now if you put 2 into this function you will get 12 in return.
 
 $$f(2) = 12$$
 
->The set of numbers that you can put into a function is known as the <a target="_blank" href="http://en.wikipedia.org/wiki/Domain_of_a_function">domain</a> of the function. If you'd like to have a more in-depth understanding of function (e.g. its formal definition), check out <a href="http://0a.io/0a-explains-set-theory-and-axiomatic-systems-with-pics-and-gifs">my article on set theory</a>. (You will probably love it.)
+>The set of numbers that you can put into a function is known as the <a target="_blank" href="http://en.wikipedia.org/wiki/Domain_of_a_function">domain</a> of the function. If you'd like to have a more in-depth understanding of function (e.g. its formal definition), check out <a href="http://0a.io/0a-explains-set-theory-and-axiomatic-systems-with-pics-and-gifs">my article on set theory</a>. (You will probably love it!)
 
-<span class="_index to_limit">What is a limit?</span>
+<br/>
+<h3 class="_index to_limit">What is a limit?</h3>
 A <u>limit</u> is the number you are "expected" to get from a function (or algebraic expression) when it takes in a certain input. By "expected" it is referring to the expectation of the output when $x$ "approaches" a certain value.
 
 Here is an example where the limit (the expected output) is the same as the actual output.
@@ -102,59 +105,11 @@ $$\frac{(x^2-3x)^2}{x-3} = \frac{x^4-6x^3+9x^2}{x-3} = \frac{x^2(x-3)^2}{x-3} = 
 
 $$\lim_{x\rightarrow 3}\frac{(x^2-3x)^2}{x-3} = \lim_{x\rightarrow 3} x^2(x-3) = 3^2(3-3) = 0$$
 
-<blockquote>
+If you would like to learn more about limit, feel free to check out my essay [What do we talk about when we talk about limit](what-do-we-talk-about-when-we-talk-about-limit.html).
 
-Limit can be viewed as the biggest/smallest impossible number for a function to output, when you put in numbers that are slightly smaller or bigger than what x is approaching.<br>
-<br>
-Take the limit above for example:<br>
-<br>
-$$\begin{align}f(x) &= \frac{(x^2-3x)^2}{x-3} \\\\\lim_{x\rightarrow 3}f(x) &= 0 \end{align}$$
-0 is the <u>smallest impossible number</u> for $f(x)$ to output if $f(x)$ takes in values <u>slightly smaller</u> than 3.<br>
-<br>
-$$\begin{align}f(2.99999) &= -0.0000899994 \\f(2.9999999) &= -0.000008999994000001 \end{align}$$
-<br>
-No matter how close the input is to 3, as long as it is smaller than 3, it is impossible for the function to output 0 or any number bigger than 0. So 0 is the limit - the smallest impossible value when the input slightly is smaller.<br>
-<br>
-0 is also the <u>biggest impossible number</u> for $f(x)$ to output if $f(x)$ takes in values <u>slightly bigger</u> than 3.<br>
-<br>
-$$\begin{align}f(3.00001) &= 0.00009000059 \\f(3.0000001) &= 0.000000900000054 \end{align}$$
-<br>
-It is impossible for the function to output 0 or any number smaller than 0 if it is to take values slightly bigger than 3.  So 0 is the limit - the biggest impossible value when the input slightly is bigger.<br>
-<br>
-Here is a case where the situation is reversed.<br>
-<br>
-$$\begin{align}f(x) &= -\frac{(x^2-3x)^2}{x-3} \\\\\lim_{x\rightarrow 3}f(x) &= 0 \end{align}$$
-<br>
-0 is the <u>biggest impossible number</u> for $f(x)$ to output if $f(x)$ takes in values <u>slightly smaller</u> than 3.<br>
-<br>
-$$\begin{align}f(2.99999) &= 0.0000899994 \\f(2.9999999) &= 0.000008999994000001 \end{align}$$
-<br>
-And it is the <u>smallest impossible number</u> if $f(x)$ takes in value <u>slightly bigger</u> than 3.<br>
-<br>
-$$\begin{align}f(3.00001) &= -0.00009000059 \\f(3.0000001) &= -0.000000900000054 \end{align}$$
-<br>
-<small>This part before ● ● ● was added on 30th Oct, at 1AM SG Time after reading <a href="https://news.ycombinator.com/item?id=8526221">a useful comment on HN by amitkgupta84</a>:</small><br>
-However, there are also situations when the limit is the value we will actually get when we put in value that is slightly smaller or bigger than what we are approaching.<br>
-<br>
-$$f(x)=\left\{\begin{array}{ll}10  & \mbox{if } x > 1.51 \\20 & \mbox{if } x < 1.5  \\99 & \mbox{otherwise} \end{array}\right.$$<br>
-$$\lim_{x\rightarrow 1.503}f(x) = 99 \\ f(1.502999) = 99$$
-<br>
-<p class="text-center"> ● ● ● </p>
-Let's denote what x is approaching as $z$ and the limit as $L$. <br>
-<br>
-$$\lim_{x\rightarrow z}f(x) = L$$
-<br>
-For every positive number, $|f(z-a) - L|$ can give us a number smaller than it, as long as $a$ is a number bigger than 0. This is also true when it is $f(z+a)$ instead of $f(z-a)$.<br>
-<br>
-In short we state that <br>
-<br>
-$$\text{For all }ε> 0\text{, there exists some }δ > 0 \\ \text{ such that whenever } 0 < |x − z| < δ\text{, we have }|f(x) − L| < ε$$
-<br>
-This is one way of formally defining what a limit is. It is known as the <a target="_blank" href="http://math.berkeley.edu/~charleyc/1Afall07/epsilondelta.pdf">(ε, δ)-definition of limit</a>.<br>
+<br/>
 
-</blockquote>
-
-<span class="_index to_differentiation">What is differentiation?</span>
+<h3 class="_index to_differentiation">What is differentiation?</h3>
 Differentiation is a fanciful name for the process of obtaining a <u>derivative</u>. And a derivative is a function that gives you the "slope" (or rate of change) of another function at a certain point.
 
 Basically, differentiation can be seen as a machine that takes in a function and gives you back another function.
@@ -187,7 +142,7 @@ This is when we cannot use a constant to represent the "slope": we need to use a
 If you are still trying to get your head around what it means by "the rate of change is not constant", imagine a cat at rest starts to accelerate constantly at $1m/s^2$. Three seconds later it would be moving at the speed of $3m/s$. So far the rate of change in its speed is constant. But when the cat begins to slow down, the rate of change would no longer be constant.
 </small>
 
-<span class="_index">How to find the derivative of a function?</span>
+<h3 class="_index">How to find the derivative of a function?</h3>
 The rate of change at a certain point in the function can be visualized as a straight line across the point.
 
 <p class="text-center"><img src="/img/from-chapter-1/nonlinear2.png"></p>
@@ -266,7 +221,7 @@ $$\begin{align}\frac{d}{dx} x^n & = n(x^{n-1}) \\ \frac{d}{dx} x^3 &= 3(x^{3-1})
 
 Here is a list of famous shortcuts for differentiation.
 
-<div class="block-of-grey"><div class="col-sm-6">
+<div class="block-of-grey"><div class="row"><div class="col-sm-6">
 $\frac{d}{dx} c = 0$<br>
 <br>
 $\frac{d}{dx} c f(a) = c \frac{d}{dx} f(a)$<br>
@@ -285,6 +240,7 @@ $\frac{d}{dx} f(x) \cdot g(x) = f'(x)g(x) + g'(x)f(x)$<br><br>
 $\frac{d}{dx} f(g(x)) = f'(g(x))g'(x)$<br><br>
 <span class="span-block">"Quotient rule"</span><br>
 $\frac{d}{dx} \frac{f(x)}{g(x)} = \frac{f'(x)g(x) - g'(x)f(x)}{g(x)^2}$<br>
+<br>
 $\frac{d}{dx} \frac{1}{x} = \frac{-f'(x)}{x^2}$
 </div><div class="col-sm-6">
 $\frac{d}{dx} c_1{^{ax}} = c_1{^{ax}} ln(c_1) a$<br>
@@ -315,12 +271,13 @@ $c$ is a constant. $c_1$ is a constant $>0$. <br>
 $n$ is an integer. <br>
 $x_1$ is a variable  $>0$. <br>
 $x_2$ is a variable $>0$ but $\neq 1$.
-</div></div>
+</div></div></div>
 
 These shortcuts can all be derived from the limit of $\frac{f(x+h)-f(x)}{(x+h)-x}$ above. They are sometimes referred to as <a target="_blank" href="http://en.wikipedia.org/wiki/Differentiation_rules">"differentiation rules"</a>. Calling them "rules" certainly makes them sound like some fundamental principles in calculus, but the truth is they are merely shortcuts to speed things up.
 
 <p class="text-center"> ● ● ● </p>
 
+<br/>
 <p class="_index">I shall now introduce a new concept called <u>anti-differentiation</u>. It is just the inverse of differentiation. It can be seen as a machine that takes in a function, $g(x)$, and give you back another function, $f(x)$, whose derivative is $g(x)$. Here, $g(x)$ is known as the <u>anti-derivative</u> of $f(x)$.</p>
 
 <p class="text-center"><img src="/img/from-chapter-1/a_machine.png"></p>
@@ -333,7 +290,7 @@ As shown above, we can see that no matter what the constant is, it would always 
 
 $$\begin{align}f(x) &= 2x \\ \frac{d}{dx} g(x) &= f(x) \\ g(x) &= x^2 + C \end{align}$$
 
-<span class="_index to_integration">What is integration?</span>
+<h3 class="_index to_integration">What is integration?</h3>
 Integration is a fanciful name for the process of finding <u>integral</u>. Integral here is referring to either <u>indefinite integral</u>, or <u>definite integral</u>. (Therefore sometimes we say indefinite integration or definite integration just to be specific.)
 
 <u>Indefinite integral</u> is fundamentally equivalent to anti-derivative. They are basically the same thing.
@@ -420,14 +377,18 @@ $y$<sup>4</sup>: this $y$ is the $y$ from $g(x)$.
 
 </blockquote>
 
-<span class="_index">How to find the definite integral of a function from $a$ to $b$?</span>
+<br />
+<h3 class="_index">How to find the definite integral of a function from $a$ to $b$?</h3>
+
 Computing the limit of a Riemann sum can really be a tedious thing to do. So what we normally do is to find the indefinite integral first before putting $a$ and $b$ into the indefinite integral and getting the difference between them (using the definition of definite integral from the 2nd fundamental theorem of calculus mentioned above).
 
 $$g(x) = x^4 \\ \int g(x)\ dx =\frac{x^5}{5} + C \\ \int_2^3 g(x)\ dx = \frac{3^5}{5}-\frac{2^5}{5} = 42.2 $$
 
 Of course, it is <a target="_blank" href="http://math.stackexchange.com/q/710175/65082">not always necessary to get the indefinite integral first (it is possible to arrive at an answer after some transformations of the definite integral)</a>.
 
-<span class="_index">How to find the indefinite integral (anti-derivative) of a function?</span>
+<br />
+<h3 class="_index">How to find the indefinite integral (anti-derivative) of a function?</h3>
+
 Apparently, we can reverse the differentiation shortcuts/rules above and turn them into integration shortcuts/rules. But sometimes a little bit of creativity is required for integration. Let's take a look at the reverse-<a target="_blank" href="http://en.wikipedia.org/wiki/Chain_rule">chain-rule</a>.
 
 $$ f'(g(x))g'(x) = \frac{d}{dx} f(g(x))$$
@@ -469,7 +430,9 @@ And as we can see, definite integration is more of a local operation, while inde
 
 <p class="text-center"> ● ● ● </p>
 
-<span class="_index">Bonus: Partial derivative</span>
+<br/>
+
+<h3 class="_index">Bonus: Partial derivative</h3>
 
 When a function has more than one input value, we call it a multivariable function.
 

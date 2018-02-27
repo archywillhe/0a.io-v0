@@ -55,6 +55,12 @@ $lovelyPink: #ff0063;
         display: block !important;
     }
 }
+.show-if-smaller-than-mobile-device-regular-but-inline{
+    display: none !important;
+    @media (max-width: $mobile-device-regular) {
+        display: inline !important;
+    }
+}
 
 .hide-if-smaller-than-mobile-device-regular {
     display: none !important;
@@ -568,8 +574,16 @@ article{
             img{
                 margin:6px 0;
             }
+            ol,ul{
+                margin:0;
+                margin-left: 30px;
+                li{
+                    margin:0;
+                    list-style-type:upper-roman;
+                }
+            }
         }
-        .containing-images-of-max-half-width{
+        .containing-images-of-max-half-width,.containing-images-of-max-half-width{
             img{
                 max-width:60%;
                 display: block;
@@ -580,6 +594,11 @@ article{
                 @media (max-width: $mobile-device-regular) {
                     max-width:95%;
                 }
+            }
+        }
+        .containing-images-of-max-80precent-width{
+            img{
+                max-width:80%;
             }
         }
         blockquote{

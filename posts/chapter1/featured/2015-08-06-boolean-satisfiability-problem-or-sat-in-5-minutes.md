@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "The Boolean Satisfiability Problem [S<small>AT</small>] and S<small>AT</small> solvers in 5 mins* (or&nbsp;more)"
-containMaths: true
+containsMaths: true
 coverPainting: "Untitled, 1962, Larry Bell"
-containMaths: true
+containsCode: true
 footBlock: |
     <script>
     (function(){
@@ -34,7 +34,7 @@ footBlock: |
 <div class="row block-of-grey">This is a quick sum-up on (and a beginner guide to) the Boolean Satisfiability Problem.</div>
 
 <small><sup>*</sup>In 5 minutes if one skips the introduction and the words in <i>the Blocks of Grey Text</i>.<br>
-<a id="blockquoteToggle">Click here to hide the introduction and all <i> Blocks of Grey Text</i>.</a>
+<a id="blockquoteToggle" href="javascript:void(0)">Click here to hide the introduction and all <i> Blocks of Grey Text</i>.</a>
 <br>
 Word count includes only words <u>not</u> in <i>the Blocks of Grey Text</i>.</small>
 
@@ -103,16 +103,16 @@ Word count includes only words <u>not</u> in <i>the Blocks of Grey Text</i>.</sm
 </blockquote>
 </div>
 
-#### What is the Boolean Satisfiability Problem? <small class="wordCount">334&nbsp;words</small>
+### <small>1st minute</small>: What is the Boolean Satisfiability Problem? <small class="wordCount">334&nbsp;words</small>
 
 The **Boolean Satisfiability Problem** (or S<small>AT</small>) is the problem of determining if a proposition statement<sup>*</sup> is **satisfiable**. A propositional statement is satisfiable when it is possible to assign some true-false values for the variables in the statement such that the statement yields `True`. Otherwise the statement is unsatisfiable.
 
 A propositional statement is simply a string made up of variables, brackets and these 3 symbols:
 
 <div class="row block-of-grey text-center">
-$\neg$ with the meaning <i>not</i>.<br> $\neg True = False $<br>
-$\land$ with the meaning <i>and</i>.<br> $ False \land True = False $<br>
-$\lor$ with the meaning <i>or</i>.<br> $ False \lor True = True $ <br>
+$\neg$ with the meaning <i>not</i>.<br> $\neg$ $True = False $<br>
+$\land$ with the meaning <i>and</i>.<br> $ False$ $\land$ $True = False $<br>
+$\lor$ with the meaning <i>or</i>.<br> $ False$ $\lor$ $True = True $ <br>
 </div>
 
 These symbols are also known as logical connectives. They're arranged in the order of precedence above. Here is an example of a propositional statement:
@@ -126,9 +126,9 @@ $$\text{Is }d \lor (a \land b \land (c \lor d \land \neg a)) \text{ satisfiable?
 The answer is yes, it is satisfiable. One solution:
 
 <div class="row block-of-grey">
-$a$ assigned: Any value<br>
-$b$ assigned: Any value<br>
-$c$ assigned: Any value<br>
+$a$ assigned: Any <br>
+$b$ assigned: Any <br>
+$c$ assigned: Any <br>
 $d$ assigned: True<br>
 </div>
 
@@ -183,7 +183,7 @@ It is, however, unsatisfiable if we define $\mathbb{Z}$, the set of integers, to
 
 <p class="text-center"> ● ● ● </p>
 
-#### Extra <small class="wordCount">(skip this if you want) 213&nbsp;words</small>
+### Extra: <small class="wordCount"> 213&nbsp;words</small>
 
 When a satisfiable statement always yields `True` no matter what the value the variables take (every set of true-false assignments to the variables is a solution), we call it a **tautology**. Here is one:
 
@@ -210,11 +210,13 @@ On the other hand, the Boolean Unsatisfiability Problem is in what's known as <b
 
 From the 2nd minute on we'd be
 
-1. using the word **formula** (instead of "statement") [For the reason, see <sup>{1}</sup> in 1st minute: What is the Boolean Satisfiability Problem? if you haven't]
+1. using the word **formula** (instead of "statement")
 
 2. using **S<small>AT</small>** as the abbreviation for the Boolean Satisfiability Problem
 
-#### Classifying S<small>AT</small> <small class="wordCount">354&nbsp;words</small>
+<br />
+
+### <small>2nd minute</small>: Classifying S<small>AT</small> <small class="wordCount">354&nbsp;words</small>
 
 We can classify instances of S<small>AT</small> based on what form the formulas are in.
 
@@ -291,8 +293,9 @@ This pretty much sums up generally how instances of S<small>AT</small> are class
 
 Perhaps you've also heard of problems with names like [MAXS<small>AT</small>](https://en.wikipedia.org/wiki/MAX-3SAT) and [#S<small>AT</small>](https://en.wikipedia.org/wiki/Sharp-SAT). Instances of these problems are not really instances of S<small>AT</small>; it'd be more accurate to say that they are variations of S<small>AT</small>. MAXS<small>AT</small> is the problem of finding a boolean assignment satisfying most clauses in a CNF formula, and #S<small>AT</small> is the problem of counting the number of satisfying assignments.
 
+<br />
 
-#### </small> S<small>AT</small> Solvers - General Overview <small class="wordCount">337&nbsp;words</small>
+### <small>3rd minute</small>: </small> S<small>AT</small> Solvers - General Overview <small class="wordCount">337&nbsp;words</small>
 
 There are many known algorithms capable of solving some (but not all) instances of S<small>AT</small> pretty efficiently. We often refer to them as <b>S<small>AT</small> solvers</b>. In general they can be classified into **complete** or **incomplete**.
 
@@ -313,7 +316,9 @@ Many modern S<small>AT</small> solvers are based on the original **DPLL** algori
 
 2. No matter what boolean values a set of variables are assigned to, it would break the overall satisfiability, and hence the formula is unsatisfiable.
 
-#### </small> S<small>AT</small> Solvers - DPLL and More <small class="wordCount">613&nbsp;words</small>
+<br />
+
+### <small>4th & 5th minutes</small>: </small> S<small>AT</small> Solvers - DPLL and More <small class="wordCount">613&nbsp;words</small>
 
 You may have already imagined, DPLL is basically a [depth-first search](https://www.youtube.com/watch?v=bkROCj-BTWE), and that means at its heart it uses **backtracking**, a brute-force-like technique that, rather than checking every single possible solution one by one (which is what's known as brute-force), it checks possible solutions by compositing part by part in a combinatorial fashion [e.g. building a solution variable by variable as described above], discarding sets of solutions that are deemed invalid by parts.
 
@@ -360,11 +365,11 @@ The other 2 techniques classical DPLL uses are
     >
     >    In the formula above, $a$ and $c$ are both pure, so we can give $a = True$ and $c = False$, and delete all the clauses that contain them. After that we'd end up with no clauses. And that means the formula is satisfiable with
     >   
-    >    <div class="row block-of-grey">
-    >    $a$: True<br>
-    >    $b$: Any value<br>
-    >    $c$: False<br>
-    >    </div>
+    >    
+    >    $a: True$ &nbsp;&nbsp;
+    >    $b: Any$ &nbsp;&nbsp;
+    >    $c: False$
+    >   
     >
 
 2. **unit propagation**: It is obvious that for clauses made up of 1 literal, that 1 literal has to evaluate `True` for the formula to yield `True`. Therefore
@@ -387,12 +392,12 @@ The other 2 techniques classical DPLL uses are
     >
     >And here we have it, the original formula is satisfiable with
     >
-    >    <div class="row block-of-grey">
-    >    $a$: True<br>
-    >    $b$: False<br>
-    >    $c$: False<br>
-    >    $d$: Any value<br>
-    >    </div>
+    >   
+    >    $a: True$ &nbsp;&nbsp;
+    >    $b: False$ &nbsp;&nbsp;
+    >    $c: False$ &nbsp;&nbsp;
+    >    $d: Any$
+    >   
     >
     > <p class="text-center"> ● ● ● </p>
     >
@@ -592,5 +597,3 @@ and many and many more.
 8. [Algorithms for the Satisfiability Problem: A Survey (1996)](http://www.cs.toronto.edu/~chechik/courses03/csc2108/algorithms-for-satisfiability.pdf) <small class="wordCount">~60k words</small>
 
 9. [Theory and Applications of Satisfiability Testing - S<small>AT</small> 2014](http://www.amazon.com/gp/product/3319092839/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=3319092839&linkCode=as2&tag=0aarhe-20&linkId=ZKNKEH4TF3DC6R7R) <small class="wordCount">a book</small> <small>Also available on <a href="http://www.springer.com/us/book/9783319092836">springer</a>.</small>
-
-{{page.script}}

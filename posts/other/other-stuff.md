@@ -9,3 +9,5 @@ date: 2018-01-02
 2. I can speak English, Cantonese, and Mandarin fluently. Currently I’m studying Japanese as a hobby, thinking about picking it up as my forth language. Looking to live in Tokyo for a good few years in the near future.
 
 3. I can be reached on Twitter [\@archywilhes](http://twitter.com/archywilhes) or via email at [archy@zer0.degree](mailto://archy@zer0.degree).
+
+4. My personal [public key](/archy.asc) id is 595DC27A2D98C22E. [You can find me on keybase](https://keybase.io/archywilhes).

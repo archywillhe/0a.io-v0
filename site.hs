@@ -9,6 +9,9 @@ import Control.Monad
 import Data.List
 import qualified Data.Text as T
 import Text.Regex
+import           Text.Pandoc.Options
+
+pandocOptions = defaultHakyllWriterOptions{ writerHTMLMathMethod = MathJax "" }
 
 --------------------------------------------------------------------------------
 timedCtx :: Context String
@@ -34,7 +37,7 @@ main = do
     updateMusicDir
     musicInnerDirs <- listDirectory "music-for-work"
     hakyll $ do
-        match ("img/*" .||. "img/*/*" .||. "fonts/*" .||. "js/*") $ do
+        match ("archy.asc" .||. "img/*" .||. "img/*/*" .||. "fonts/*" .||. "js/*") $ do
           route   idRoute
           compile copyFileCompiler
 
@@ -46,10 +49,10 @@ main = do
             route   $ setExtension "css"
             compile compressScssCompiler
 
-        match ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/*") $ do
+        match ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/*" .||. "posts/old-blog/*") $ do
             route $ setExtension "html"
                 `composeRoutes` gsubRoute "(posts/|[0-9]+-[0-9]+-[0-9]+-|featured/|more/)" (const "")
-            compile $ pandocCompiler
+            compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
                 >>= loadAndApplyTemplate "templates/post.html"    timedCtx
                 >>= loadAndApplyTemplate "templates/default.html" timedCtx
                 >>= relativizeUrls
@@ -69,6 +72,7 @@ main = do
         createRowOf3Session "2014-09-01-more-from-chapter1.html" "posts/chapter1/more/*" "More Posts from Chapter 1" "posts that didn't make it to the home page" "1001"
         createRowOf3SessionWithoutTimeCtx "2018-01-01-artwork.html" "artwork-info/*" "Artwork Info" "" "1040"
 
+        -- create ["index.html"] $ page "home" "isTech" "Tech" ["posts/other/coming-soon.html"]
         create ["index.html"] $ page "home" "isBlog" "Blog" ["2018-01-02-chapter2.html","posts/other/gap-year.md", "2014-09-01-chapter1.html"]
         create ["chapter1/index.html"] $ page "home" "isBlog" "Chapter 1" ["2014-09-01-chapter1.html","2014-09-01-chapter1.html"]
         create ["chapter2/index.html"] $ page "home" "isBlog" "Chapter 2" ["2018-01-01-chapter2.html"]

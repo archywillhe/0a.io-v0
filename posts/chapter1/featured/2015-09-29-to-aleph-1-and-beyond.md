@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "to \\aleph 1 and beyond"
-containMaths: true
+containsMaths: true
 containsCode: true
 coverPainting: "L'Ora X Clock, 1945, Bruno Munari"
 ---
