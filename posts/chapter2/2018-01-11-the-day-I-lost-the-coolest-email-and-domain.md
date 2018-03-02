@@ -17,7 +17,7 @@ As I was doing so it didn’t even occur to me the slightest to back up password
 
 I was a huge fan of the domain registrar [Hover](https://en.wikipedia.org/wiki/Hover_(domain_registrar)) and I used it to set up both my domains and emails. There was this unsettling symmetry in the recovery relation between my email <a>a@0a.io</a> and Hover account: just like the password of <a>a@0a.io</a> which can only be reset by my Hover account, the password of my Hover account can only be reset by <a>a@0a.io</a>. A recursive and logically flawed design indeed, one that I will never allow to exist in programs I write. Nonetheless I had kept it this way for as long as I could remember. It was still somewhat a stable system since the probability of losing access to both accounts concurrently was pretty low.
 
-Years had passed and I hadn’t run into any problem, expect this time. Hover had become hyper-sensitive with security over the years. It decided to lock my account after just two failed attempts to log in as I fumbled for the right key. Normally I could just gracefully recover the account through <a>a@0a.io</a>. With a brand new OS I would need to rely on this short-term memory of mine to get the right password to access the inbox, and it just so happened I had recently changed the password in a variation experiment. I ended up writing a [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) script in hopes of brute-forcing my way in.
+Years had passed and I hadn’t run into any problem, expect this time. Hover had become hyper-sensitive with security over the years. It decided to lock my account after two failed attempts of mine log in as I fumbled for the right key. Normally I could gracefully recover the account through <a>a@0a.io</a>. But this time to access the inbox I would need to rely on this short-term memory of mine, and it just so happened I had recently changed the password in a variation experiment. I ended up writing a [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) script in hopes of brute-forcing my way in.
 
 ```js
 // ==UserScript==
@@ -135,12 +135,12 @@ They replied. Not very helpful though. To make the situation worst my 16 years o
 >In this case, after reviewing the domains you mentioned previously in your email, to claim ownership of the individual domains:
 > ...
 
-Apparently I wouldn't be able to claim ownership for 0a.io since my 17 years old self [had decided to put only half my legal name in the WHOIS record during registration](https://www.whois.com/whois/0a.io). I could now further reassure myself that my domain 0a.io and email <a>a@0a.io</a> were gone forever, unless I could somehow snatch the domain away from domain merchants right after it expires. And that would highly likely be pretty damn hard considering I would either be competing with bots or Hover itself.
+Apparently I wouldn't be able to claim ownership for 0a.io since my 17 years old self [had decided to put only half my legal name in the WHOIS record during registration](https://www.whois.com/whois/0a.io). I could now further reassure myself that my domain and email were gone forever, unless I somehow manage to snatch the domain away from domain merchants right after it expires. And that would highly likely be pretty damn hard considering I would either be competing with bots or Hover itself.
 
 On the bright side work wasn't affected by this screw-up since I hadn't been doing anything email-intensive lately. I just needed to get a new email address and update my contacts about it, and probably losing some weak ties along the way.
 
-Well, it wasn't really that much of a loss overall.
+"Well, it wasn't really that much of a loss overall," I said to myself trying to make me feel better about the whole thing.
 
-Despite telling myself that, I had been having quite a hard time getting over this whole incident. The realisation I would never in my life use this email and domain again hurt. One can indeed argue that losing things is a large part of what life is about. But it would always take a while to get used to. At some point in time the email and domain had become somewhat an identity to me. And while I was grieving over the bygone domain I recalled how it had been two years since I last updated 0a.io.
+Despite that I had been having quite a hard time getting over it. The realisation I would never in my life use a@0a.io and 0a.io again hurt. One can argue that losing things is a large part of what life is about. But it would always take a while to get used to. At some point in time the email and domain had become somewhat an identity to me. And while I was grieving over the bygone domain I recalled how it had been two years since I last updated 0a.io.
 
 Perhaps it’s time that I start [a new site](http://zer0.degree), migrate everything to it, and get back to writing again.
