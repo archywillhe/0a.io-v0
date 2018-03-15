@@ -49,7 +49,7 @@ main = do
             route   $ setExtension "css"
             compile compressScssCompiler
 
-        match ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/*" .||. "posts/old-blog/*") $ do
+        match ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/*" .||. "posts/chapter1.5/*" .||. "posts/old-blog/*") $ do
             route $ setExtension "html"
                 `composeRoutes` gsubRoute "(posts/|[0-9]+-[0-9]+-[0-9]+-|featured/|more/)" (const "")
             compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
@@ -68,13 +68,14 @@ main = do
                 >>= relativizeUrls
 
         createRowOf3Session "2018-01-02-chapter2.html" "posts/chapter2/*" "Chapter 2" "jan 2018 ~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" "1001"
+        createRowOf3Session "2018-01-01-chapter1.5.html" "posts/chapter1.5/*" "Chapter 1.5" "" "1001"
         createRowOf3Session "2014-09-01-chapter1.html" "posts/chapter1/featured/*" "Chapter 1" "sep 2014 ~ nov 2015" "1001"
         createRowOf3Session "2014-09-01-more-from-chapter1.html" "posts/chapter1/more/*" "More Posts from Chapter 1" "posts that didn't make it to the home page" "1001"
         createRowOf3SessionWithoutTimeCtx "2018-01-01-artwork.html" "artwork-info/*" "Artwork Info" "" "1040"
 
         -- create ["index.html"] $ page "home" "isTech" "Tech" ["posts/other/coming-soon.html"]
-        create ["index.html"] $ page "home" "isBlog" "Blog" ["2018-01-02-chapter2.html","posts/other/gap-year.md", "2014-09-01-chapter1.html"]
-        create ["chapter1/index.html"] $ page "home" "isBlog" "Chapter 1" ["2014-09-01-chapter1.html","2014-09-01-chapter1.html"]
+        create ["index.html"] $ page "home" "isBlog" "Blog" ["2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
+        create ["chapter1/index.html"] $ page "home" "isBlog" "Chapter 1" ["2014-09-01-chapter1.html","2014-09-01-more-from-chapter1.html"]
         create ["chapter2/index.html"] $ page "home" "isBlog" "Chapter 2" ["2018-01-01-chapter2.html"]
         create ["more-from-chapter1/index.html"] $ page "home-sub" "" "More FromChapter 1" ["2014-09-01-more-from-chapter1.html"]
         create ["artwork-info.html"] $ page "home"  "isArtworkInfo" "Artwork Info" ["2018-01-01-artwork.html"]
@@ -83,6 +84,22 @@ main = do
         create ["about-zer0-degree.html"] $ page "home-sub" "" "About Zer0 Degree" ["posts/other/about-zer0-degree.md", "posts/other/letter.md","posts/other/other-stuff.md"]
 
         match "templates/*" $ compile templateBodyCompiler
+
+        create ["sitemap.xml"] $ do
+               route   idRoute
+               compile $ do
+                 c1 <- recentFirst =<< loadAll "posts/chapter1/*/*"
+                 c15 <- recentFirst =<< loadAll "posts/chapter1.5/*"
+                 c2 <- recentFirst =<< loadAll "posts/chapter2/*"
+                 old <- recentFirst =<< loadAll "posts/old-blog/*"
+                 pages <- loadAll "*.html"
+                 let everything = (return (pages ++ c1 ++ c15 ++ c2 ++ old))
+                 let sitemapCtx = mconcat
+                                  [ listField "entries" defaultContext everything
+                                  , defaultContext
+                                  ]
+                 makeItem ""
+                  >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
 
 -----
 
