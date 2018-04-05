@@ -8,8 +8,8 @@
      $if(coverPainting)$
      <img class="ArchyItemImg" src="/img/covers/$coverPainting$.jpg"/>
      $else$
-     $if(lazyload)$
-     <img class="ArchyItemImg" data-src="$displayImg$" width="$imageWidth$" height="$imageHeight$"/>
+     $if(filmName)$
+     <img class="ArchyItemImg" src="/img/films/$filmName$.jpg"/>
      $else$
      <img class="ArchyItemImg" src="$displayImg$"/>
      $endif$

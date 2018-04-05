@@ -1,3 +1,4 @@
+
 $if(customForwardUrl)$
 <script>
 window.location = window.location.hostname + "$customForwardUrl$"
@@ -14,10 +15,16 @@ $else$
     $if(coverPainting)$
         <img src="/img/covers/$coverPainting$.jpg"/>
     $else$
+    $if(filmName)$
+        <img src="/img/films/$filmName$.jpg"/>
+    $else$
         <img src="$coverImg$"/>
+    $endif$
     $endif$
     </div>
     <div class="everythingElse">
+        $if(filmName)$
+        $else$
         <div class="info">
             <i class="ion-calendar"></i>
             <span class="date">$date$</span>
@@ -26,6 +33,7 @@ $else$
             <span class="readingTime">$readingTime$ read</span>
             $endif$
         </div>
+        $endif$
         <h2 class="title">
             $title$
         </h2>
