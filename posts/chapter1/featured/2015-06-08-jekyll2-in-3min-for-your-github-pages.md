@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jekyll 2 in 3 minutes - a quick tour for those who plan to make a customized Github Page"
+title: "Jekyll 2 in 3 minutes (or more) - a quick tour for those who plan to make a customized Github Page"
 metaDescription: |
     This post aims to provide a quick sum-up for anyone who is unfamiliar with Jekyll.
 coverPainting: "Capri Battery, 1985, Joseph Beuys"

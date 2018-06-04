@@ -10,12 +10,22 @@ import Data.List
 import qualified Data.Text as T
 import Text.Regex
 import           Text.Pandoc.Options
+import           Network.URI                     (escapeURIString, isUnescapedInURI)
+
 
 pandocOptions = defaultHakyllWriterOptions{ writerHTMLMathMethod = MathJax "" }
 
---------------------------------------------------------------------------------
-timedCtx :: Context String
-timedCtx =
+imgEscURLCtx :: Context String
+imgEscURLCtx = field "imgEscURL" $ \item -> do
+  imgURL <- getMetadataField (itemIdentifier item) "coverPainting"
+  case imgURL of
+      Nothing -> return ""
+      Just val -> return (escapeURIString isUnescapedInURI val)--
+
+------------------------------------------------------------------------------
+timedWithEspImgCtx :: Context String
+timedWithEspImgCtx =
+    imgEscURLCtx `mappend`
     dateField "date" "%d %b %Y" `mappend`
     defaultContext
 
@@ -29,8 +39,17 @@ compressScssCompiler = do
                                         , "--style", "compressed"
                                         , "--load-path", "css"
                                         ])
-
 --------------------------------------------------------------------------------
+teaserFieldWithSeparatorNoHTML separator key snapshot = field key $ \item -> do
+    body <- itemBody <$> loadSnapshot (itemIdentifier item) snapshot
+    case needlePrefix separator body of
+        Nothing -> fail $
+            "Hakyll.Web.Template.Context: no teaser defined for " ++
+            show (itemIdentifier item)
+        Just t -> return (stripTags t)
+
+teaserFieldNOHTEML = teaserFieldWithSeparatorNoHTML "<!--more-->"
+---------------
 main :: IO ()
 main = do
     updateArtworkInfo
@@ -53,14 +72,15 @@ main = do
             route $ setExtension "html"
                 `composeRoutes` gsubRoute "(posts/|[0-9]+-[0-9]+-[0-9]+-|featured/|more/)" (const "")
             compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
-                >>= loadAndApplyTemplate "templates/post.html"    timedCtx
-                >>= loadAndApplyTemplate "templates/default.html" timedCtx
+                >>= saveSnapshot "content"
+                >>= loadAndApplyTemplate "templates/post.html"  timedWithEspImgCtx
+                >>= loadAndApplyTemplate "templates/default.html" ( (teaserFieldNOHTEML "teaser" "content") `mappend` timedWithEspImgCtx)
                 >>= relativizeUrls
 
         match "posts/other/*" $ do
             compile $ pandocCompiler
-                >>= loadAndApplyTemplate "templates/simple-archy-item.html" timedCtx
-                >>= loadAndApplyTemplate "templates/page-session.html" timedCtx
+                >>= loadAndApplyTemplate "templates/simple-archy-item.html" timedWithEspImgCtx
+                >>= loadAndApplyTemplate "templates/page-session.html" timedWithEspImgCtx
                 >>= relativizeUrls
 
         match ("music-for-work/*/*" .||. "artwork-info/*") $ do
@@ -108,7 +128,7 @@ main = do
 
 createRowOf3SessionWithoutTimeCtx = createRowOf3Session_ defaultContext return
 
-createRowOf3Session = createRowOf3Session_ timedCtx recentFirst
+createRowOf3Session = createRowOf3Session_ timedWithEspImgCtx recentFirst
 
 createRowOf3Session_ ctx postPossessing identifer filePath maintitle subtitle width = create [identifer] $ do
   compile $ do
@@ -138,7 +158,7 @@ page_ moreTemplating pageType isX title sessions = do
   compile $ do
       sessions <- recentFirst =<< loadAll (fromList $ [fromFilePath s | s <- sessions])
       let indexCtx =
-              listField "sessions" timedCtx (return sessions) `mappend`
+              listField "sessions" timedWithEspImgCtx (return sessions) `mappend`
               constField isX "true" `mappend`
               constField "title" title `mappend`
               constField "pageType" pageType `mappend`

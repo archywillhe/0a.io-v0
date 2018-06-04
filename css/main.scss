@@ -282,7 +282,7 @@ h3 {
             color: #111;
             justify-content: center;
             align-items: stretch;
-            height: 160px;
+            height: 150px;
             display: flex;
             font-family: 'Roboto', sans-serif;
             @media (max-width: $mobile-device-large) {
@@ -423,7 +423,10 @@ h3 {
         .ArchyItemTitle,.ArchyItemSubtitle,.ArchyItemDate{
             font-family: 'Roboto', sans-serif;
             a{
-                color:#333
+                color:#333;
+                :hover{
+                    color:#2598f6
+                }
             }
         }
         .ArchyItemImg {
@@ -522,6 +525,11 @@ h3 {
     width: 100%;
     height: 100%;
 }
+article.filmNight{
+    .everythingElse{
+        max-width:500px;  width: 100%;
+    }
+}
 article{
     h3{
         padding-bottom: 20px;
@@ -571,12 +579,17 @@ article{
         }
         .text{
             margin-top: 20px;
+            p{
+                padding: 1px 0;
+            }
             img{
-                margin:6px 0;
+                display: block;
+                margin:14px auto;
+                max-width: 100%;
             }
             ol,ul{
                 margin:0;
-                margin-left: 30px;
+                margin-left: 40px;
                 li{
                     margin:0;
                     list-style-type:upper-roman;
@@ -605,7 +618,10 @@ article{
             color: #777;
             padding:13px;
             background: #f2f2f2;
-            font-family: Times
+            font-family: Times;
+            p:last-child {
+                margin-bottom: 0
+            }
         }
     }
 }
@@ -622,6 +638,9 @@ background-color:#f3f3f3;
  max-width: 750px;
  padding: 30px;
  margin: 18px auto;
+ p:last-child {
+     margin-bottom: 0
+ }
 }
 .math{
     color: rgb(11, 68, 238)
@@ -631,4 +650,13 @@ background-color:#f3f3f3;
 .span-block{
     font-family: 'Roboto', sans-serif;
     padding:5px;
+}
+
+code{
+    color: #479afd;
+}
+@media (max-width: 606px) {
+.edge-case-to-be-hidden{
+    display: none
+}
 }

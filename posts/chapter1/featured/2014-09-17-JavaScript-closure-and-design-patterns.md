@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "JavaScript Closure and Design Patterns in 3 minutes"
+title: "JavaScript Closure and Design Patterns in 3 minutes (or more)"
 metaDescription: "JavaScript closure and design patterns explained in a comprehensible way."
 containsCode: true
 coverPainting: "Church Street El, 1920, Charles Sheeler"
 reddit: https://www.reddit.com/r/javascript/comments/2i3zj4/javascript_closure_and_design_patterns_for_those/
 ---
 
-###1st Minute: What is a closure in Javascript?
+### 1st Minute: What is a closure in Javascript?
 
 A <i>closure</i> is not really <a target="_blank" class="default_anchor" href="http://0ar.ch/">a</a> thing. It is just a term we use to describe what happens when we have a function that has access to outside variables other functions cannot access.
 

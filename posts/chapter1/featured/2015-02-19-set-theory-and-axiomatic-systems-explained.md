@@ -156,9 +156,8 @@ We can say that this is the universe <i> the axiom of extensionality </i> has be
 
 > "It is said that the world is empty, the world is empty, lord. In what respect is it said that the world is empty?" The Buddha replied, "Insofar as it is empty of a self or of anything pertaining to a self: <a target="_blank" href ="http://en.wikipedia.org/wiki/%C5%9A%C5%ABnyat%C4%81">Thus it is said, Ānanda, that the world is empty</a>."
 >
-><p class="text-center"><img src="/img/from-chapter-1/mindexplosion.gif"></p>
 >
-><i>I was exposed to ideas in Buddhism when I was young. Just pointing out an interesting resemblance here.</i>
+
 
 
 <p class="text-center"> ● ● ● </p>

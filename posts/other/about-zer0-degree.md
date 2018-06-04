@@ -4,4 +4,4 @@ subtitle: ""
 width: 665
 date: 2018-01-21
 ---
-[Zer0.degree](http://zer0.degree/) is the personal site of Archy 魏何, where he writes about life, start-up, mathematics, technology, and art.
+[Zer0.degree](http://zer0.degree/) is the website of Archy 魏何, where he writes about life, start-up, mathematics, technology, and art.
