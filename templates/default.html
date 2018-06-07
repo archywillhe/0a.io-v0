@@ -23,7 +23,7 @@
                 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="/css/bootstrap.4.0.0-beta3.min.css" />
 <link href="/css/ionicons.2.0.1.min.css" rel="stylesheet">
-<link href="/css/main.css?v=8" rel="stylesheet">
+<link href="/css/main.css?v=11" rel="stylesheet">
 <link href="/css/fonts.css" rel="stylesheet">
 $if(containsCode)$
 <link href="/css/highlight.css" rel="stylesheet">
@@ -76,7 +76,7 @@ $if(containsMaths)$
 $endif$
   </head>
   <body>
-      <div id="body-wrapper"><div id="body">
+      <div id="body-wrapper" $if(isPhoneAbout)$class="isPhoneAboutPage"$endif$><div id="body">
     <div class="cover-image">
     <img class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/willian-justen-de-vasconcellos-430007.jpg" />
     <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/willian-justen-de-vasconcellos-430007-full.jpg" />

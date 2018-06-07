@@ -367,7 +367,20 @@ h3 {
 .menu-bottom{
     color:#444
 }
-
+.paintingInfoContainer{
+    font-style: italic;
+    margin-top: 20px;
+    padding: 5px;
+    line-height: 1.1em;
+    font-size: 0.9em;
+    .paintingInfo{
+        font-size: 0.8em;
+        color: #555;
+        @media (max-width: $mobile-device-regular) {
+            font-size: 0.7em;
+        }
+    }
+}
 .content {
     margin-top: 63px;
     font-family: 'tt-regular','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -660,3 +673,7 @@ code{
     display: none
 }
 }
+
+.isPhoneAboutPage .container:first-child div{
+            margin: 0 auto
+    }

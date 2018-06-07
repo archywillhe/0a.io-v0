@@ -15,12 +15,19 @@ import           Network.URI                     (escapeURIString, isUnescapedIn
 
 pandocOptions = defaultHakyllWriterOptions{ writerHTMLMathMethod = MathJax "" }
 
-imgEscURLCtx :: Context String
-imgEscURLCtx = field "imgEscURL" $ \item -> do
-  imgURL <- getMetadataField (itemIdentifier item) "coverPainting"
-  case imgURL of
-      Nothing -> return ""
-      Just val -> return (escapeURIString isUnescapedInURI val)--
+
+makeNewContext :: String -> String -> (String -> String) -> Context String
+makeNewContext original new stringTrans  = field new $ \item -> do
+    val <- getMetadataField (itemIdentifier item) original
+    case val of
+        Nothing -> return mempty
+        Just val_ -> return (stringTrans val_)
+
+imgEscURLCtx = makeNewContext "coverPainting" "imgEscURL" (escapeURIString isUnescapedInURI)
+
+paintingInfo = makeNewContext "coverPainting" "paintingArtistName" (extractPaintingInfo "author")
+    `mappend` makeNewContext "coverPainting" "paintingTitle" (extractPaintingInfo "title")
+    `mappend` makeNewContext "coverPainting" "paintingYear" (extractPaintingInfo "year")
 
 ------------------------------------------------------------------------------
 timedWithEspImgCtx :: Context String
@@ -73,7 +80,7 @@ main = do
                 `composeRoutes` gsubRoute "(posts/|[0-9]+-[0-9]+-[0-9]+-|featured/|more/)" (const "")
             compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
                 >>= saveSnapshot "content"
-                >>= loadAndApplyTemplate "templates/post.html"  timedWithEspImgCtx
+                >>= loadAndApplyTemplate "templates/post.html"  (paintingInfo `mappend` timedWithEspImgCtx)
                 >>= loadAndApplyTemplate "templates/default.html" ( (teaserFieldNOHTEML "teaser" "content") `mappend` timedWithEspImgCtx)
                 >>= relativizeUrls
 
@@ -103,8 +110,8 @@ main = do
         create ["more-from-chapter1/index.html"] $ page "home-sub" "" "More FromChapter 1" ["2014-09-01-more-from-chapter1.html"]
         create ["artwork-info.html"] $ page "home"  "isArtworkInfo" "Artwork Info" ["2018-01-01-artwork.html"]
         createPageOfSessionsBasedOnDirectoryStructure "home" "isMusicForWork" "music-for-work" "Music For Work" musicInnerDirs
-        create ["about.html"] $ page "home-sub" "" "About Me" ["posts/other/letter.md","posts/other/other-stuff.md"]
-        create ["about-zer0-degree.html"] $ page "home-sub" "" "About Zer0 Degree" ["posts/other/about-zer0-degree.md", "posts/other/letter.md","posts/other/other-stuff.md"]
+        create ["about.html"] $ page "home-sub" "" "About Me" ["posts/other/about.md","posts/other/other-stuff.md"]
+        create ["about-zer0-degree.html"] $ page "home-sub" "isPhoneAbout" "About Zer0 Degree" ["posts/other/quote.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
 
         match "templates/*" $ compile templateBodyCompiler
 
@@ -194,6 +201,12 @@ makeArtworkYaml (title:year:author:paintingURL:[]) = "---\n" ++
     "---"
 makeArtworkYaml wrongformat = show wrongformat
 
+extractPaintingInfo infoType str = formattingImgStr $ extractPainting_ infoType $ splitOn ", " str
+extractPainting_ "author" (title:year:author:[]) = author
+extractPainting_ "title"(title:year:author:[]) = title
+extractPainting_ "year" (title:year:author:[]) = year
+extractPainting_ _ _ = "something went wrong"
+
 makeMusicYaml (title:artist:link:imgURL:virtualDate:[]) = "---\n" ++
     "title: \"" ++ title ++ "\"\n" ++
     "subtitle: \"" ++ artist ++ "\"\n" ++
@@ -237,9 +250,9 @@ zipWidthIndex list = (zip list $ reverse [0..(length list)])
 
 ------------------
 
+formattingImgStr str = T.unpack $ foldl (\str (x,y) -> T.replace (T.pack x) (T.pack y) str) (T.pack str) [("_perc", "%"),("_comma",","),("_hash","#"),("Rene","René")]
 propagate folder dataLists dataToFile = do
-    let formatting str = T.unpack $ foldl (\str (x,y) -> T.replace (T.pack x) (T.pack y) str) (T.pack str) [("_perc", "%"),("_comma",","),("_hash","#"),("Rene","René")]
-    let formated = map (\dataList -> ((map formatting) . init) dataList ++ [last dataList]) dataLists
+    let formated = map (\dataList -> ((map formattingImgStr) . init) dataList ++ [last dataList]) dataLists
     zipWithM_ writeFile (map ((\a -> folder ++ "/" ++ a ++ ".md") . head) formated) (map dataToFile formated)
 
 ------------------

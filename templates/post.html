@@ -14,11 +14,21 @@ $else$
     <div class="coverPainting">
     $if(coverPainting)$
         <img src="/img/covers/$coverPainting$.jpg"/>
+          <div class="thickRaleway paintingInfoContainer">
+              Featuring
+              <a target="_blank" href="https://www.wikiart.org/en/Search/$paintingTitle$%20$paintingArtistName$" class="paintingInfo">
+                  $paintingTitle$ ($paintingYear$)
+                  by
+                  $paintingArtistName$
+              </a>
+          </div>
     $else$
     $if(filmName)$
         <img src="/img/films/$filmName$.jpg"/>
     $else$
+    $if(coverImg)$
         <img src="$coverImg$"/>
+    $endif$
     $endif$
     $endif$
     </div>

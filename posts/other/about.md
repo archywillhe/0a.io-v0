@@ -5,11 +5,13 @@ width: 665
 date: 2018-01-07
 ---
 
-Name is Archy Wilhes. &nbsp;&nbsp; 姓魏何，名<a target="_blank" href="http://wiki.mbalib.com/wiki/%E5%AE%B6%E8%B1%AA%E5%A8%81%E5%A3%AB%E5%BF%8C">家豪</a>，字Archy。
+Wilhes, Archy Wilhes. &nbsp;&nbsp; 姓魏何，名<a target="_blank" href="http://wiki.mbalib.com/wiki/%E5%AE%B6%E8%B1%AA%E5%A8%81%E5%A3%AB%E5%BF%8C">家豪</a>，字Archy。
+
+Mathematically Curious. Computationally Adventurous. Philosophically Intrigued. Artistically Inclined. Multidisciplinarily Aroused.
 
 Co-founder & CTO of [Castella](http://castella.sg/).
 
-22 years of age with 6 years of experience in doing start-up.
+22 years of age. With 6 years of experience in doing start-up.
 
 Singapore-based.
 

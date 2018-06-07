@@ -5,7 +5,7 @@ layout: post
 title: "The Game That Matters"
 ---
 ><p class="text-center"><b>prologue</b></p>
->I'm not going to lie. I was slightly crestfallen when I learnt that I didn't make it to the final round in my <a target="_blank" href="http://en.wikipedia.org/wiki/Thiel_Fellowship">Thiel Fellowship</a> application. I was invited to <a target="_blank" href="http://summit.thielfellowship.org/">the summit</a> though (which sounds like a waste of money). Actually, I should not have had any expectation when applying for the fellowship at the first place, let along feeling the slightest dejection upon knowing the result. I got so involved in this game of application that only after it was over did I realize that it did not matter at all.
+>I'm not going to lie. I was slightly crestfallen when I learnt that I didn't make it to the final round in my <a target="_blank" href="http://en.wikipedia.org/wiki/Thiel_Fellowship">Thiel Fellowship</a> application. I was invited to <a target="_blank" href="http://summit.thielfellowship.org/">the summit</a> though (which requires you buy an expensive ticket, occurring to me as more like a way they monetise). Actually, I should not have had any expectation when applying for the fellowship at the first place, let along feeling the slightest dejection upon knowing the result. I got so involved in this game of application that only after it was over did I realize that it did not matter at all.
 
 There is only one game in life that actually matters, and that is life itself.
 
