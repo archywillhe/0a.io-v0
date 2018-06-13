@@ -1,14 +1,15 @@
-## Summary 
+## Summary 概要
 
 Everything interesting is in `site.hs`.
+ぜんぶ有趣的東西都在`site.hs`裡です～
 
-## Quick start
+## Quick start クイックスタート
 
 ```
 $ stack build
 $ stack exec site build
 ```
 
-## Learn more
+## Learn more もっと
 
-Doc: https://jaspervdj.be/hakyll/
+Doc (官方文檔): https://jaspervdj.be/hakyll/
