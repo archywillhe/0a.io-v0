@@ -1,0 +1,26 @@
+(define from-cardhu-to-archy
+  (lambda ()
+    ((lambda (0a)
+       (letrec ([visit
+                 (lambda (x y)
+                   (if (null? y)
+                    (visit (cdr x) (cons (car x) y))
+                    (let ([ahead (cddr x)])
+                      (if (null? ahead)
+                          (list (car x) (alphabetP->letter (apply + (map letter->alphabetP (cons (cadr x) y)))))
+                          (cons (car x) (cons (cadr x)
+                                      (cons (car y) (visit ahead (cdr y)))))))))])
+                (list->string (visit (string->list 0a) '()))))
+     "cardhu")))
+
+(define alphabetP->letter
+  (lambda (x)
+    (integer->char (+ x 96))))
+
+(define letter->alphabetP
+  (lambda (x)
+    (- (char->integer x) 96)))
+
+(from-cardhu-to-archy)
+;;archy
+;;阿奇博爾德

@@ -60,16 +60,16 @@ Here "$\in$" means <a target="_blank" href ="https://proofwiki.org/wiki/Definiti
 
 Similarly, in the banana example above, we can express the banana equivalence as an axiom in the language of first order logic:
 
-$$\forall A \, \forall B \, (nameTag(A) = nameTag(B) \Rightarrow A = B)$$
+$$\forall A \, \forall B \, (name(A) = name(B) \Rightarrow A = B)$$
 
-where $nameTag(X)$ returns the name on the name tag of $X$.
+where $name(X)$ returns the name on the name tag of $X$.
 
 One obvious consequence of this axiom is that if we see two bananas on the table, $banana_1$ and $banana_2$, each having the same name in its name tag, by our axiom we would have no choice but to conclude that the two bananas are equivalent.
 
-Another detrimental consequence is that $nameTag(A) = nameTag(B) \Rightarrow A = B$ applies to not just bananas but **everything** in the universe (hence the <a target="_blank" href ="http://en.wikipedia.org/wiki/Universal_quantification">universal quantification, $\forall$</a> in $\forall A \, \forall B$). So if you have a tailor-made suit and a high school uniform that both have your name on it, by the axiom the tailor-made suit would be equivalent to the school uniform! But you spent almost a grand on the suit!
+Another detrimental consequence is that $name(A) = name(B) \Rightarrow A = B$ applies to not just bananas but **everything** in the universe (hence the <a target="_blank" href ="http://en.wikipedia.org/wiki/Universal_quantification">universal quantification, $\forall$</a> in $\forall A \, \forall B$). So if you have a tailor-made suit and a high school uniform that both have your name on it, by the axiom the tailor-made suit would be equivalent to the school uniform! But you spent almost a grand on the suit!
 
-> This can be fixed by introducing the Universal Banana Set $U_{Banana}$ that contains all bananas in the world and rewrite the axiom as
-> $$\forall A \in U_{Banana} \, \forall B \in U_{Banana} \, (nameTag(A) = nameTag(B) \Rightarrow A = B)$$
+> This can be fixed by introducing the Universal Banana Set $U_{_{Banana}}$ that contains all bananas in the world and rewrite the axiom as
+> $$\forall A \in U_{_{Banana}} \, \forall B \in U_{_{Banana}} \, (name(A) = name(B) \Rightarrow A = B)$$
 
 <h3 class="_index">More on <i>the axiom of extensionality</i></h3>
 
@@ -99,12 +99,12 @@ Addition can then be defined recursively in an conditional formula:
 $$   Add(a,b) =
 \begin{cases}
 b  & \text{if }a = \varnothing \\
-Add(a',\{b\}) \text{ where }a' = \{a\} & \text{otherwise}
+Add(a',\{b\}) \text{ where }a = \{a'\} & \text{otherwise}
 \end{cases}$$
 
 Here is what adding 2 and 3 looks like:
 
- $$ Add(2,3) = Add(\{\{\varnothing\}\},\{\{\{\varnothing\}\}\}) = Add(\{\varnothing\},\{\{\{\{\varnothing\}\}\}\}) = \\ Add(\varnothing,\{\{\{\{\{\varnothing\}\}\}\}\}) = \{\{\{\{\{\varnothing\}\}\}\}\} = 5 $$
+ $$ \begin{align} Add(2,3) & = Add(\{\{\{\}\}\},\{\{\{\{\}\}\}\}) \\ & = Add(\{\{\}\},\{\{\{\{\{\}\}\}\}\}) \\ & = Add(\{\},\{\{\{\{\{\{\}\}\}\}\}\}) \\ & =  \{\{\{\{\{\{\}\}\}\}\}\} \\ & = 5 \end{align}$$
 
 
 We can say that this is the universe <i> the axiom of extensionality </i> has beautifully entailed.

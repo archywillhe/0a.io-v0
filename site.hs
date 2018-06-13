@@ -25,7 +25,8 @@ makeNewContext original new stringTrans  = field new $ \item -> do
 
 imgEscURLCtx = makeNewContext "coverPainting" "imgEscURL" (escapeURIString isUnescapedInURI)
 
-paintingInfo = makeNewContext "coverPainting" "paintingArtistName" (extractPaintingInfo "author")
+paintingInfo = makeNewContext "coverPainting" "paintingUrl" (\a -> paintingUrl (extractPaintingInfo "title" a) (extractPaintingInfo "author" a))
+    `mappend` makeNewContext "coverPainting" "paintingArtistName" (extractPaintingInfo "author")
     `mappend` makeNewContext "coverPainting" "paintingTitle" (extractPaintingInfo "title")
     `mappend` makeNewContext "coverPainting" "paintingYear" (extractPaintingInfo "year")
 
@@ -63,13 +64,14 @@ main = do
     updateMusicDir
     musicInnerDirs <- listDirectory "music-for-work"
     hakyll $ do
-        match ("archy.asc" .||. "img/*" .||. "img/*/*" .||. "fonts/*" .||. "js/*") $ do
+        match ("archy.asc" .||. "阿奇博爾德.txt" .||. "img/*" .||. "img/*/*" .||. "fonts/*" .||. "js/*") $ do
           route   idRoute
           compile copyFileCompiler
 
         match "css/*.css" $ do
             route   idRoute
             compile compressCssCompiler
+
 
         match "css/*.scss" $ do
             route   $ setExtension "css"
@@ -110,8 +112,8 @@ main = do
         create ["more-from-chapter1/index.html"] $ page "home-sub" "" "More FromChapter 1" ["2014-09-01-more-from-chapter1.html"]
         create ["artwork-info.html"] $ page "home"  "isArtworkInfo" "Artwork Info" ["2018-01-01-artwork.html"]
         createPageOfSessionsBasedOnDirectoryStructure "home" "isMusicForWork" "music-for-work" "Music For Work" musicInnerDirs
-        create ["about.html"] $ page "home-sub" "" "About Me" ["posts/other/about.md","posts/other/other-stuff.md"]
-        create ["about-zer0-degree.html"] $ page "home-sub" "isPhoneAbout" "About Zer0 Degree" ["posts/other/quote.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
+        create ["about.html"] $ page "home-sub" "" "About Me" ["posts/other/credits.md", "posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
+        create ["about-zer0-degree.html"] $ page "home-sub" "isPhoneAbout" "About Zer0 Degree" ["posts/other/quote.md","posts/other/credits.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
 
         match "templates/*" $ compile templateBodyCompiler
 
@@ -194,10 +196,13 @@ rowsOf3 list identifier ctx = foldl mappend defaultContext contexts
 
 ---------
 makeArtworkYaml (title:year:author:paintingURL:[]) = "---\n" ++
-    "title: \"" ++ title ++ " (" ++ year ++ ")\"\n" ++
+    "title: \"" ++ title ++ "\"\n" ++
+    "year: \"" ++ year ++ "\"\n" ++
     "subtitle: \"" ++ author ++ "\"\n" ++
     "displayImg: \"" ++ paintingURL ++ "\"\n" ++
-    "noURL: true\n" ++
+    "isArtworkInfo: 1\n" ++
+    "url: \""++(paintingUrl title author) ++ "\"\n" ++
+    "newTab: 1\n" ++
     "---"
 makeArtworkYaml wrongformat = show wrongformat
 
@@ -250,7 +255,7 @@ zipWidthIndex list = (zip list $ reverse [0..(length list)])
 
 ------------------
 
-formattingImgStr str = T.unpack $ foldl (\str (x,y) -> T.replace (T.pack x) (T.pack y) str) (T.pack str) [("_perc", "%"),("_comma",","),("_hash","#"),("Rene","René")]
+formattingImgStr str = T.unpack $ foldl (\str (x,y) -> T.replace (T.pack x) (T.pack y) str) (T.pack str) [("_perc", "%"),("_comma",","),("_hash","#"),("Rene","René"),("Aquel","Aquél")]
 propagate folder dataLists dataToFile = do
     let formated = map (\dataList -> ((map formattingImgStr) . init) dataList ++ [last dataList]) dataLists
     zipWithM_ writeFile (map ((\a -> folder ++ "/" ++ a ++ ".md") . head) formated) (map dataToFile formated)
@@ -265,3 +270,17 @@ empty dir = do
     removePathForcibly dir
     createDirectory dir
     putStr ("Emptying directory " ++ dir ++"\n")
+
+paintingUrl = purl
+
+purl :: String -> String -> String
+purl _ "Mary Pratt" = "http://thechronicleherald.ca/heraldmagazine/1254755-the-life-and-art-of-painter-mary-pratt"
+purl _ "Paolo Scheggi" = "https://www.robilantvoena.com/usr/documents/press/download_url/95/the-art-newspaper-the-rise-of-paolo-scheggi-17-june-2015.pdf"
+purl _ "Ludwig Wilding" = "http://www.arasgallery.com/profile.php?id=49"
+purl _ "Francois Morellet" = "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Morellet"
+purl _ "Jacek Yerka" = "http://www.yerkaland.com/language/en/"
+purl _ "Laszlo Mednyanszky" = "https://en.wikipedia.org/wiki/L%C3%A1szl%C3%B3_Medny%C3%A1nszky"
+purl "Aquél que camina delante" _  = "https://wsimag.com/art/22210-aquel-que-camina-delante"
+purl _ "Analia Saban" = "http://www.analiasabanstudio.com/index.html"
+purl "Flame Nebula" _ = "http://chandra.harvard.edu/photo/2014/flame/"
+purl title author  = "https://www.wikiart.org/en/Search/"++title++"%20"++author

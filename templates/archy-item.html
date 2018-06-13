@@ -1,5 +1,8 @@
 <div class="ArchyItem">
     $if(noURL)$
+    $if(isArtworkInfo)$
+      <a target="_blank" href="https://www.wikiart.org/en/Search/$title$%20$subtitle$">
+    $endif$
     $else$
   <a href="$if(customForwardUrl)$$customForwardUrl$$else$$url$$endif$"
     $if(newTab)$ target="_blank" $endif$
@@ -15,12 +18,21 @@
      $endif$
      $endif$
      $if(noURL)$
+     $if(isArtworkInfo)$
+    </a>
+     $endif$
      $else$
   </a>
     $endif$
   <div class="ArchyItemTitle">
       $if(noURL)$
+      $if(isArtworkInfo)$
+        <a target="_blank" href="https://www.wikiart.org/en/Search/$title$%20$subtitle$">
+            $title$ ($year$)
+        </a>
+      $else$
       $title$
+      $endif$
       $else$
     <a href="$if(customForwardUrl)$$customForwardUrl$$else$$url$$endif$"
     $if(newTab)$ target="_blank" $endif$

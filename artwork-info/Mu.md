@@ -1,6 +1,9 @@
 ---
-title: "Mu (XVII-XVIII cent.)"
+title: "Mu"
+year: "XVII-XVIII cent."
 subtitle: "Hakuin Ekaku"
 displayImg: "img/covers/Mu, XVII-XVIII cent., Hakuin Ekaku.jpg"
-noURL: true
+isArtworkInfo: 1
+url: "https://www.wikiart.org/en/Search/Mu%20Hakuin Ekaku"
+newTab: 1
 ---

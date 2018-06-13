@@ -1,0 +1,2 @@
+runhaskell updateArtworkInfo.hs
+

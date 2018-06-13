@@ -23,7 +23,7 @@
                 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="/css/bootstrap.4.0.0-beta3.min.css" />
 <link href="/css/ionicons.2.0.1.min.css" rel="stylesheet">
-<link href="/css/main.css?v=11" rel="stylesheet">
+<link href="/css/main.css?v=36" rel="stylesheet">
 <link href="/css/fonts.css" rel="stylesheet">
 $if(containsCode)$
 <link href="/css/highlight.css" rel="stylesheet">
@@ -57,7 +57,6 @@ $endif$
 
   gtag('config', 'UA-112409544-1');
 </script>
-<script src="/js/main.js"></script>
 $if(containsMaths)$
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -67,7 +66,7 @@ $if(containsMaths)$
       displayMath: [ ['$$$$','$$$$'], ["\\[","\\]"] ],
       processEscapes: true
     },
-    "HTML-CSS": { availableFonts: ["TeX"] }
+    "HTML-CSS": { availableFonts: ["TeX"], minScaleAdjust: 100}
   });
 </script>
 <script type="text/javascript"
@@ -83,14 +82,20 @@ $endif$
     <div class="cover-image-text-wrapper">
     <div class="cover-image-text">
       <h1 class="zeroDegreeLogo centerFlex">
-        <div><a href="/">Zer0<br/>Degree</a></div><div><sup class="degreeDot">o</sup><br/>&nbsp;</div>
+        <div>
+            <a href="/">Zer0<br/>Degree</a>
+        </div>
+        <div><sup class="degreeDot">o</sup><br/>&nbsp;</div>
+        <div class="description show-if-smaller-than-mobile-device-large">
+            Archy's Blog
+        </div>
       </h1>
 
       <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
       <h2 class="zeroDegreeName">
         <a href="/about.html">Archy</a>'s Blog<br />
+        <a target="_blank" href="https://arxiv.org/search/?query=Wilhes%2C+Archy&searchtype=author&order=-announced_date_first&size=50"><i class="social-icon ion-ios-paper"></i></a>
         <a target="_blank" href="http://twitter.com/arrchhy"><i class="social-icon ion-social-twitter"></i></a>
-        <a target="_blank" href="http://github.com/arrchhy"><i class="social-icon ion-social-octocat"></i></a>
         <a target="_blank" href="http://instagram.com/arrchyy"><i class="social-icon ion-social-instagram"></i></a>
         <a target="_blank" href="http://castella.sg"><i class="social-icon ion-erlenmeyer-flask"></i></a>
         <a href="/about.html"><small style="font-size: 50%; margin-left:5px;top:-1px;position:relative">ABOUT</small></a>
@@ -99,18 +104,19 @@ $endif$
       </div>
     </div>
     <h2 class="stayCool thickRaleway hide-if-smaller-than-mobile-device-large">
-      Stay cool.
+      <a href="https://www.youtube.com/watch?v=2Z6UJbwxBZI">Stay cool.</a>
     </h2>
     <h3 class="stayCool thickRaleway show-iff-mobile-device-large">
-      <a href="/about.html">Archy</a>'s Blog
+      <a href="/about.html">About</a>
   </h3>
   <h2 class="stayCool thickRaleway show-if-smaller-than-mobile-device-medium">
     <a href="/about-zer0-degree.html">About</a>
   </h2>
     </div>
   </div>
-
+  <div style="position:relative">
   $body$
+    </div>
   <div class="cover-image">
   <img class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/maarten-van-den-heuvel-346883.jpg" />
   <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/maarten-van-den-heuvel-346883-full.jpg" />
@@ -166,6 +172,8 @@ $endif$
 $if(footBlock)$
 $footBlock$
 $endif$
+<script src="/js/underscore-min.js"></script>
+<script src="/js/main.js"></script>
 </body>
 
 </html>

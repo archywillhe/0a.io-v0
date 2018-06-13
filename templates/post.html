@@ -4,19 +4,42 @@ $if(customForwardUrl)$
 window.location = window.location.hostname + "$customForwardUrl$"
 </script>
 $else$
-<div class="hide-if-bigger-than-mobile-device-regular">
-  <h2 class="thickRaleway menu">
-    <!-- <a href="/" class="menu-item">Back to Home Page</a> -->
-</h2>
+<div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
+    $if(filmName)$
+    <img src="/img/covers/Burring Brook, XIX-XX cent., Laszlo Mednyanszky.jpg"/>
+    $else$
+    $if(coverPainting)$
+        <img src="/img/covers/$coverPainting$.jpg"/>
+    $else$
+    $if(filmName)$
+        <img src="/img/films/$filmName$.jpg"/>
+    $else$
+    $if(coverImg)$
+        <img src="$coverImg$"/>
+    $endif$
+    $endif$
+    $endif$
+    $endif$
+    <div class="dark-overlay">
+    </div>
 </div>
+ <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+     $if(filmName)$
+     <a href="/film-night.html" class="menu-item">Back to Film Night</a>
+     $else$
+     <a href="/" class="menu-item">Back to Home Page</a>
+     $endif$
+</h2>
+
 <div class="container content">
 <article style="$if(width)$max-width:$width$px;$endif$ $if(isFilmNight)$filmNight$endif$">
     <div class="coverPainting">
     $if(coverPainting)$
         <img src="/img/covers/$coverPainting$.jpg"/>
           <div class="thickRaleway paintingInfoContainer">
-              Featuring
-              <a target="_blank" href="https://www.wikiart.org/en/Search/$paintingTitle$%20$paintingArtistName$" class="paintingInfo">
+              <span class="hide-if-smaller-than-mobile-device-large">Featuring</span>
+              <a target="_blank" href="$paintingUrl$" class="paintingInfo">
                   $paintingTitle$ ($paintingYear$)
                   by
                   $paintingArtistName$
@@ -59,3 +82,4 @@ $else$
 </h2>
 </div>
 $endif$
+<input type="text" value="http://zer0.degree$url$" id="currrentLink" />
