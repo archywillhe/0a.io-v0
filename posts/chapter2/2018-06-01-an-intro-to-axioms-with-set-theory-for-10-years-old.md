@@ -25,7 +25,7 @@ The child stare at the banana in disbelief.
 
 And then you interrupt yourself, "except this is not Mike's banana. This is Jane's." You turn the banana to the other side, showing a name tag with *Jane* on it. You go on to explain that in this world everyone's banana has their name on it.
 
-The cunning child suggests to remove the name tag and put on a new one with *Mike* on it. This way Mike would have no idea this is Jane's banana and think he has gotten back the one he lost. And everyone lives happily ever after, except for Jane. But no one cares about Jane.
+The cunning child then suggests to remove the name tag and put on a new one with *Mike* on it. This way Mike would have no idea this is Jane's banana and think he has gotten back the one he lost. And everyone lives happily ever after, except for Jane. But no one cares about Jane.
 
 <p style="text-align:center; font-size:1.3em">
 &bull; &bull; &bull;
@@ -39,7 +39,7 @@ The first baby step to embrace the notion of axioms is to accept that we always 
 
 ><sup>1</sup>: in order to do it in an **extremely** righteous manner. We are serious people.
 >
-><sup>2</sup>: Actually almost all of us humans (except for *true* nihilists) live our lives with this axiom as if our neural circuitry comes with the axiom built-in. Humans are strange
+><sup>2</sup>: Actually almost all of us humans (except for *true* nihilists) live our lives with this axiom as if it is built into our neural circuitry. Humans are strange
 
 
 Once a child is comfortable with the concept of axioms, we can proceed to the ambiguities-ridding formalisation. With an intuitive understanding of naïve set theory, the child is ready to dissect the axiom that formalises equivalence in set theory, written in the language of first order logic:
@@ -56,7 +56,7 @@ Here "$\in$" means <a target="_blank" href ="https://proofwiki.org/wiki/Definiti
 "$\Leftrightarrow$" means <a target="_blank" href ="http://mathworld.wolfram.com/Iff.html"><i>if and only if</i></a>.
 </div>
 
-> This is known as *the axiom of extensionality*, and it is used in many formal systems of set theory (such as <i><a target="_blank" href ="http://www.math.uchicago.edu/~may/VIGRE/VIGRE2011/REUPapers/Lian.pdf">Zermelo–Fraenkel set theory</a></i> (ZF), <i><a target="_blank" href ="https://proofwiki.org/wiki/Definition:G%C3%B6del-Bernays_Axioms">von Neumann–Bernays–Gödel set theory</a></i> (NGB) and <i><a target="_blank" href ="http://math.boisestate.edu/~holmes/holmes/nf.html">New Foundations</a></i> (NF)).
+> This is known as **the axiom of extensionality**, and it is used in many formal systems of set theory (such as <i><a target="_blank" href ="http://www.math.uchicago.edu/~may/VIGRE/VIGRE2011/REUPapers/Lian.pdf">Zermelo–Fraenkel set theory</a></i> (ZF), <i><a target="_blank" href ="https://proofwiki.org/wiki/Definition:G%C3%B6del-Bernays_Axioms">von Neumann–Bernays–Gödel set theory</a></i> (NGB) and <i><a target="_blank" href ="http://math.boisestate.edu/~holmes/holmes/nf.html">New Foundations</a></i> (NF)).
 
 Similarly, in the banana example above, we can express the banana equivalence as an axiom in the language of first order logic:
 
@@ -66,7 +66,7 @@ where $name(X)$ returns the name on the name tag of $X$.
 
 One obvious consequence of this axiom is that if we see two bananas on the table, $banana_1$ and $banana_2$, each having the same name in its name tag, by our axiom we would have no choice but to conclude that the two bananas are equivalent.
 
-Another detrimental consequence is that $name(A) = name(B) \Rightarrow A = B$ applies to not just bananas but **everything** in the universe (hence the <a target="_blank" href ="http://en.wikipedia.org/wiki/Universal_quantification">universal quantification, $\forall$</a> in $\forall A \, \forall B$). So if you have a tailor-made suit and a high school uniform that both have your name on it, by the axiom the tailor-made suit would be equivalent to the school uniform! But you spent almost a grand on the suit!
+Another detrimental consequence is that $name(A) = name(B) \Rightarrow A = B$ applies to not just bananas but **everything** in the universe (hence the <a target="_blank" href ="http://en.wikipedia.org/wiki/Universal_quantification">universal quantification, $\forall$</a> in $\forall A \, \forall B$). So if you have a tailor-made suit and a high school uniform that both have your name on it, by the axiom the suit would be equivalent to the school uniform! But you spent almost a grand on the suit!
 
 > This can be fixed by introducing the Universal Banana Set $U_{_{Banana}}$ that contains all bananas in the world and rewrite the axiom as
 > $$\forall A \in U_{_{Banana}} \, \forall B \in U_{_{Banana}} \, (name(A) = name(B) \Rightarrow A = B)$$

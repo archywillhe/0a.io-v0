@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Removing \"Dr.\" Manahel Thabet's Wikipedia Page and Giving Her Some Nice Google Search Results"
+title: "Removing 'Dr.' Manahel Thabet's Wikipedia Page and Giving Her Some Nice Google Search Results"
 coverPainting: "The Horse Mug, 1991, Mary Fedden"
 ---
 
@@ -10,17 +10,19 @@ A couple of weeks ago I stumbled upon the Wikipedia entry of Dr. Manahel Thabet 
 
 <a href="/img/PhonyScreenShot.png"> <img src="/img/PhonyScreenShot.png"></a>
 
-Goolging here name shows that she has really good PR. [She even has a verified twitter account with 50k followers.](https://twitter.com/manahelthabet) Oh, and an appearance on the front cover of Arabian Business!
+Goolging her name showed that she has really great PRs. She even has [a verified twitter account with 50k followers.](https://twitter.com/manahelthabet) Oh, and an appearance on the front cover of Arabian Business!
 
 <img src="/img/PhonyMagazine.jpg" style="max-width:300px">
 
-However, as anyone can see, the Wikipedia article was rather poorly written. And her achievements often sound a little bit far-fetched. Such as successfully predicting the 2008 financial crisis using a formula [as reported by Forbes Middle East](https://www.forbesmiddleeast.com/en/news/read/article/magic-numbers/articleid/465) (as of 2016 the article has been taken down, <small>[view records of it in the Internet Archive ](https://web.archive.org/web/20140512001100/https://www.forbesmiddleeast.com/en/news/read/article/magic-numbers/articleid/465)</small>) and having developed a formula to "measure distances in space in the absence of light" which had supposedly [taken the world by storm as reported by Gulfnews](http://gulfnews.com/news/uae/general/dubai-woman-s-space-formula-takes-world-by-storm-1.1024095) (as of 2016 the article has been taken down too <small>[view records of it in the Internet Archive ](https://web.archive.org/web/20150903004741/http://gulfnews.com:80/news/uae/general/dubai-woman-s-space-formula-takes-world-by-storm-1.1024095)</small>).
+<small>Image taken from [an article by a Dubai blogger later this month](https://alexofarabia.com/2015/07/26/did-arabian-business-get-hoodwinked-by-the-arab-worlds-most-intelligent-person/)</small>
 
-All claims made in the Wikipedia entry were supported by either news articles from presumably paid-to-write sources such as [arabianbusiness.com](http://web.archive.org/web/20150220000246/http://www.arabianbusiness.com/100-most-powerful-arab-women-2013-491497.html?view=profile&itemid=491330#.WxPpMlOFMWp), and even [Forbes Middle East](https://web.archive.org/web/20140512001100/https://www.forbesmiddleeast.com/en/news/read/article/magic-numbers/articleid/465) or crappy websites like [World Genius Directory](http://www.psiq.org/world_genius_directory_awards/goty2013manahelthabet.pdf), [iqsociety.org](www.iqsociety.org/win-people/manahel-thabet/) and [kauzala.com](http://www.kauzala.com/index.php?m=kauzala&s=leadership&p=dr-manahel-thabet).
+But her achievements often sounded far-fetched. She had allegedly successfully predicted the 2008 financial crisis using a formula [as reported by Forbes Middle East](https://www.forbesmiddleeast.com/en/news/read/article/magic-numbers/articleid/465) (the article has been taken down as of 2016, <small>[view records of it in the Internet Archive ](https://web.archive.org/web/20140512001100/https://www.forbesmiddleeast.com/en/news/read/article/magic-numbers/articleid/465)</small>) and developed a formula to "measure distances in space in the absence of light" which had supposedly [taken the world by storm as reported by Gulfnews](http://gulfnews.com/news/uae/general/dubai-woman-s-space-formula-takes-world-by-storm-1.1024095) (the article has too been taken down as of 2016, <small>[view records of it in the Internet Archive ](https://web.archive.org/web/20150903004741/http://gulfnews.com:80/news/uae/general/dubai-woman-s-space-formula-takes-world-by-storm-1.1024095)</small>).
+
+All claims made in the Wikipedia entry were supported by either news articles from presumably paid-to-write sources such as [arabianbusiness.com](http://web.archive.org/web/20150220000246/http://www.arabianbusiness.com/100-most-powerful-arab-women-2013-491497.html?view=profile&itemid=491330#.WxPpMlOFMWp), or crappy websites like [World Genius Directory](http://www.psiq.org/world_genius_directory_awards/goty2013manahelthabet.pdf), [iqsociety.org](www.iqsociety.org/win-people/manahel-thabet/) and [kauzala.com](http://www.kauzala.com/index.php?m=kauzala&s=leadership&p=dr-manahel-thabet).
 
 <img src="/img/sources_of_shit.png" style="max-width: 600px;">
 
-She is highly likely a fraud. And I believe the Internet should know about it. So I started off by posting a question on Skeptics StackExchange ["**Did Manahel Thabet develop a groundbreaking formula to measure distance in space without the use of light?**" ](http://skeptics.stackexchange.com/q/27566).
+I was highly skeptical about the whole thing. She felt more like a con artist. I had to consult the Internet about it, I thought. So I posted a question on Skeptics StackExchange ["**Did Manahel Thabet develop a groundbreaking formula to measure distance in space without the use of light?**" ](http://skeptics.stackexchange.com/q/27566).
 
 <a href="https://skeptics.stackexchange.com/q/27566/26092">
 <img src="/img/sse0.png">
@@ -39,11 +41,10 @@ Many people dived in deeper.
 </a>
 
 
-Internet is a wonderful place. Kudos to everyone who participated.
+Internet is a wonderful place. Kudos to everyone who participated!
 
-Case closed.
 
-> Fun fact: I just tweeted this article and mentioned her (<a href="https://twitter.com/manahelthabet">@manahelthabet</a>) in my tweet, and I think she is going to block me, similar to [what happened to the guy who asked her about the supposedly ground-breaking paper on Twitter](http://skeptics.stackexchange.com/questions/27566/did-manahel-thabet-develop-a-groundbreaking-formula-to-measure-distance-in-space#comment102663_27566).
+> Fun fact: I just tweeted this article and mentioned her (<a href="https://twitter.com/manahelthabet">@manahelthabet</a>) in the tweet. I think she is going to block me like [what happened to the guy who asked her about the supposedly ground-breaking paper on Twitter](http://skeptics.stackexchange.com/questions/27566/did-manahel-thabet-develop-a-groundbreaking-formula-to-measure-distance-in-space#comment102663_27566).
 >
 >Update: Yup, I'm blocked.
 >

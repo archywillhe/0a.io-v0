@@ -64,7 +64,7 @@ main = do
     updateMusicDir
     musicInnerDirs <- listDirectory "music-for-work"
     hakyll $ do
-        match ("archy.asc" .||. "阿奇博爾德.txt" .||. "img/*" .||. "img/*/*" .||. "fonts/*" .||. "js/*") $ do
+        match ("archy.asc" .||. "阿奇博爾德.txt" .||. "mail.txt" .||. "img/*" .||. "img/*/*" .||. "fonts/*" .||. "js/*") $ do
           route   idRoute
           compile copyFileCompiler
 

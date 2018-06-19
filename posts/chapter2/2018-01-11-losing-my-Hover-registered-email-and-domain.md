@@ -57,7 +57,13 @@ I asked him if there was any other way to prove my identity, such as using my cr
 >
 >When you obtain the affidavit, all you need to do is to send us an electronic copy, such as scanning the document, and emailing it back to me here via attaching it to the email. From there we can process it for you
 
-Nope. They appeared to be very strict about it. Kenny proceeded by giving me very elaborate information on obtaining an affidavit! This would be very useful except I had a little problem here. I explained to him that my 17 years old self didn't register the domain under my legal name. (As a Chinese passport holder growing up in Singapore I have an English name that is not a part of my legal name. My legal name is simply the pinyin romanisation of my Chinese name, while my English name is the name I go by in everyday life. The only time I'd use my legal name is when dealing with strictly legal documents or distant relatives who don't speak English.)
+Nope. They appeared to be very strict about it. Kenny proceeded by giving me more information on obtaining an affidavit! This would be very useful except I had a little problem here. I explained to him my 17 years old self didn't register the domain under my legal name<sup>1</sup>.
+
+<blockquote style="padding:40px;font-size:0.9em">
+<sup>1</sup>: As a Chinese passport holder growing up in Singapore I have an English name that is not a part of my legal name. My legal name is simply the pinyin romanisation of my Chinese name, while the English one is the name I go by in everyday life. The only time I'd use my legal name is when dealing with strictly legal documents or distant relatives who don't speak English.)
+</blockquote>
+
+Is there anyway around this?
 
 > ##### Dec 28, 11:32 EST
 >Hi Archy,
@@ -68,7 +74,11 @@ Nope. They appeared to be very strict about it. Kenny proceeded by giving me ver
 >
 > Alternatively, if you did use your real name on the Hover account, you can provide a single notarized affidavit of just your first and last name, in which case you can claim ownership of the account.
 
-Kenny then explained to me why I wouldn't be able to reclaim the ownership of my domains, emphasising that the name in the registration has to be my _real_ name. I was rather tempted to tell him that I did use my _real_ name but it just so happened to have no legal bearing yet. (Someday in the future when I become a Singapore citizen I'll be entitled to include an English name as a part of my legal name.) But I wouldn't want to get into an ontological argument with Kenny on _What is Real, really?_
+Nope. Kenny then explained to me why I wouldn't be able to reclaim the ownership of my domains, emphasising that the name in the registration has to be my _real_ name. I was rather tempted to tell him that it was indeed my _real_ name but it just so happened to have no legal bearing yet.<sup>2</sup> But I wouldn't want to get into an ontological argument with Kenny on _What is Real, really?_
+
+<blockquote style="padding:40px;font-size:0.9em">
+<sup>2</sup>: When I become a Singapore citizen in the future I'll be entitled to include an English name as part of my legal name. [The Chinese laws that forbade it](https://en.wikipedia.org/wiki/Naming_laws_in_the_People%27s_Republic_of_China) will no longer apply to me.
+</blockquote>
 
 I thanked him for the detailed break-downs and ended the conversation. Feeling defeated, I wrote a [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) script in hopes of brute-forcing my way in.
 
@@ -156,13 +166,11 @@ Nope. It did ~600 POST requests to mail.hover.com but to no avail.
 &bull; &bull; &bull;
 </p>
 
-I did the post-mortem and disabled the credit cards affiliated with my Hover account, which was the only way to turn off the auto-renewals. I wonder what will happen when these domains expire. Perhaps that is when domain merchant bots would take their chance. I doubt I would be able to re-register any of them.
+I did the post-mortem and disabled the credit cards affiliated with my Hover account, which was the only way to turn off the auto-renewals. I wonder what will happen when these domains expire. Perhaps that is when domain merchant bots would take their chances. I doubt I will be able to re-register any of them.
 
-Oh dear. My super cool email <code>a@0a.io</code> and domain <code>0a.io</code> are gone forever.
+Oh dear. My super cool email address <code>a@0a.io</code> and domain <code>0a.io</code> are gone forever. And so are <code>archy.sh</code> and <code>penfield.io</code>.
 
-On the bright side work wasn't affected by this screw-up since I hadn't been doing anything email-intensive lately. I just needed to get a new email address and update my contacts about it, and probably losing some weak ties along the way. It wasn't really that much of a loss overall.
-
-Convincing oneself the insignificance in losses often helped to alleviate the agony. Gradually we all learn that losing things is a large part of what life is about. Nonetheless, it would always take a while to get used to. At some point in time <code>0a.io</code> had become somewhat an identity to me.
+Gradually we all learn that losing things is a large part of what life is about. Nonetheless, it would always take a while to get used to. At some point in time <code>0a.io</code> had become somewhat an identity to me.
 
 While grieving over the bygone domain I recall how it has been two years since I last updated my blog. Perhaps it’s time that I start [a new one](http://zer0.degree), migrate everything to it, and get back to writing again.
 

@@ -23,6 +23,7 @@ $else$
     <div class="dark-overlay">
     </div>
 </div>
+<input type="text" value="http://zer0.degree$url$" id="currrentLink" />
  <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
      <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
      $if(filmName)$
@@ -38,7 +39,7 @@ $else$
     $if(coverPainting)$
         <img src="/img/covers/$coverPainting$.jpg"/>
           <div class="thickRaleway paintingInfoContainer">
-              <span class="hide-if-smaller-than-mobile-device-large">Featuring</span>
+              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
               <a target="_blank" href="$paintingUrl$" class="paintingInfo">
                   $paintingTitle$ ($paintingYear$)
                   by
@@ -82,4 +83,3 @@ $else$
 </h2>
 </div>
 $endif$
-<input type="text" value="http://zer0.degree$url$" id="currrentLink" />

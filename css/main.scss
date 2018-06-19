@@ -143,6 +143,12 @@ span.hide-if-smaller-than-mobile-device-large{
     max-width: 1739px;
     margin: 0 auto;
     background-color: #fff;
+    color:#333;
+}
+
+.black-body{
+    color:#ddd;
+    background-color: #000;
 }
 
 html {
@@ -159,10 +165,6 @@ html {
     @media (max-width: $mobile-device-small) {
         font-size: 13px;
     }
-}
-
-body {
-    color: #333;
 }
 
 a,
@@ -245,7 +247,7 @@ h3 {
 
 .icon-font{
     font-size: 50%; margin-left:5px;top:-1px;position:relative
-    
+
 }
 
 .cover-image {
@@ -423,7 +425,7 @@ h3 {
 .content {
     margin-top: 63px;
     font-family: 'tt-regular','Helvetica Neue',Helvetica,Arial,sans-serif;
-    color: #333;
+
     line-height: 1.45;
     font-size: 1.05em;
     @media (max-width: $mobile-device-regular) {
@@ -649,7 +651,6 @@ article{
             padding-bottom: 5px
         }
         .title{
-            color:#333;
             font-family: 'Roboto', sans-serif;
         }
         .text{
@@ -662,6 +663,13 @@ article{
                 display: block;
                 margin:14px auto;
                 max-width: 100%;
+            }
+            a {
+                img {
+                    :hover{
+                        opacity: 0.8
+                    }
+                }
             }
             ol,ul{
                 margin:0;
