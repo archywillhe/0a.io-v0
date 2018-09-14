@@ -15,23 +15,23 @@ Among the most elegant things in mathematics is the notion of axioms. It is a wa
 
 "One day your good friend Mike tells you that he has lost the precious banana his mother got him for his birthday," you continue, making sure the child does have a good friend named Mike.
 
-"Mike starts crying." You pause, and take out a banana you've prepared earlier. "You recall seeing this banana on the street just now. It must have flown out from Mike's window!"
+"Mike is really sad and he starts crying." You pause, and take out a banana you prepared earlier. "You recall seeing this banana in a dark alley just now. It must have escaped from Mike's house!"
 
-"In this alien other world bananas fly," you declare, wobbling the banana up and down in midair pretending it's a toy plane.
+"In this alien other world bananas fly," you declare, wobbling the banana up and down like how a three years old would do with a toy glider.
 
-The child stare at the banana in disbelief.
+The child stares at the banana, lost for words.
 
-"So you go back to the street and manage to catch the banana while it is asleep. And give it back to Mike. Mike has his banana back. Everyone lives happily ever after."
+"So you go back to the alley and capture the banana while it is asleep. Being a decent human being, you give it back to Mike instead of selling it in the black market. Mike has his banana back. Everyone lives happily ever after."
 
-And then you interrupt yourself, "except this is not Mike's banana. This is Jane's." You turn the banana to the other side, showing a name tag with *Jane* on it. You go on to explain that in this world everyone's banana has their name on it.
+And then you interrupt yourself, "except this is not Mike's banana. This is Jane's." You turn the banana to the other side, showing a name tag with *Jane* on it. You go on to explain that in this alien other world everyone's banana has their name on it.
 
-The cunning child then suggests to remove the name tag and put on a new one with *Mike* on it. This way Mike would have no idea this is Jane's banana and think he has gotten back the one he lost. And everyone lives happily ever after, except for Jane. But no one cares about Jane.
+The cunning child then suggests to remove the name tag and put on a new one with *Mike* on it. This way Mike would have no idea this is Jane's and think he has gotten his one back. And everyone lives happily ever after, except for Jane. But no one cares about Jane.
 
 <p style="text-align:center; font-size:1.3em">
 &bull; &bull; &bull;
 </p>
 
-Throughout a child's life there are many scenarios where the concept of equivalence is more flexible than it seems. It is really up to a person to decide what equals to what and what not. If Mike thinks that is the banana he lost, *that's it*. This corresponds very nicely to the notion of equivalence in mathematics from an axiomatic perspective. Ultimately it is all up to the axioms to decide what equal to what and what not.
+Throughout a child's life there are many scenarios where the concept of equivalence is more flexible than it seems. It is often up to one to decide what equals to what and what not. If Mike thinks that is the banana he lost, *that's it*. This corresponds very nicely to the notion of equivalence in mathematics from an axiomatic perspective. Ultimately it is all up to the axioms to decide what equal to what and what not.
 
 In plain language an axiom is a statement that is taken to be true, giving us a bottom-up process in reasoning about things. It is often expressed in a formal manner (as you'll see below) in order to remove ambiguities semantically and conceptually. That can be difficult for young children though.
 
@@ -39,8 +39,7 @@ The first baby step to embrace the notion of axioms is to accept that we always 
 
 ><sup>1</sup>: in order to do it in an **extremely** righteous manner. We are serious people.
 >
-><sup>2</sup>: Actually almost all of us humans (except for *true* nihilists) live our lives with this axiom as if it is built into our neural circuitry. Humans are strange
-
+><sup>2</sup>: Actually almost all of us humans (except for *true* nihilists) live our lives with this axiom as if it is built into our neural circuitry. Humans are strange beings.
 
 Once a child is comfortable with the concept of axioms, we can proceed to the ambiguities-ridding formalisation. With an intuitive understanding of naïve set theory, the child is ready to dissect the axiom that formalises equivalence in set theory, written in the language of first order logic:
 
@@ -79,7 +78,7 @@ $$\forall x \, (x \in A \Leftrightarrow x \in B) \, \Rightarrow A = B$$
 
 applies to everything in the universe too (a consequence of the preceding $\forall A \, \forall B$), which is to say every mathematical object in the universe would be distinguished only by the elements in them. In a universe like this (such as <a target="_blank" href ="http://www.math.uchicago.edu/~may/VIGRE/VIGRE2011/REUPapers/Lian.pdf">ZF</a>'s universe), empty set is the building block of everything.
 
-Say we have $A=\{a,b\}$ and here is an example of what $a$ and $b$ can be:
+For example we are presented with two distinct entities $a$ and $b$, these are what $a$ and $b$ can be:
 
 $$\begin{align} a &= \{\} =\varnothing \\ b &= \{\{\}\} =\{\varnothing\} \end{align}$$
 
