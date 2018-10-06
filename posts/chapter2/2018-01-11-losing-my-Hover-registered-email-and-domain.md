@@ -23,11 +23,11 @@ In order to recover my email password I would need to access my Hover account. I
 
 How many is too many? Two!
 
-This doesn't look as bad it it seems except when you have used Hover to set up both the domain and email. Now the only way to recover the Hover email was to log into the Hover account, and the only way to recover the Hover account was to log into the Hover email! What a typical deadlock situation!
+This would be no big deal except when you have used Hover to set up both your domain and email. Now the only way to recover the Hover email was to log into the Hover account, and the only way to recover the Hover account was to log into the Hover email! What a typical deadlock situation!
 
 <img src="../img/deadlock.png" style="max-width:400px">
 
-Lucky for me I had got a centralised system to contact! I wrote to help@hover.com. Tweeted to them and facebook-messaged them subsequently.
+Lucky for me I had got a centralised system to contact (unlike in a block-chain situation)! So I wrote to help@hover.com. Tweeted to them and fb-messaged them.
 
 <div style="display:table; margin:5px auto">
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hover?ref_src=twsrc%5Etfw">@hover</a> Hi there. Please get back to me asap. I need your help. My account is locked &amp; I can&#39;t access to my recovery account.</p>&mdash; Archy Wilhes 魏何 (@archywilhes) <a href="https://twitter.com/archywilhes/status/945929498201006081?ref_src=twsrc%5Etfw">December 27, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -60,10 +60,10 @@ I asked him if there was any other way to prove my identity, such as using my cr
 Nope. They appeared to be very strict about it. Kenny proceeded by giving me more information on obtaining an affidavit! This would be very useful except I had a little problem here. I explained to him my 17 years old self didn't register the domain under my legal name<sup>1</sup>.
 
 <blockquote style="padding:40px;font-size:0.9em">
-<sup>1</sup>: As a Chinese passport holder growing up in Singapore I have an English name that is not a part of my legal name. My legal name is simply the pinyin romanisation of my Chinese name, while the English one is the name I go by in everyday life. The only time I'd use my legal name is when dealing with strictly legal documents or distant relatives who don't speak English.)
+<sup>1</sup>: As a Chinese passport holder growing up in Singapore I have an English name that is not a part of my legal name. My legal name is simply the pinyin romanisation of my Chinese name, while the English one is the name I go by in everyday life. The only time I'd use my legal name is when dealing with strictly legal documents or distant relatives who don't speak English.
 </blockquote>
 
-Is there anyway around this?
+Is there any way around this?
 
 > ##### Dec 28, 11:32 EST
 >Hi Archy,

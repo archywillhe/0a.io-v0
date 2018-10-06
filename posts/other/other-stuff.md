@@ -10,4 +10,4 @@ date: 2018-01-02
 
 3. I was the lead developer & shareholder of a start-up that got into the Startup Battle in TechCrunch Disrupt London 2016. Still, just like most start-ups it ran out of its runway eventually and died.
 
-4. I speak English, Cantonese, and Mandarin fluently. But most importantly, I run [Arch Linux](https://wiki.archlinux.org/index.php/Arch_is_the_best) and [spacemacs](http://spacemacs.org/) -)
+4. I speak English, Cantonese, and Mandarin fluently. But most importantly, I use [emacs](http://spacemacs.org/) -)
