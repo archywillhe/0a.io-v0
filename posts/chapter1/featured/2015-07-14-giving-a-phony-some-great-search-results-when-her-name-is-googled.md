@@ -14,7 +14,7 @@ Goolging her name showed that she has really great PRs. She even has [a verified
 
 <img src="/img/PhonyMagazine.jpg" style="max-width:300px">
 
-<small>Image taken from [an article by a Dubai blogger later this month](https://alexofarabia.com/2015/07/26/did-arabian-business-get-hoodwinked-by-the-arab-worlds-most-intelligent-person/)</small>
+<small>Image taken from [an article by a Dubai blogger posted later this month](https://alexofarabia.com/2015/07/26/did-arabian-business-get-hoodwinked-by-the-arab-worlds-most-intelligent-person/)</small>
 
 But her achievements often sounded far-fetched. She had allegedly successfully predicted the 2008 financial crisis using a formula [as reported by Forbes Middle East](https://www.forbesmiddleeast.com/en/news/read/article/magic-numbers/articleid/465) (the article has been taken down as of 2016, <small>[view records of it in the Internet Archive ](https://web.archive.org/web/20140512001100/https://www.forbesmiddleeast.com/en/news/read/article/magic-numbers/articleid/465)</small>) and developed a formula to "measure distances in space in the absence of light" which had supposedly [taken the world by storm as reported by Gulfnews](http://gulfnews.com/news/uae/general/dubai-woman-s-space-formula-takes-world-by-storm-1.1024095) (the article has too been taken down as of 2016, <small>[view records of it in the Internet Archive ](https://web.archive.org/web/20150903004741/http://gulfnews.com:80/news/uae/general/dubai-woman-s-space-formula-takes-world-by-storm-1.1024095)</small>).
 
@@ -41,7 +41,7 @@ Many people dived in deeper.
 </a>
 
 
-Internet is a wonderful place. Kudos to everyone who participated!
+Internet is a wonderful place.
 
 
 > Fun fact: I just tweeted this article and mentioned her (<a href="https://twitter.com/manahelthabet">@manahelthabet</a>) in the tweet. I think she is going to block me like [what happened to the guy who asked her about the supposedly ground-breaking paper on Twitter](http://skeptics.stackexchange.com/questions/27566/did-manahel-thabet-develop-a-groundbreaking-formula-to-measure-distance-in-space#comment102663_27566).

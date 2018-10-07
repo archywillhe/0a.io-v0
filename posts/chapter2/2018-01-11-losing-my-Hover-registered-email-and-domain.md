@@ -1,5 +1,5 @@
 ---
-readingTime: 10min
+readingTime: 15min
 layout: post
 title: "How I Lost My Hover Registered Email & Domains"
 coverPainting: Volumi (blue), 1964, Paolo Scheggi
@@ -27,7 +27,7 @@ This would be no big deal except when you have used Hover to set up both your do
 
 <img src="../img/deadlock.png" style="max-width:400px">
 
-Lucky for me I had got a centralised system to contact (unlike in a block-chain situation)! So I wrote to help@hover.com. Tweeted to them and fb-messaged them.
+Lucky for me I had got a centralised system to contact (unlike in [a blockchain situation](https://github.com/ethereum/mist/issues/2077))! So I wrote to help@hover.com, and tried to reach out to them on fb & twitter.
 
 <div style="display:table; margin:5px auto">
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hover?ref_src=twsrc%5Etfw">@hover</a> Hi there. Please get back to me asap. I need your help. My account is locked &amp; I can&#39;t access to my recovery account.</p>&mdash; Archy Wilhes 魏何 (@archywilhes) <a href="https://twitter.com/archywilhes/status/945929498201006081?ref_src=twsrc%5Etfw">December 27, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

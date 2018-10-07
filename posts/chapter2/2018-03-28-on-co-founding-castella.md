@@ -1,5 +1,5 @@
 ---
-readingTime: 5min
+readingTime: 7min
 layout: post
 title: "On Co-founding Castella"
 coverPainting: Poppyseed Cake Glazed for Calypso, 2002, Mary Pratt

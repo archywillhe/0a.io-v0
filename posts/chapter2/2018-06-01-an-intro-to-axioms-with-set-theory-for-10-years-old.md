@@ -1,5 +1,5 @@
 ---
-readingTime: 10min
+readingTime: 20min
 layout: post
 title: "Introduction to Axioms with Set Theory for an Imaginary 10 years old"
 coverPainting: Bathyscaphe, 2001, Jacek Yerka

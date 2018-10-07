@@ -23,10 +23,6 @@ What I fear more is whether I as a school dropout, who have been staying home st
 <br><br>
 Therefore I have to be more <a href="http://www.youtube.com/watch?v=lHfjvYzr-3g">productive</a>.
 
-<div class="vid">
-<iframe width="700" height="493" src="http://www.youtube.com/embed/aQeIDhz-_eg?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-(a random video to end this article)
-<br><br><br>
+<br><br>
 
 <p style="font-size:18px; font-family: 'Times New Roman';">Tagged: digressing, quasi-tangential</p>

@@ -8,7 +8,7 @@ date: 2013-12-21
 <i>I figured out I should write an article about some compelling IQ questions modeled after items in <a href="http://en.wikipedia.org/wiki/Raven's_Progressive_Matrices">Raven's Advanced Progressive Matrices</a> and how they can be solved, before writing an article on the use of a number widely known as IQ to represent an individual's intelligence. </i><br><br>These are the four most interesting questions I came across while doing an IQ quiz on <a href="http://iqtest.dk">iqtest.dk</a>. Among the 39 questions in the quiz, they have the least intuitive solutions. Or simply put it, they are among the very few questions which I took more than 12 seconds to solve.
 
 <h3><br>Question 26</h3>
-<div class="picture in"><img style="height:450px; width:auto;"  src="{{  "q26.png" | prepend: site.fromThePast }}"></div>
+<div class="picture in"><img style="height:450px; width:auto;"  src="https://zer0.degree/img/old-blog/q26.png"></div>
 <div>
 <span class="hx"><a>Show hint</a></span>  
 <span class="s"><a>show solution<br><br></a></span>
@@ -21,7 +21,7 @@ The transformations going on are <b style="font-family:Times">the synchronous cl
 One of the things that make the solution not so intuitive is that when the two shorter line segments are at the edge (e.g. in the 3rd picture) and the rotations take place, instead of spinning 90 degrees and leaving the picture, they spin 180 degrees as if they are confined in the bounded pictorial two-dimensional world.
 </div>
 <h3 class="titlez"><br>Question 37</h3>
-<div class="picture in" ><img style="height:450px; width:auto;" src="{{  "q37.png" | prepend: site.fromThePast }}"></div>
+<div class="picture in" ><img style="height:450px; width:auto;" src="https://zer0.degree/img/old-blog/q37.png"></div>
 <div>
 <span class="hx"><a>show hint</a></span>
 <span class="s"><a>show solution<br><br></a></span>
@@ -35,7 +35,7 @@ One of the things that make the solution not so intuitive is that when the two s
 </div>
 
 <h3 class="titlez"><br>Question 36</h3>
-<div class="picture in" ><img style="height:450px; width:auto;" src="{{  "q36.png" | prepend: site.fromThePast }}"></div>
+<div class="picture in" ><img style="height:450px; width:auto;" src="https://zer0.degree/img/old-blog/q36.png"></div>
 <div>
 <span class="hx"><a>show hint</a></span>
 <span class="s"><a>show solution<br><br></a></span>
@@ -56,7 +56,7 @@ The 3 principles each row and column has to abide by are
 Therefore the answer is <b style="font-family:arial">F</b>, which has 3 sets of same-color block(s) <b style="font-family:Times"> horizontally displayed</b> with only 1 block in light grey, 2 blocks in grey, and <b style="font-family:Times">3 blocks in black dissimilar from the other pictures' in the third row and column</b>.
 </div>
 <h3 class="titlez"><br>Question 39</h3>
-<div class="picture in" ><img style="height:450px; width:auto;" src="{{  "q39.png" | prepend: site.fromThePast }}"></div>
+<div class="picture in" ><img style="height:450px; width:auto;" src="https://zer0.degree/img/old-blog/q39.png"></div>
 <div>
 <span class="hx"><a>show hint</a></span>
 <span class="s"><a>show solution<br><br></a></span>
@@ -135,7 +135,7 @@ If they exhibit similar differences, come up with principle(s) that explains thi
 <br>
 But most importantly, you have to be confident and always remember that as a human with a well-functioning brain, you are capable of solving logically constructed questions using logic. It is just a matter of time. And then just keep trying, old sport. It is this frame of mind that gets you a higher score in an IQ quiz. And succeed at anything in life.<br>
 <div class="picture">
-<img src="{{  "dick.jpg" | prepend: site.fromThePast }}">
+<img src="https://zer0.degree/img/old-blog/dick.jpg">
 </div>
 (I believe Feynman would have used a similar algorithm to solve those questions. And probably a more efficient one.)
 <br>

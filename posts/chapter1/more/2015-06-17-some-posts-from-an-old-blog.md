@@ -4,11 +4,9 @@ layout: post
 title: "Some posts from an old blog"
 ---
 
-These were some stuff I wrote roughly two years ago. At that time I was still an overly confident kid just like any other optimistic self-assured adolescents who have not seen the world or experienced anything outside of their comfort zone to realize how unrealistic the assumptions about reality upon many of their beliefs are based, preparing for his univ applications. I've changed quite a lot since then.
+These were some stuff I wrote roughly two years ago. At that time I was still an overly confident kid just like any other optimistic self-assured adolescents who have not seen the world or experienced anything outside of their comfort zone to realize how unrealistic the assumptions about reality upon many of their beliefs are based, preparing for his univ applications. I've changed quite a lot since then; I'm now an overly confident adult.
 
-I no longer write in that manner or at least that is what I incline to think.
-
-Mind you, they are pretty badly written. As a redditor would put it, "This guy is an intolerably bad writer, narcissistic and sophomoric and lacking real insights." And I agreed.
+Mind you, they were pretty badly written. As a redditor would put it, "This guy is an intolerably bad writer, narcissistic and sophomoric and lacking real insights." And I agreed.
 
 [The key here is not hard work, but interest (Jan 2014)](/old-blog/key.html)
 

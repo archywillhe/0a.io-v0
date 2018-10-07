@@ -64,10 +64,12 @@ main = do
     updateMusicDir
     musicInnerDirs <- listDirectory "music-for-work"
     hakyll $ do
-        match ("GET-REKTED.html" .||. "archy.asc" .||. "阿奇博爾德.txt" .||. "mail.txt" .||. "img/*" .||. "img/*/*" .||. "fonts/*" .||. "js/*") $ do
+        match ("archy.asc" .||. "阿奇博爾德.txt" .||. "mail.txt" .||. "img/*" .||. "img/*/*" .||. "fonts/*" .||. "js/*") $ do
           route   idRoute
           compile copyFileCompiler
-
+        match ("GET-REKTED.txt") $ do
+            route   $ setExtension "html"
+            compile  copyFileCompiler
         match "css/*.css" $ do
             route   idRoute
             compile compressCssCompiler

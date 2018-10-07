@@ -1,5 +1,5 @@
 ---
-readingTime: 10min
+readingTime: 5min
 layout: post
 title: "Oh all these recurring dreams 《梦，这些终而复始的梦》"
 coverPainting: Still Life with Grape Juice and Sandwiches, 1994, David Ligare
