@@ -12,7 +12,7 @@ Communicator. System Architect. Functional Programmer. Product Designer. Art Per
 
 Co-founder & CTO of [Castella](http://castella.art/).
 
-22 years of age. With 10 years of experience in wiring up apps and websites.
+22 years of age. With 10 years of experience in wiring up websites and apps.
 
 Singapore-based.
 

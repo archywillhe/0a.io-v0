@@ -427,7 +427,7 @@ h3 {
     font-family: 'tt-regular','Helvetica Neue',Helvetica,Arial,sans-serif;
 
     line-height: 1.45;
-    font-size: 1.05em;
+    font-size: 1.06em;
     @media (max-width: $mobile-device-regular) {
         max-width: 99%;
         margin-left: auto;
@@ -607,8 +607,11 @@ article.filmNight{
     }
 }
 article{
-    h3{
+    h3,h4,h2,h1{
         padding-bottom: 20px;
+        font-family: 'Roboto',sans-serif;
+    }
+    h5{
         font-family: 'Roboto',sans-serif;
     }
     margin: 0 auto;
@@ -654,7 +657,7 @@ article{
             font-family: 'Roboto', sans-serif;
         }
         .text{
-            font-size: 1.05em;
+            font-size: 1.06em;
             margin-top: 20px;
             p{
                 padding: 1px 0;
