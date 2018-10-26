@@ -8,11 +8,9 @@ date: 2018-01-02
 
 2. I started coding at 12. I founded my first start-up at 16 (back in 2012, after dropping out from [Catholic High School](https://en.wikipedia.org/wiki/Catholic_High_School,_Singapore)) and eight months later it died. I began freelancing & working for different start-ups since then.
 
-3. I was the lead developer & shareholder of a start-up that got into the Startup Battle in TechCrunch Disrupt London 2016. Still, just like most start-ups it ran out of its runway eventually and died.
+3. I speak English, Cantonese, and Mandarin fluently. But most importantly, I use [emacs](http://spacemacs.org/) -)
 
-4. I speak English, Cantonese, and Mandarin fluently. But most importantly, I use [emacs](http://spacemacs.org/) -)
-
-5. And lastly, here is a photo of me staring into your soul (in case you want to know how I look like because parts of your brain that can be traced back to the hunter-gathering times would love to encode my face into your memory as it is so much easier to associate a name with a face than the abstract notion of a human): 
+4. And lastly, here is a photo of me staring into your soul (in case you want to know how I look like because parts of your brain that can be traced back to the hunter-gathering times would love to encode my face into your memory as it is so much easier to associate a name with a face than the abstract notion of a human): 
 <br/>
 <br/>
 <br/>
