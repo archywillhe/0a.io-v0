@@ -11,7 +11,7 @@ import qualified Data.Text as T
 import Text.Regex
 import           Text.Pandoc.Options
 import           Network.URI                     (escapeURIString, isUnescapedInURI)
-
+import           System.FilePath               (takeBaseName, takeExtension)
 
 pandocOptions = defaultHakyllWriterOptions{ writerHTMLMathMethod = MathJax "" }
 
@@ -58,6 +58,7 @@ teaserFieldWithSeparatorNoHTML separator key snapshot = field key $ \item -> do
 
 teaserFieldNOHTEML = teaserFieldWithSeparatorNoHTML "<!--more-->"
 ---------------
+
 main :: IO ()
 main = do
     updateArtworkInfo
@@ -73,7 +74,6 @@ main = do
         match "css/*.css" $ do
             route   idRoute
             compile compressCssCompiler
-
 
         match "css/*.scss" $ do
             route   $ setExtension "css"
@@ -114,10 +114,14 @@ main = do
         create ["more-from-chapter1/index.html"] $ page "home-sub" "" "More FromChapter 1" ["2014-09-01-more-from-chapter1.html"]
         create ["artwork-info.html"] $ page "home"  "isArtworkInfo" "Artwork Info" ["2018-01-01-artwork.html"]
         createPageOfSessionsBasedOnDirectoryStructure "home" "isMusicForWork" "music-for-work" "Music For Work" musicInnerDirs
-        create ["about.html"] $ page "home-sub" "" "About Me" ["posts/other/credits.md", "posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
-        create ["about-zer0-degree.html"] $ page "home-sub" "isPhoneAbout" "About Zer0 Degree" ["posts/other/quote.md","posts/other/credits.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
+        create ["about.html"] $ page "home-sub" "" "About me" ["posts/other/credits.md", "posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
+        create ["about-0a.html"] $ page "home-sub" "isPhoneAbout" "About Zer0 Degree" ["posts/other/quote.md","posts/other/credits.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
 
         match "templates/*" $ compile templateBodyCompiler
+
+        match ( "links/*" .||. "links/*/*" .||. "links/*/*/*" ) $ do
+            route $  (gsubRoute "links/" (const ""))
+            compile $ copyFileCompiler
 
         create ["sitemap.xml"] $ do
                route   idRoute
@@ -126,14 +130,16 @@ main = do
                  c15 <- recentFirst =<< loadAll "posts/chapter1.5/*"
                  c2 <- recentFirst =<< loadAll "posts/chapter2/*"
                  old <- recentFirst =<< loadAll "posts/old-blog/*"
+                 film <- recentFirst =<< loadAll "posts/film-night/*"
                  pages <- loadAll "*.html"
-                 let everything = (return (pages ++ c1 ++ c15 ++ c2 ++ old))
+                 let everything = (return (pages ++ c1 ++ c15 ++ c2 ++ old ++ film))
                  let sitemapCtx = mconcat
                                   [ listField "entries" defaultContext everything
                                   , defaultContext
                                   ]
                  makeItem ""
                   >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
+
 
 -----
 
@@ -257,7 +263,7 @@ zipWidthIndex list = (zip list $ reverse [0..(length list)])
 
 ------------------
 
-formattingImgStr str = T.unpack $ foldl (\str (x,y) -> T.replace (T.pack x) (T.pack y) str) (T.pack str) [("_perc", "%"),("_comma",","),("_hash","#"),("Rene","René"),("Aquel","Aquél")]
+formattingImgStr str = T.unpack $ foldl (\str (x,y) -> T.replace (T.pack x) (T.pack y) str) (T.pack str) [("_perc", "%"),("_comma",","),("_hash","#"),("Rene","René"),("Aquel","Aquél"), ("Compenetracao estatica interior de uma cabeca complementarismo congenito absoluto","Compenetração estática interior de uma cabeça = complementarismo congénito absoluto (SENSIBILIDADE LITHOGRAPHICA)")]
 propagate folder dataLists dataToFile = do
     let formated = map (\dataList -> ((map formattingImgStr) . init) dataList ++ [last dataList]) dataLists
     zipWithM_ writeFile (map ((\a -> folder ++ "/" ++ a ++ ".md") . head) formated) (map dataToFile formated)

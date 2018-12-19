@@ -1,0 +1,3 @@
+window.$ = {
+    notHomePage: true
+};

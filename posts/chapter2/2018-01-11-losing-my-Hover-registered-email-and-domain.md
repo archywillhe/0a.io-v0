@@ -172,6 +172,16 @@ Oh dear. My super cool email address <code>a@0a.io</code> and domain <code>0a.io
 
 Gradually we all learn that losing things is a large part of what life is about. Nonetheless, it would always take a while to get used to. At some point in time <code>0a.io</code> had become somewhat an identity to me.
 
-While grieving over the bygone domain I recall how it has been two years since I last updated my blog. Perhaps it’s time that I start [a new one](http://zer0.degree), migrate everything to it, and get back to writing again.
+While grieving over the bygone domain I recall how it has been two years since I last updated my blog. Perhaps it’s time that I start [a new one](http://0a.io), migrate everything to it, and get back to writing again.
 
 Farewell <code>a@0a.io</code>. Farewell <code>0a.io</code>.
+
+<br/>
+
+>Update as of 27th September 2018:
+>
+>I have just regained access to my Hover account & domains & email address after countless email exchanges with the Hover support team started from back in December 2017. Sometimes perseverance does bring you somewhere in life. And thanks, Hover. This really means a lot to me.
+>
+>And as I went through my mailbox (which I now have access to) out of curiosity I saw that out of the blue I had received an email from [Daniel Gross](https://www.youtube.com/watch?v=LH1bewTg-P4) in January 2018 about a start-up idea I shared in my YC application a year ago. That is super cool man! Thanks, Daniel. Your email means a lot to me. Was a pity that I didn't know about the email back in Jan when you sent it (Likely I'd have made some different life decisions at that time). But I'm still very glad I manage to see it in the end!
+>
+> Suddenly it feels like everything is falling into place.

@@ -1,5 +1,6 @@
 ---
 maintitle: "About Archy Wilhes"
+divID: "aboutMe"
 subtitle: ""
 width: 665
 date: 2018-01-07
@@ -16,8 +17,9 @@ Co-founder & CTO of [Castella](http://castella.art/).
 
 Singapore-based.
 
+<a style="margin-right:20px" target="_blank" href="http://instagram.com/arrchyy">Instagram</a>
 <a style="margin-right:20px" target="_blank" href="http://twitter.com/archywilhes">Twitter</a>
 <a style="margin-right:20px" target="_blank" href="http://github.com/arrchyy">Github</a>
 <a style="margin-right:20px" target="_blank" href="https://stackoverflow.com/users/2041954/archy-wilhes-%E9%AD%8F%E4%BD%95">StackOverflow</a>
-<a style="margin-right:20px" target="_blank" href="http://instagram.com/arrchyy">Instagram</a>
-<a style="margin-right:20px" target="_blank" href="http://zer0.degree/mail.txt">Email</a>
+<a style="margin-right:20px" target="_blank" href="https://news.ycombinator.com/user?id=archibaldJ">HN</a>
+<a style="margin-right:20px" target="_blank" href="http://0a.io/mail.txt">Email</a>

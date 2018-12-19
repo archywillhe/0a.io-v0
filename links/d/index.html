@@ -1,0 +1,147 @@
+<div class="archywrap">
+<div class="container">
+<div class="row" style="margin-top:50px">
+<div id="keyField" class="col-xs-10">
+<input id="key" type="text" value="" placeholder="FileName-DecryptionKey" class="form-control">
+</div>
+<div class="col-xs-2">
+<a id="decrypt" class="btn btn-block btn-lg btn-primary">Decrypt</a>
+</div>
+<div id="copy" class="col-xs-2" style="display:none">
+<button id="copy-button" class="btn btn-block btn-lg btn-warning">Copy</button>
+</div>
+</div>
+<div class="dailylog notHomePage">
+<div class="archypost">
+<div class="archycontent"> <div class="articleBody" itemprop="articleBody">
+
+</div> </div>
+</div>
+</div>
+
+<pre id="code" class="decrypted prettyprint lang-scm" style="display:none"></pre>
+
+<pre class="error prettyprint lang-scm">
+<span class="errorMessage">//Enter string to continue...</span><br><br>
+_______              .__
+\   _  \ _____       |__| ____
+/  /_\  \\__  \      |  |/  _ \
+\  \_/   \/ __ \_    |  (  <_> )
+ \_____  (____  / /\ |__|\____/
+       \/     \/  \/
+</pre>
+
+</div>
+<script>
+var JsonFormatter = {
+        stringify: function (cipherParams) {
+            // create json object with ciphertext
+            var jsonObj = {
+                ct: cipherParams.ciphertext.toString(CryptoJS.enc.Base64)
+            };
+
+            // optionally add iv and salt
+            if (cipherParams.iv) {
+                jsonObj.iv = cipherParams.iv.toString();
+            }
+            if (cipherParams.salt) {
+                jsonObj.s = cipherParams.salt.toString();
+            }
+
+            // stringify json object
+            return JSON.stringify(jsonObj);
+        },
+
+        parse: function (jsonStr) {
+            // parse json string
+            var jsonObj = JSON.parse(jsonStr);
+
+            // extract ciphertext from json object, and create cipher params object
+            var cipherParams = CryptoJS.lib.CipherParams.create({
+                ciphertext: CryptoJS.enc.Base64.parse(jsonObj.ct)
+            });
+
+            // optionally extract iv and salt
+            if (jsonObj.iv) {
+                cipherParams.iv = CryptoJS.enc.Hex.parse(jsonObj.iv)
+            }
+            if (jsonObj.s) {
+                cipherParams.salt = CryptoJS.enc.Hex.parse(jsonObj.s)
+            }
+
+            return cipherParams;
+        }
+    };
+var showError = function(errorMessage){
+  $(".error").css("display","block");
+  $("#copy").css("display","none");
+  $("#keyField").addClass("col-xs-10").removeClass("col-xs-8");
+  $(".decrypted").css("display","none");
+  $(".errorMessage").html(errorMessage);
+}
+
+$("#decrypt").click(function(){
+  var key = $("#key").val().split("-");
+  if(key.length<2){
+    showError("//Ouch! Input string is not in the correct format. Unable to proceed further :'(");
+  }else{
+    $.ajax({
+        url: "encrypted/"+key[0],
+        dataType: "text",
+        success: function (string) {
+            //var a = CryptoJS.AES.encrypt(string, key[1], { format: JsonFormatter });
+            var a = CryptoJS.AES.decrypt(string, key[1], { format: JsonFormatter });
+            try{
+              a = a.toString(CryptoJS.enc.Utf8)
+            }
+            catch(err){
+              showError("//Hehehe.. File couldn't be decrypted :P");
+            }
+            if(a){
+              if(key[0]==="moessner_proof" || key[0]==="cmu_essay" || key[0]==="cornell_essay" || key[0]==="common_application" || key[0]==="application"){
+                $(".error").css("display","none");
+                $(".articleBody").html(a);
+              }else{
+              console.log(a.toString());
+              $("#copy").css("display","block");
+              $("#keyField").addClass("col-xs-8").removeClass("col-xs-10");
+              $(".error").css("display","none");
+              $(".decrypted").css("display","block");
+              $(".decrypted").html(a);
+                window.prettyPrint();
+              }
+            }
+        },
+        error: function(request, status, error){
+          if(request.status===404){
+            showError("//404 file not found :O");
+          }else{
+            showError("//Hmmmm.. something went wrong and you need to figure it out yourself :D");
+          }
+        }
+    });
+  }
+});
+</script>
+<script src="/zeroclipboard/ZeroClipboard.min.js"></script>
+<script type="text/javascript">
+  var client = new ZeroClipboard( document.getElementById("copy-button") );
+
+client.on( "ready", function( readyEvent ) {
+
+  client.on( "copy", function( event ) {
+    $("#copy-button").text("Done!");
+      var clipboard = event.clipboardData;
+      clipboard.setData( "text/plain", $(".decrypted").text());
+  } );
+} );
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+                                        tex2jax: { inlineMath: [ ["$", "$"], ["\\\\(","\\\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+                                        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+                                        messageStyle: "none"
+                });
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+

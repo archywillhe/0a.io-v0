@@ -11,4 +11,4 @@ I want to do a little experiment here. I want to see if I’m able to convince m
 
 That can be nice.
 
-> The blog series is accessible on [zer0.degree/film-night.html](/film-night.html)
+> The blog series is accessible on [0a.io/film-night.html](/film-night.html)

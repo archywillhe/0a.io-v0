@@ -16,6 +16,16 @@ _.each(document.getElementsByClassName("ArchyItem"),function(item){
     })})
 })
 
+_.each(document.getElementsByClassName("zeroDegreeLogo"), function(l){
+l.addEventListener("click",function(){
+    window.location.href = "http://0a.io"
+})
+l.addEventListener("touchstart",function(){
+    window.location.href = "http://0a.io"
+})
+
+})
+
 var zer0DLogo = document.getElementsByClassName("zeroDegreeLogo")[0]
 var zer0DLogod = zer0DLogo.querySelector(".description")
 

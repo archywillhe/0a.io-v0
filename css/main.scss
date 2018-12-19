@@ -323,19 +323,23 @@ h3 {
     .stayCool {
         position: absolute;
         bottom: 10px;
+        color:#fff;
         right: 15px;
         text-align: right;
     }
 
     .zeroDegreeLogo {
+
         position: relative;
         background-color: #fff;
         text-align: right;
-        padding: 0 26px;
+
+        width: 150px;
         font-weight: 800;
         cursor: default;
         :hover{
-            color:$lovelyPink
+            color:$lovelyPink;
+            cursor: pointer;
         }
         .description{
             position:absolute;
@@ -361,6 +365,7 @@ h3 {
         flex-direction: column;
 
         .zeroDegreeName {
+            color:#fff;
             font-weight: 800;
         }
 
@@ -443,8 +448,9 @@ h3 {
     .sessionContainer {
         margin: 0 auto;
         overflow: hidden;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         .sessionTitle {
+            padding-top:20px;
             font-family: 'Pacifico', "Arial";
             margin-bottom: 60px;
             font-size: 1.3em;
@@ -572,7 +578,7 @@ h3 {
 }
 
 .whiteOverlay {
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(0,0,0,0.3);
     position: absolute;
     left: 0;
     top: 0;

@@ -1,0 +1,13 @@
+#Fix Rewrite
+Options -Multiviews
+<IfModule mod_rewrite.c>
+   RewriteEngine on
+   RewriteBase /
+RewriteRule ^article/(.*) article.php?id=$1 [L]
+RewriteRule ^post/(.*) post.php?id=$1 [L]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.html [L]
+
+</IfModule>

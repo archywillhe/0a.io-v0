@@ -1,53 +1,59 @@
 ---
 readingTime: 8min
 layout: post
-title: "We screwed up our YC interview and here are what we learnt"
-coverPainting: No dressing up they say, 2018, Archy Wilhes
+title: "5 things we learnt from our screw-up during the YC interview."
+coverPainting: Compenetracao estatica interior de uma cabeca complementarismo congenito absoluto, 1913, Guilherme de Santa-Rita
 ---
+Updated as of 31 October 2018: Pruning.
 
 ##### 0. Prologue
 
-My co-founder Evelyn (who is also my sister) and I are extremely fortunate to be invited and chosen as the first interviewee<sup><a href="#a0">[0]</a></sup> for [YC China](https://blog.ycombinator.com/yc-china-qi-lu/) Winter 2019. And we screwed up. It is fair to say we had been a disappointment and an embarrassment. We are sorry that Qi Lu and the 4 YC partners who were there had to put up with an unpleasant surprise like this early in the morning on the first day. On the other hand we are extremely grateful to YC and everyone involved for this unique opportunity. Here are what we learnt.
+A few days ago my co-founder/sister Evelyn and I went to Beijing for an interview for [YC China](https://blog.ycombinator.com/yc-china-qi-lu/) Winter 2019. We were the first to be interviewed<sup><a href="#a0">[0]</a></sup>. Nice.
 
-##### 1. Behavioural sugar-coating ruins everything.
+And we screwed up horribly<sup><a href="#a0">[1]</a></sup>.
 
-I am one of those humans who are straightforward and speak in an unfiltered manner as I don't like wasting time [(both mine and others')](http://www.paulgraham.com/vb.html). That often means I pay less attention to the possibilities of how people may interpret my words very differently, and more on the content of my delivery. And never be able to make proper small talks (which by definition have no content). Certainly a plus for the YC Interview. Meanwhile, Evelyn is a friendly human, not always as straightforward as I am but much better at socialising. She has a natural tendency to slip away from _negativity_ and portrait reality in a _positive_ light. This tendency can sometimes over-compress details in order to manufacture _positive_ images, under-exemplify ideas deemed _negative_ with inconclusive anecdotes to prove the contrary and maintain _positiveness_, etc, basically resulting in an atmosphere of _positivity_. Useful for things like making friends and project management. Not useful for things like depicting reality accurately and project management. And definitely not useful in a YC interview.
+Here are what we've learnt.
 
-Before the interview Evelyn and I had constantly reminded ourselves to be crisp and not to sugar-coat. And yet during the interview limited to 10 minutes we had outputted only 5 minutes worth of information. Evelyn spoke at x0.75 and sugar-coated 80% of her content. At one point she misunderstood a question and got nervous and threw a sales pitch intended to excite a none-tech audience. (Yup, in front of Qi Lu and 4 YC Partners.) I watched in horror as everyone cringed. It was really bad. Like [Kellyanne Conway](https://www.youtube.com/watch?v=C-7fzHy3aG0) bad. So when I was finally given the chance to interrupt her I did everything I could to be crisp and informative and spoke at ~170 words a minute. Completely forgot that my Cantonese and Singaporean accents may further obscure the already condensed audio content. I missed some important points as well. Nonetheless I was able to speed up the conversation and I got the impressions that they liked my answers especially the brutally honest ones (though I'm not sure how much of that were true after getting rid of all the confirmation bias).
+##### 1. Don't pitch to YC (and potential shareholders) like you are pitching to a customer.
 
-Overall the interview moved at a slow rate with long-winded sugar-coating from Evelyn that was more behavioural than intentional and a little bit accelerations here and there implemented by [the Movie Zuckerberg Speech Pattern](https://www.youtube.com/watch?v=BPazh2kDdvA) from me that was more intentional than behavioural. But as a whole I didn't get to speak much (less 15% of the interview). In summary the sugar-coating was really bad, we had both missed many points in our answers, and we have certainly painted a very messy picture of what our start-up is about.
+A start-up is a human system (often founded by 2 or 3 human entities) interacting with the outside world. To a start-up, YC (and potential shareholders) are systems and entities that are looking to integrate internally. Meanwhile, customers/users are systems and entities that a start-up interacts with on a transactional basis i.e. they are a part of the outside world. When you pitch to customers you are ultimately delivering feelings to them in hopes of achieving transactional relationship that will bring value to your start-up, which is why start-ups talk about Customer Lifetime Value (CLV) like they are vampires. But when you are pitching to entities and systems that are looking to integrate internally, you are basically welcoming them to join you on a journey to build a billion dollar empire. Therefore when you pitch to these entities you should never pitch like you are pitching to your customers, and instead go one and two meta-levels up and pitch to them like you are talking to a imaginary co-founder who has amnesia.
 
-##### 2. A none-verbal communication protocol among co-founders would be useful.
+##### 2. Be careful of behavioural sugar-coating.
 
-A lot of what happened (especially the sales pitch) could have been avoided had we defined among ourselves a none-verbal communication protocol such as kicking another person's leg as a request to interrupt<sup><a href="#a1">[1]</a></sup>. Or sending a signal with secret hand gestures. Just to make sure the other co-founder who is desperate to interrupt wouldn't need to resort to waiting for the right moment (which can often take very long) or interrupting in a manner that may come across as being abrupt and rude (minus point for co-founder relationship). This protocol can also be used by the speaking person to invite the other co-founder(s) to interrupt since it is often hard to terminate when one has started babbling, as noted by Evelyn.
+Behavioural sugar-coating is the natural tendency to slip away from _negativity_ and portrait reality in a _positive_ light. This tendency can sometimes over-compress details in order to manufacture _positive_ images, under-exemplify ideas deemed _negative_ with inconclusive anecdotes to prove the contrary and maintain _positiveness_, etc, basically resulting in an atmosphere of _positivity_. Useful for things like socialising and project management. Not useful for things like depicting reality accurately and project management.
 
-It will also come in handy if each co-founder computes an elapsed time based on a confidence score before they decide to answer an interview question. This way the question would always be answered by the most confident co-founder. And a co-founder would not feel obligated to give an immediate answer when they are doubtful of their delivery.
+Behavioural sugar-coating can result in horrible time management, which is exactly the reason why one must be extremely careful with it in a YC interview which is limited to only 10 minutes. Behavioural sugar-coating can prevent one from being precise and giving a 0 or 1 answer, as it encourages beating around the bush for a middle ground in order for things to feel more _positive_ in general. Losing time aside, this risks giving off the wrong impressions and can result in borderline bullshits. Behavioural sugar-coating may be useful if [you are a certain ivy-league drop-out co-founding some blood testing start-up](https://en.wikipedia.org/wiki/Elizabeth_Holmes). But for start-ups that have actually worked hard in product design, market research, etc, and have many interesting and insightful discoveries to share, behavioural sugar-coating is downright self-mutilating. That is mainly because it would always consume a lot more time than you expect. So you would be left with less time to share with YC the awesome informative stuff (e.g. your analysis of the market and your strategy to achieve early stage sustainability based on the analysis, etc). For YC and other investors these are the stuff that will act as indicators to whether there will a return if they are to invest in you. Not the sugar-coating.<sup><a href="#a1">[2]</a></sup>
 
-##### 3. Living under the same roof keeps ideas in sync much efficiently.
+##### 3. Implement a none-verbal communication protocol among co-founders.
 
-Evelyn and I have been collaborating remotely for a while now. We met in person two days before the YC interview and I presented to her some new ideas for the product, many of which were inspired by conversations we had during previous Skype and WeChat calls. We had a good discussion and documented everything, convinced we were on the same page.
+We would have certainly performed better had we defined among ourselves a none-verbal communication protocol such as kicking another person's leg as a request to [interrupt](https://en.wikipedia.org/wiki/Interrupt)<sup><a href="#a1">[3]</a></sup>. Or sending a signal with secret hand gestures. Just to make sure the other co-founder desperate to speak wouldn't need to resort to waiting for the right moment (which often means losing more time) or interrupt in a manner that may come across as abrupt and rude (minus point for cohesion).
 
-But we weren't.
+It will also come in handy if each co-founder computes an elapsed time based on a confidence score before they decide to answer an interview question. This way the question would always be answered by the most confident co-founder. And a co-founder would not feel obligated to give an immediate answer that would often turn into babbling when they are doubtful of their delivery.
 
-During the interview it had become apparent that Evelyn was pitching the product she had been showing to our potential users and clients in the past one month. This was the product designed to test if we could achieve early-stage sustainability<sup><a href="#a2">[2]</a></sup> and it turned out we likely couldn't. So it was a failure by itself and we learnt a lot from it. What we intended to present to YC was an improved version of this product and with a different target audience. It is more scalable and can be sustainable in many ways. Our plan was to talk briefly about the old version and what we had learnt, and bring the spotlight to the new version, the main dish of the day. But when Evelyn was answering the interview questions she leaned towards the more familiar connotations she had with the product, which were those of the old. And then there came the bad time management. The behavioural sugar-coating. And the introduction to the main dish was further delayed.
+##### 4. Be aware of the cons of remote collaboration for early stage start-ups.
 
-It takes time for new ideas to instil themselves into the mind. One can be at ease with these ideas only when there is a sense of familiarity to them as these ideas get more integrated with the existing constructs in the subconscious mind. And then one can articulate these ideas with clarity and confidence in front of strangers.
+It takes time for new ideas to instil themselves into the mind. One can be at ease with these ideas only when there is a sense of familiarity to them. And then one can articulate these ideas with clarity and confidence.
 
-Living under the same roof is important for start-up at its infancy when everything is dynamic and ad hoc. The same-roof arrangement enables meetings to be effortlessly scheduled and conducted in an on-demand manner, making it much easier for each other to communicate new ideas without always bothering with formalisation, organisation and documentation. This way the co-founders are constantly enabling new ideas from each other to evolve and dissolve into their consciousness, keeping everyone's version of the ideas up-to-date and pretty much in sync (which would take a longer time over telecommunication).
+Remote collaboration can result in bad synchronisation of information and ideas among co-founders, especially for early stage start-ups when things are still dynamic and ad hoc.
 
-##### 4. Cheer up.
+In contrast to remote collaboration, working (or if possible _living_) under the same roof brings more benefits for start-ups at early stage. The same-roof arrangement enables meetings to be effortlessly scheduled and conducted in an on-demand manner, making it much easier for each other to communicate new ideas without always bothering with formalisation, organisation and documentation (which all have their pros and cons). It is the readily availability and the flexibilities of choosing when to formalise and when not, when to organise or not, etc, that make a huge difference. Readily availability can still be enforced during remote collaboration although it would require trainings. Meanwhile, these flexibilities are lost when there are structures imposed on the scheduling of meetings and the meetings themselves. And these structures will naturally arise for the sake of efficiency during remote collaboration (or when things become less ad hoc in nature e.g. after reaching product market fit).
 
-Maybe the interview didn't go as horribly as I remembered. We were just not at the right stage yet and thus the natural screw-up. We had some traction but were still uncertain about many things. We had no active users. No revenue. Only clients who signed up for free trials. And an unfinished app. And we are facing a variation of the chicken-and-egg problem where there are two types of chickens and they are in a love-hate relationship and none of them know a lot about the eggs which work in a mysterious way. We are still in the midst of figuring out how to go around this problem. Maybe by introducing a new kind of eggs and seeing how the system evolves as the market responses. A lot of uncertainty indeed.
+##### 5. Cheer up.
 
-We are still waiting for YC to get back to us, although looking at the damage we have done we are pretty sure it is a rejection and we are cool with that. We are super grateful for this whole thing because we have learnt so much from it. And after experiencing a screw-up like this which is so surrealistic in nature, Evelyn and I have become sharper and more crisp.
+In retrospect it is perhaps natural that we screwed up. This was our first time pitching to investors/accelerators after all.
 
-We will stay focus and keep shipping. And apply for YC again next year.
+We are still waiting for YC to get back to us, but we are quite sure it is a no<sup>[4]</sup>. We are just super grateful that this whole thing has happened because we have learnt so much from it. After meeting with Qi Lu and 4 YC partners in real-life and experiencing first-hand a screw-up like this - so surrealistic in nature - Evelyn and I have become sharper and more crisp.
+
+We'll stay focus and keep shipping. [It's gonna be a long trip.](https://www.youtube.com/watch?v=V5YOhcAof8I)
 
 <br>
 
-><span id="a0">[0]</span> or zeroth if you are a computer scientist -)
+><span id="a0">[0]</span> or zeroth if you are a computer scientist.
 >
-><span id="a1">[1]</span> just make sure you kick the right person's.
+><span id="a1">[1]</span> It must have been an unpleasant surprise for anyone involved. We're super sorry about that.
 >
-><span id="a2">[2]</span> this is an extremely important point we missed during the interview.
+> <span id="a2">[2]</span> Nonetheless sugar-coating plays a fundamental part in many aspects of life in the human society.
 >
+><span id="a2">[3]</span> just make sure you kick the right person's.
+>
+><span id='a3'>[4]</span> Update as of 29th Oct 2018: Just received an email from YC. Yup, rejected. Looks like we would indeed have to apply again next year.

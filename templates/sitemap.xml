@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 $for(entries)$
     <url>
-        <loc>http://zer0.degree$url$</loc>
+        <loc>https://0a.io$url$</loc>
         <changefreq>weekly</changefreq>
         $if(lastmod)$<lastmod>$lastmod$</lastmod>$endif$
         <priority>0.8</priority>

@@ -5,4 +5,6 @@ width: 665
 date: 2018-01-20
 ---
 
-The cover <a target="_blank" href="https://unsplash.com/photos/LzwNq8DVQzs">photograph</a> depicts Iceland, taken by <a target="_blank" href="https://unsplash.com/@willianjusten">Willian Justen de Vasconcellos</a>.The footer <a target="_blank" href="https://unsplash.com/photos/ynehkSV-Awc">photograph<a/> depicts Consolation Lakes, Canada, taken by <a target="_blank" href="https://unsplash.com/@mvdheuvel">Maarten van den Heuvel</a>. 
+The cover <a target="_blank" href="https://unsplash.com/photos/AmpgDR9nUy4">photograph</a> depicts Ang Mo Kio, Singapore, taken by <a target="_blank" href="https://unsplash.com/@victor_g">Victor Garcia
+</a>.The footer <a target="_blank" href="https://unsplash.com/photos/8sDsVsXZMFk">photograph<a/> depicts Fusionpolis, Singapore, taken by <a target="_blank" href="https://unsplash.com/@victor_g">Victor Garcia
+</a> as well.

@@ -10,36 +10,53 @@ date: 2018-01-02
 
 3. I speak English, Cantonese, and Mandarin fluently. But most importantly, I use [emacs](http://spacemacs.org/) -)
 
-4. And lastly, here is a photo of me staring into your soul (in case you want to know how I look like because parts of your brain that can be traced back to the hunter-gathering times would love to encode my face into your memory as it is so much easier to associate a name with a face than the abstract notion of a human): 
+4. And lastly, you can <a id="clickHereDesu" style="color:rgb(18, 129, 219);cursor:pointer" onClick="showImages()">click here</a> for a photo of me staring into your soul (in case you want to know how I look like because parts of your brain that can be traced back to the hunter-gathering times would love to encode my face into your memory as it is so much easier to associate a name with a face than the abstract notion of a human).
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<div id="images-desu" style="display:none">
 <div style="text-align:center">
-<img src="/img/me.jpg" style="width:350px;max-width:100%">
+<img src="/img/Archy Wilhes.jpg" style="width:312px;max-width:100%">
 </div>
 <br/>
 <br/>
 <br/>
-me when I was pitching to investors:
+me when I was pitching to VCs:
 <br/>
 <br/>
 <div style="text-align:center">
-<img src="/img/mee.jpg" style="width:700px;max-width:100%">
+<img src="/img/Archy Wilhes1.jpg" style="width:400px;max-width:100%">
 </div>
 <br/>
 <br/>
 <br/>
-me when I was pushing code to production to fix a really horrible bug:
+me when I was pitching to VCs again, with more light this time:
 <br/>
 <br/>
 <div style="text-align:center">
-<img src="/img/meee.jpg" style="width:400px">
+<img src="/img/Archy Wilhes1.5.jpg" style="width:400px;max-width:100%">
+</div>
+<br/>
+<br/>
+<br/>
+and me when I was pushing code to production to fix a really horrible bug:
+<br/>
+<br/>
+<div style="text-align:center">
+<img src="/img/Archy Wilhes2.jpg" style="width:400px">
 </div>
 <br/>
 <br/>
 <br/>
 Live Long and Prosper,<br/>
 Archy Wilhes
+</div>
+
+<script>
+function showImages(){
+    var a = document.getElementById("images-desu")
+    a.style.display = "block"
+    var b = document.getElementById("clickHereDesu")
+    b.style.color = "black"
+    b.style.cursor = "default"
+}
+</script>

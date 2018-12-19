@@ -14,7 +14,7 @@ coverPainting: "Untitled (Lettres), 1998, Moon Pil Shim"
 <p class="_index"></p>
 
 >
->I’ve never imagined that [writing an essay](http://zer0.degree/chapter1/calculus-explained.html) on calculus and making some animated gifs can have such a huge impact in my life.
+>I’ve never imagined that [writing an essay](http://0a.io/chapter1/calculus-explained.html) on calculus and making some animated gifs can have such a huge impact in my life.
 >
 >I left school at the age of 16 to pursue what I wanted to do in life. I had ambitious dreams. But throughout the years I learnt to be conscious of my naivety and ignorance. I understand that it is perfectly normal if it turns out that all this time I have been living in a delusional state. So far every project I started had failed. Things have not once gone as planned.
 >
