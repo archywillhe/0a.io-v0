@@ -292,3 +292,4 @@ purl "Aquél que camina delante" _  = "https://wsimag.com/art/22210-aquel-que-ca
 purl _ "Analia Saban" = "http://www.analiasabanstudio.com/index.html"
 purl "Flame Nebula" _ = "http://chandra.harvard.edu/photo/2014/flame/"
 purl title author  = "https://www.wikiart.org/en/Search/"++title++"%20"++author
+purl title "René Magritte"  = "https://www.wikiart.org/en/Search/"++title++"%20Rene Magritte"

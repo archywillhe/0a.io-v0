@@ -385,6 +385,10 @@ h3 {
     }
 }
 
+.menu-bottom {
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
 .menu,.menu-bottom {
     z-index: 1;
     position: relative;
@@ -578,7 +582,15 @@ h3 {
 }
 
 .whiteOverlay {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.45);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.whiteOverlay2 {
+    background-color: rgba(0,0,0,0.15);
     position: absolute;
     left: 0;
     top: 0;
@@ -782,6 +794,20 @@ code{
     background-color: rgba(0,0,0,0.75)
 }
 
+
+blockquote {
+    overflow: auto;
+    color: #777;
+    padding: 13px;
+    background: #f2f2f2;
+    font-size: 0.9em;
+    padding: 30px
+}
+
 #currrentLink{
 position: absolute;left:-2000px;
+}
+
+.helloo{
+    font-family: "FixedsysExcelsior"
 }

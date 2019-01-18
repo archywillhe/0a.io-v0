@@ -23,7 +23,7 @@
                 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="/css/bootstrap.4.0.0-beta3.min.css" />
 <link href="/css/ionicons.2.0.1.min.css" rel="stylesheet">
-<link href="/css/main.css?v=40" rel="stylesheet">
+<link href="/css/main.css?v=43" rel="stylesheet">
 <link href="/css/fonts.css" rel="stylesheet">
 $if(containsCode)$
 <link href="/css/highlight.css" rel="stylesheet">
@@ -77,8 +77,9 @@ $endif$
   <body>
       <div id="body-wrapper" $if(isPhoneAbout)$class="isPhoneAboutPage"$endif$><div id="body">
     <div class="cover-image">
-    <img class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/chuttersnap-436705-unsplash.jpg" />
-    <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/chuttersnap-436705-unsplash-mobile.jpg" />
+          <div class="whiteOverlay2 hide-if-smaller-than-mobile-device-large"></div>
+    <img class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/chuttersnap-1103171-unsplash.jpg" />
+    <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/chuttersnap-1103178-unsplash-mobile.jpg" />
     <div class="cover-image-text-wrapper">
     <div class="cover-image-text">
       <h1 class="zeroDegreeLogo centerFlex">
@@ -86,13 +87,13 @@ $endif$
             <a href="/">&nbsp;&nbsp;</a>
         </div>
         <div class="description show-if-smaller-than-mobile-device-large">
-            0a: Archy's Blog
+            <a href="/">0a: Archy's Blog</a>
         </div>
       </h1>
 
       <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
-      <h2 class="zeroDegreeName" style="color: #fff;">
-        0a: <a href="/about.html#aboutMe">Archy</a>'s Blog<br />
+      <h2 class="zeroDegreeName">
+        0a.io: <a href="/about.html#aboutMe">Archy</a>'s Blog<br />
         <a target="_blank" href="https://arxiv.org/search/?query=Wilhes%2C+Archy&searchtype=author&order=-announced_date_first&size=50"><i class="social-icon ion-ios-paper"></i></a>
         <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
         <a target="_blank" href="http://instagram.com/arrchyy"><i class="social-icon ion-social-instagram"></i></a>
@@ -148,11 +149,9 @@ $endif$
 </div>
 </div>
     <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
-    <h3 class="zeroDegreeName">
-      Handcrafted by <a href="/about.html">Archy Wilhes 魏何</a><br />
-      <a href="https://github.com/arrchyy/0a.io">
-          <small>vi3w_s0urce <i class="ion-beer"></i></small>
-      </a>
+    <h3 class="zeroDegreeName" style="color:#fff">
+      0a is handcrafted by <a href="/about.html">Archy</> <br />
+          <small><a href="https://github.com/arrchyy/0a.io">vi3w_s0urce <i class="ion-beer"></i></a></small>
   </h3>
     <div class="zeroDegreeDescription">
         Frontend consists of vanilla JS, CSS & HTML with <a href="https://v4-alpha.getbootstrap.com/">Bootstrap</a>  <br />

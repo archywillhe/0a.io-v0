@@ -5,6 +5,19 @@
   src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/Pacifico-Regular.woff2") format('woff2'), url("../fonts/Pacifico-Regular.ttf") format('ttf');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+@font-face {
+    font-family: 'FixedsysExcelsior';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fsex300-webfont.eot');
+    src: url('../fonts/fsex300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fsex300-webfont.woff') format('woff'),
+         url('../fonts/fsex300-webfont.ttf') format('truetype'),
+         url('../fonts/fsex300-webfont.svg#FixedsysExcelsior301Regular') format('svg');
+    -webkit-font-smoothing: aliased;
+    font-smooth: never;
+}
+
 @font-face{
   font-family:'tt-regular';src:url("../fonts/tt-regular-webfont.woff2") format("woff2"),url("../fonts/tt-regular-webfont.woff") format("woff");font-weight:normal;font-style:normal
 }

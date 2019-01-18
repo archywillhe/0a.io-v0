@@ -1,3 +1,20 @@
+_.each(document.getElementsByClassName("zeroDegreeLogo"), function(l){
+l.addEventListener("click",function(){
+    window.location.href = "http://0a.io"
+})
+l.addEventListener("touchstart",function(){
+    window.location.href = "http://0a.io"
+})
+
+})
+
+window.copyCurrentURL = function(){
+    var copyText = document.getElementById("currrentLink");
+    copyText.select();
+    document.execCommand("copy");
+}
+
+
 _.each(document.getElementsByClassName("ArchyItem"),function(item){
     var aLink = item.querySelector(".ArchyItemTitle a")
     var date = item.querySelector(".ArchyItemDate")
@@ -16,29 +33,13 @@ _.each(document.getElementsByClassName("ArchyItem"),function(item){
     })})
 })
 
-_.each(document.getElementsByClassName("zeroDegreeLogo"), function(l){
-l.addEventListener("click",function(){
-    window.location.href = "http://0a.io"
-})
-l.addEventListener("touchstart",function(){
-    window.location.href = "http://0a.io"
-})
-
-})
-
-var zer0DLogo = document.getElementsByClassName("zeroDegreeLogo")[0]
-var zer0DLogod = zer0DLogo.querySelector(".description")
-
-zer0DLogo.addEventListener("mouseover",function(){
-    zer0DLogod.classList.add("hover")
-})
-
-zer0DLogo.addEventListener("mouseout",function(){
-    zer0DLogod.classList.remove("hover")
-})
-
-window.copyCurrentURL = function(){
-    var copyText = document.getElementById("currrentLink");
-    copyText.select();
-    document.execCommand("copy");
-}
+// var zer0DLogo = document.getElementsByClassName("zeroDegreeLogo")[0]
+// var zer0DLogod = zer0DLogo.querySelector(".description")
+//
+// zer0DLogo.addEventListener("mouseover",function(){
+//     zer0DLogod.classList.add("hover")
+// })
+//
+// zer0DLogo.addEventListener("mouseout",function(){
+//     zer0DLogod.classList.remove("hover")
+// })

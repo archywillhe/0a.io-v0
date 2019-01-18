@@ -10,7 +10,7 @@ date: 2018-01-02
 
 3. I speak English, Cantonese, and Mandarin fluently. But most importantly, I use [emacs](http://spacemacs.org/) -)
 
-4. And lastly, you can <a id="clickHereDesu" style="color:rgb(18, 129, 219);cursor:pointer" onClick="showImages()">click here</a> for a photo of me staring into your soul (in case you want to know how I look like because parts of your brain that can be traced back to the hunter-gathering times would love to encode my face into your memory as it is so much easier to associate a name with a face than the abstract notion of a human).
+4. And lastly, you can <a id="clickHereDesu" style="color:rgb(18, 129, 219);cursor:pointer" onClick="showImages()">click here</a> for a photo of me staring into your soul.
 <br/>
 <br/>
 <div id="images-desu" style="display:none">
