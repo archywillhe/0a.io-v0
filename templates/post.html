@@ -60,26 +60,46 @@ $else$
         $if(filmName)$
         $else$
         <div class="info">
-            <i class="ion-calendar"></i>
             <span class="date">$date$</span>
             $if(readingTime)$
-            <i class="ion-clock"></i>
-            <span class="readingTime">$readingTime$ read</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="readingTime"  >$readingTime$ read</span>
             $endif$
+            &nbsp;&nbsp;&nbsp;&nbsp;
         </div>
         $endif$
+        <!-- <h4 class="date">
+        <span class="datee">$date$</span>
+        </h4> -->
         <h2 class="title">
             $title$
         </h2>
+        <span class="author">
+        by <a href="https://0a.io/about.html">Archy Wilhes</a>
+        </span>
         <div class="text">
             $body$
         </div>
     </div>
 </article>
-<blockquote>
-    <span class="helloo">Archy Wilhes: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this peice and/or would like to give me some suggesitons on stuff, etc! Thanks! Let's be pen pals :))</span>
+<blockquote id="scale-up-center" >
+    <span class="helloo">Archy Wilhes: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
 </blockquote>
-
+<script>
+    window.addEventListener('load', function() {
+    var toPopDOM = document.getElementById("scale-up-center")
+    toPopDOM.className = "scale-up-center"
+    var popItUp = function(e) {
+        var currentBTM = (window.scrollY+window.innerHeight)
+        var triggeringPoint =  (document.getElementsByTagName("body")[0].offsetHeight - 526)
+        if(currentBTM > triggeringPoint){
+            window.removeEventListener('scroll', popItUp)
+            toPopDOM.className = "scale-up-center scale-up-center-animates-desu"
+        }
+    }
+    window.addEventListener('scroll', popItUp)
+})
+</script>
 
 </div>
 <div>

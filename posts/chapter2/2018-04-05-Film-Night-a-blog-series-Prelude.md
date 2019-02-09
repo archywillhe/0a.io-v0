@@ -1,7 +1,7 @@
 ---
 readingTime: 3min
 layout: post
-title: "Film Night: a blog series, Prelude"
+title: "Film Night: a commentary series, Prelude"
 coverPainting: Burring Brook, XIX-XX cent., Laszlo Mednyanszky
 ---
 Have been single for half a year now, after an 18 months of craze that ended in bitter tongues. So all of a sudden I have more time than I’m used to when not on the road.

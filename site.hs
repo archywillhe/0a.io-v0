@@ -34,7 +34,7 @@ paintingInfo = makeNewContext "coverPainting" "paintingUrl" (\a -> paintingUrl (
 timedWithEspImgCtx :: Context String
 timedWithEspImgCtx =
     imgEscURLCtx `mappend`
-    dateField "date" "%d %b %Y" `mappend`
+    dateField "date" "%B %e %Y" `mappend`
     defaultContext
 
 --------------------------------------------------------------------------------
@@ -106,7 +106,7 @@ main = do
         createRowOf3Session "2018-04-04-film-night.html" "posts/film-night/*" "Film Night" "" "1001"
 
         -- create ["index.html"] $ page "home" "isTech" "Tech" ["posts/other/coming-soon.html"]
-        create ["index.html"] $ page "home" "isBlog" "Blog" ["2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
+        create ["index.html"] $ page "home" "isBlog" "" ["2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
         create ["film-night.html"] $ page "home" "isFilmNight" "Film Night" ["2018-04-04-film-night.html"]
 
         create ["chapter1/index.html"] $ page "home" "isBlog" "Chapter 1" ["2014-09-01-chapter1.html","2014-09-01-more-from-chapter1.html"]
@@ -114,8 +114,8 @@ main = do
         create ["more-from-chapter1/index.html"] $ page "home-sub" "" "More FromChapter 1" ["2014-09-01-more-from-chapter1.html"]
         create ["artwork-info.html"] $ page "home"  "isArtworkInfo" "Artwork Info" ["2018-01-01-artwork.html"]
         createPageOfSessionsBasedOnDirectoryStructure "home" "isMusicForWork" "music-for-work" "Music For Work" musicInnerDirs
-        create ["about.html"] $ page "home-sub" "" "About me" ["posts/other/credits.md", "posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
-        create ["about-0a.html"] $ page "home-sub" "isPhoneAbout" "About Zer0 Degree" ["posts/other/quote.md","posts/other/credits.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
+        create ["about.html"] $ page "home-sub" "" "About me" [ "posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
+        create ["about-0a.html"] $ page "home-sub" "isPhoneAbout" "About Zer0 Degree" ["posts/other/quote.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
 
         match "templates/*" $ compile templateBodyCompiler
 

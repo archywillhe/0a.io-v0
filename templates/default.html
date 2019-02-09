@@ -23,7 +23,7 @@
                 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="/css/bootstrap.4.0.0-beta3.min.css" />
 <link href="/css/ionicons.2.0.1.min.css" rel="stylesheet">
-<link href="/css/main.css?v=43" rel="stylesheet">
+<link href="/css/main.css?v=420" rel="stylesheet">
 <link href="/css/fonts.css" rel="stylesheet">
 $if(containsCode)$
 <link href="/css/highlight.css" rel="stylesheet">
@@ -35,7 +35,7 @@ $endif$
 $if(coverPainting)$
 <meta property="og:title" content="$if(Title)$$Title$$else$$title$$endif$" />
 $else$
-<meta property="og:title" content="the website of Archy Wilhes 魏何" />
+<meta property="og:title" content="a website about mathematics, life and stuff" />
 $endif$
 $if(imgEscURL)$
 <meta property="og:image" content="http://0a.io/img/covers/$imgEscURL$.jpg" />
@@ -47,7 +47,7 @@ $if(teaser)$
 <meta property="og:description" content="$teaser$" />
 $endif$
 
-<title> $if(Title)$$Title$$else$$title$$endif$ - 0a: Archy's Blog</title>
+<title> $if(isBlog)$$else$$if(Title)$$Title$$else$$title$$endif$ - $endif$0a.io -</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?class=UA-112409544-1"></script>
 <script>
@@ -76,10 +76,13 @@ $endif$
   </head>
   <body>
       <div id="body-wrapper" $if(isPhoneAbout)$class="isPhoneAboutPage"$endif$><div id="body">
-    <div class="cover-image">
-          <div class="whiteOverlay2 hide-if-smaller-than-mobile-device-large"></div>
-    <img class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/chuttersnap-1103171-unsplash.jpg" />
-    <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/chuttersnap-1103178-unsplash-mobile.jpg" />
+    <div class="cover-image $if(isBlog)$$else$cover-image-short$endif$">
+
+    <img class="hide-if-smaller-than-mobile-device-large" src="/img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
+    <img class="show-if-smaller-than-mobile-device-large-and-hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
+    <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/jack-mcgrath-300741-unsplash.jpg" />
+
+    <!-- <div style="" class="whiteOverlay2 hide-if-smaller-than-mobile-device-large"></div> -->
     <div class="cover-image-text-wrapper">
     <div class="cover-image-text">
       <h1 class="zeroDegreeLogo centerFlex">
@@ -87,13 +90,13 @@ $endif$
             <a href="/">&nbsp;&nbsp;</a>
         </div>
         <div class="description show-if-smaller-than-mobile-device-large">
-            <a href="/">0a: Archy's Blog</a>
+            <a href="/">0a.io</a>
         </div>
       </h1>
 
       <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
       <h2 class="zeroDegreeName">
-        0a.io: <a href="/about.html#aboutMe">Archy</a>'s Blog<br />
+        <a href="/">0a.io</a><br />
         <a target="_blank" href="https://arxiv.org/search/?query=Wilhes%2C+Archy&searchtype=author&order=-announced_date_first&size=50"><i class="social-icon ion-ios-paper"></i></a>
         <a target="_blank" href="http://twitter.com/archywilhes"><i class="social-icon ion-social-twitter"></i></a>
         <a target="_blank" href="http://instagram.com/arrchyy"><i class="social-icon ion-social-instagram"></i></a>
@@ -118,25 +121,23 @@ $endif$
   $body$
     </div>
   <div class="cover-image">
-  <img class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/chuttersnap-365423-unsplash.jpg" />
-  <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/chuttersnap-365423-unsplash-mobile.jpg" />
+  <img style="position:absolute;bottom:0" class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/irina-568205-unsplash.jpg" />
+  <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/irina-568205-unsplash-mobile.jpg" />
 
-  <div class="whiteOverlay"></div>
-  <div class="cover-image-text-wrapper">
+ <div class="cover-image-text-wrapper">
   <div class="cover-image-text">
-    <h1 class="zeroDegreeLogo centerFlex hide-if-smaller-than-mobile-device-regular-but-flex">
-        <div><a href="/">&nbsp;&nbsp;</a></div>
+    <h1 class="zeroDegreeLogo centerFlex hide-if-smaller-than-mobile-device-regular-but-flex" style="background:none">
     </h1>
     <div class="show-if-smaller-than-mobile-device-regular">
     <div class="centerFlex footer-info-block">
         <div>
         <h5 class="hide-if-smaller-than-mobile-device-small">
-            The blog of <a href="/about-0a.html">Archy Wilhes 魏何</a><br/>
-            Handcrafted by <a href="/about-0a.html">Archy Wilhes 魏何</a>
+            The site of <a href="/about-0a.html">Archy</a><br/>
+            Handcrafted by <a href="/about-0a.html">Archy</a>
         </h5>
         <h5 class="show-if-smaller-than-mobile-device-small">
-            Handcrafted by<br/>
-            <a href="/about-0a.html">Archy Wilhes 魏何</a><br/>
+            0a.io is handcrafted by<br/>
+            <a href="/about-0a.html">Archy Wilhes He</a><br/>
 
         </h5>
         <h3>
@@ -150,7 +151,7 @@ $endif$
 </div>
     <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
     <h3 class="zeroDegreeName" style="color:#fff">
-      0a is handcrafted by <a href="/about.html">Archy</> <br />
+      0a is handcrafted by <a href="/about.html">Archy</a> <br />
           <small><a href="https://github.com/arrchyy/0a.io">vi3w_s0urce <i class="ion-beer"></i></a></small>
   </h3>
     <div class="zeroDegreeDescription">
