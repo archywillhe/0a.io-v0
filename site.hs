@@ -107,7 +107,7 @@ main = do
 
         -- create ["index.html"] $ page "home" "isTech" "Tech" ["posts/other/coming-soon.html"]
         create ["index.html"] $ page "home" "isBlog" "" ["2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
-        create ["film-night.html"] $ page "home" "isFilmNight" "Film Night" ["2018-04-04-film-night.html"]
+        create ["film-night.html"] $ page "home" "isFilmNight" "Film Night" ["2018-04-04-film-night.html","posts/other/film-night.md"]
 
         create ["chapter1/index.html"] $ page "home" "isBlog" "Chapter 1" ["2014-09-01-chapter1.html","2014-09-01-more-from-chapter1.html"]
         create ["chapter2/index.html"] $ page "home" "isBlog" "Chapter 2" ["2018-01-01-chapter2.html"]

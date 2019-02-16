@@ -27,7 +27,7 @@ $else$
  <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
      <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
      $if(filmName)$
-     <a href="/film-night.html" class="menu-item">Back to Film Night</a>
+     <a href="/film-night.html" class="menu-item">Back to Films Page</a>
      $else$
      <a href="/" class="menu-item">Back to Home Page</a>
      $endif$
@@ -82,6 +82,8 @@ $else$
         </div>
     </div>
 </article>
+$if(filmName)$
+$else$
 <blockquote id="scale-up-center" >
     <span class="helloo">Archy Wilhes: Hey there! Thanks for reading! Hit me up at a@0a.io if you enjoy this piece and/or would like to give me some suggesitons on stuff, etc! Thanks! :))</span>
 </blockquote>
@@ -100,12 +102,11 @@ $else$
     window.addEventListener('scroll', popItUp)
 })
 </script>
-
+$endif$
 </div>
 <div>
   <h2 class="thickRaleway menu-bottom">
-    <a class="menu-item" href="/">Back to Home Page</a>
-    <a class="menu-item" href="/about">About me</a>
+    
 </h2>
 </div>
 $endif$

@@ -42,10 +42,19 @@ $if(imgEscURL)$
 $else$
 <meta property="og:image" content="http://0a.io/img/zer0_degree.png" />
 $endif$
-
+$if(isBlog)$
+<meta name="description" content="0a.io is a website about mathematics, life and stuff, started by Archy Wilhes in 2014.">
+$else$
+$if(isFilmNight)$
+<meta name="description" content="Film Night: a commentary series, by Archy Wilhes">
+$else$
 $if(teaser)$
 <meta property="og:description" content="$teaser$" />
+<meta name="description" content="$teaser$" />
 $endif$
+$endif$
+$endif$
+
 
 <title> $if(isBlog)$$else$$if(Title)$$Title$$else$$title$$endif$ - $endif$0a.io -</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -151,7 +160,7 @@ $endif$
 </div>
     <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
     <h3 class="zeroDegreeName" style="color:#fff">
-      0a is handcrafted by <a href="/about.html">Archy</a> <br />
+      0a.io is handcrafted by <a href="/about.html">Archy</a> <br />
           <small><a href="https://github.com/arrchyy/0a.io">vi3w_s0urce <i class="ion-beer"></i></a></small>
   </h3>
     <div class="zeroDegreeDescription">

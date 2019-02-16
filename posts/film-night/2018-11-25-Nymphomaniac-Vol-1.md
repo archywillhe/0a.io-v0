@@ -8,5 +8,5 @@ year: 2013
 ---
 
 Poetic, erotic and bohemian, Nymphomaniac Vol. 1 (written and directed by [Lars von Trier](https://en.wikipedia.org/wiki/Lars_von_Trier)) is a metaphorical analysis on sex and the human condition with many scenes of intercourses aim to spice things up a little bit in the mind of a heterosexual man.
-
+<!--more-->
 <img src="/img/nymphomaniac.png">
