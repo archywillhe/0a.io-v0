@@ -15,7 +15,7 @@ date: 2018-01-02
 <br/>
 <div id="images-desu" style="display:none">
 <div style="text-align:center">
-<img src="/img/Archy Wilhes.jpg" style="width:312px;max-width:100%">
+<img src="/img/Archy Will He.jpg" style="width:312px;max-width:100%">
 </div>
 <br/>
 <br/>
@@ -24,7 +24,7 @@ me when I was pitching to VCs:
 <br/>
 <br/>
 <div style="text-align:center">
-<img src="/img/Archy Wilhes1.jpg" style="width:400px;max-width:100%">
+<img src="/img/Archy Will He1.jpg" style="width:400px;max-width:100%">
 </div>
 <br/>
 <br/>
@@ -33,7 +33,7 @@ me when I was pitching to VCs again, with more light this time:
 <br/>
 <br/>
 <div style="text-align:center">
-<img src="/img/Archy Wilhes1.5.jpg" style="width:400px;max-width:100%">
+<img src="/img/Archy Will He1.5.jpg" style="width:400px;max-width:100%">
 </div>
 <br/>
 <br/>
@@ -42,13 +42,13 @@ and me when I was pushing code to production to fix a really horrible bug:
 <br/>
 <br/>
 <div style="text-align:center">
-<img src="/img/Archy Wilhes2.jpg" style="width:400px">
+<img src="/img/Archy Will He2.jpg" style="width:400px">
 </div>
 <br/>
 <br/>
 <br/>
 Live Long and Prosper,<br/>
-Archy Wilhes
+Archy Will He
 </div>
 
 <script>

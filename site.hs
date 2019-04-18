@@ -79,7 +79,7 @@ main = do
             route   $ setExtension "css"
             compile compressScssCompiler
 
-        match ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/*" .||. "posts/chapter1.5/*" .||. "posts/old-blog/*" .||. "posts/film-night/*") $ do
+        match ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/*" .||. "posts/chapter1.5/*" .||. "posts/old-blog/*" .||. "posts/pretentious-reviews/film/*") $ do
             route $ setExtension "html"
                 `composeRoutes` gsubRoute "(posts/|[0-9]+-[0-9]+-[0-9]+-|featured/|more/)" (const "")
             compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
@@ -103,11 +103,11 @@ main = do
         createRowOf3Session "2014-09-01-chapter1.html" "posts/chapter1/featured/*" "Chapter 1" "sep 2014 ~ nov 2015" "1001"
         createRowOf3Session "2014-09-01-more-from-chapter1.html" "posts/chapter1/more/*" "More Posts from Chapter 1" "posts that didn't make it to the home page" "1001"
         createRowOf3SessionWithoutTimeCtx "2018-01-01-artwork.html" "artwork-info/*" "Artwork Info" "" "1040"
-        createRowOf3Session "2018-04-04-film-night.html" "posts/film-night/*" "Film Night" "" "1001"
+        createRowOf3Session "2018-04-04-film.html" "posts/pretentious-reviews/film/*" "Pretentious Reviews on Movies (no spoilers!)" "" "1001"
 
         -- create ["index.html"] $ page "home" "isTech" "Tech" ["posts/other/coming-soon.html"]
         create ["index.html"] $ page "home" "isBlog" "" ["2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
-        create ["film-night.html"] $ page "home" "isFilmNight" "Film Night" ["2018-04-04-film-night.html","posts/other/film-night.md"]
+        create ["pretentious-reviews.html"] $ page "home" "isPReview" "0a: Pretentious Reviews (no spoilers!)" ["2018-04-04-film.html"]
 
         create ["chapter1/index.html"] $ page "home" "isBlog" "Chapter 1" ["2014-09-01-chapter1.html","2014-09-01-more-from-chapter1.html"]
         create ["chapter2/index.html"] $ page "home" "isBlog" "Chapter 2" ["2018-01-01-chapter2.html"]
@@ -130,7 +130,7 @@ main = do
                  c15 <- recentFirst =<< loadAll "posts/chapter1.5/*"
                  c2 <- recentFirst =<< loadAll "posts/chapter2/*"
                  old <- recentFirst =<< loadAll "posts/old-blog/*"
-                 film <- recentFirst =<< loadAll "posts/film-night/*"
+                 film <- recentFirst =<< loadAll "posts/pretentious-reviews/film/*"
                  pages <- loadAll "*.html"
                  let everything = (return (pages ++ c1 ++ c15 ++ c2 ++ old ++ film))
                  let sitemapCtx = mconcat
