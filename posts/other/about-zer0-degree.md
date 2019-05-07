@@ -4,7 +4,7 @@ subtitle: ""
 width: 665
 date: 2018-01-08
 ---
-[0a.io](http://0a.io/) is a blog about mathematics, life, comp sci, and all sorts of stuff. Started back in 2014. The current version is handcrafted in Haskell using [Hakyll](https://jaspervdj.be/hakyll/). Source code [available on Github](https://github.com/arrchyy/0a.io). Information about artworks available on [the Artwork Info page](https://0a.io/artwork-info.html).
+[0a.io](http://0a.io/) is a blog about mathematics, life, comp sci, and all sorts of stuff (such as [pretentious reviews](https://0a.io/pretentious-reviews.html), [music for work](https://0a.io/music-for-work.html)). Started back in 2014. The current version is handcrafted in Haskell using [Hakyll](https://jaspervdj.be/hakyll/). Source code [available on Github](https://github.com/archywillhe/0a.io). Information about artworks available on [the Artwork Info page](https://0a.io/artwork-info.html).
 
 <blockquote>
 *Photo Credits:
