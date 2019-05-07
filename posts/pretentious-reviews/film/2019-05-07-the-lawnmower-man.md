@@ -2,7 +2,7 @@
 readingTime: 1min
 layout: post
 title: "17th February 2019: ; (1992)"
-filmName: EternalSunshineoftheSpotlessMind
+filmName: lawnmowerman
 hideDate: true
 year: 1992
 ---
