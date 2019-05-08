@@ -115,7 +115,7 @@ main = do
         create ["artwork-info.html"] $ page "home"  "isArtworkInfo" "Artwork Info" ["2018-01-01-artwork.html"]
         createPageOfSessionsBasedOnDirectoryStructure "home" "isMusicForWork" "music-for-work" "Music For Work" musicInnerDirs
         create ["about.html"] $ page "home-sub" "" "About me" [ "posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
-        create ["about-0a.html"] $ page "home-sub" "isPhoneAbout" "About Zer0 Degree" ["posts/other/quote.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
+        create ["about-0a.html"] $ page "home-sub" "isPhoneAbout" "About 0a.io" ["posts/other/quote.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
 
         match "templates/*" $ compile templateBodyCompiler
 
