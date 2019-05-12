@@ -98,10 +98,10 @@ main = do
             compile $ pandocCompiler
                 >>= relativizeUrls
 
-        createRowOf3Session "2018-01-02-chapter2.html" "posts/chapter2/*" "Chapter 2" "jan 2018 ~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" "1001"
-        createRowOf3Session "2018-01-01-chapter1.5.html" "posts/chapter1.5/*" "Chapter 1.5" "" "1001"
-        createRowOf3Session "2014-09-01-chapter1.html" "posts/chapter1/featured/*" "Chapter 1" "sep 2014 ~ nov 2015" "1001"
-        createRowOf3Session "2014-09-01-more-from-chapter1.html" "posts/chapter1/more/*" "More Posts from Chapter 1" "posts that didn't make it to the home page" "1001"
+        createRowOf3Session "2018-01-02-chapter2.html" "posts/chapter2/*" "Chapter 1" "jan 2018 ~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" "1001"
+        createRowOf3Session "2018-01-01-chapter1.5.html" "posts/chapter1.5/*" "Chapter 0.5" "" "1001"
+        createRowOf3Session "2014-09-01-chapter1.html" "posts/chapter1/featured/*" "Chapter 0" "sep 2014 ~ nov 2015" "1001"
+        createRowOf3Session "2014-09-01-more-from-chapter1.html" "posts/chapter1/more/*" "More Posts from Chapter 0" "posts that didn't make it to the home page" "1001"
         createRowOf3SessionWithoutTimeCtx "2018-01-01-artwork.html" "artwork-info/*" "Artwork Info" "" "1040"
         createRowOf3Session "2018-04-04-film.html" "posts/pretentious-reviews/film/*" "Pretentious Reviews on Movies (no spoilers!)" "" "1001"
 
@@ -109,9 +109,9 @@ main = do
         create ["index.html"] $ page "home" "isBlog" "" ["2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
         create ["pretentious-reviews.html"] $ page "home" "isPReview" "0a: Pretentious Reviews (no spoilers!)" ["2018-04-04-film.html"]
 
-        create ["chapter1/index.html"] $ page "home" "isBlog" "Chapter 1" ["2014-09-01-chapter1.html","2014-09-01-more-from-chapter1.html"]
-        create ["chapter2/index.html"] $ page "home" "isBlog" "Chapter 2" ["2018-01-01-chapter2.html"]
-        create ["more-from-chapter1/index.html"] $ page "home-sub" "" "More FromChapter 1" ["2014-09-01-more-from-chapter1.html"]
+        create ["chapter1/index.html"] $ page "home" "isBlog" "Chapter 0" ["2014-09-01-chapter1.html","2014-09-01-more-from-chapter1.html"]
+        create ["chapter2/index.html"] $ page "home" "isBlog" "Chapter 1" ["2018-01-01-chapter2.html"]
+        create ["more-from-chapter1/index.html"] $ page "home-sub" "" "More FromChapter 0" ["2014-09-01-more-from-chapter1.html"]
         create ["artwork-info.html"] $ page "home"  "isArtworkInfo" "Artwork Info" ["2018-01-01-artwork.html"]
         createPageOfSessionsBasedOnDirectoryStructure "home" "isMusicForWork" "music-for-work" "Music For Work" musicInnerDirs
         create ["about.html"] $ page "home-sub" "" "About me" [ "posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
