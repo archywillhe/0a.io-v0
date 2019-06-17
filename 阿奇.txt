@@ -23,4 +23,4 @@
 
 (from-cardhu-to-archy)
 ;;archy
-;;阿奇博爾德
+;;阿奇

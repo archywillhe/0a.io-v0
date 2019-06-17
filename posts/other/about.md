@@ -9,7 +9,7 @@ moreStyles:
 
 Will He, Archy Will He (also: Archy Wilhes).
 
-姓何 (ｈｅ)，名阿奇 (ａｒｃｈｙ) ，字魏 (ｗｉｌｌ)。
+姓何 (ｈｅ)，名[阿奇 (ａｒｃｈｙ)](\351\230\277\345\245\207.txt") ，字魏 (ｗｉｌｌ)。
 
 Communicator. System Architect. Functional Programmer. Product Designer. Mathematician.
 
