@@ -1,5 +1,5 @@
 ---
-maintitle: "About Archy Will He"
+maintitle: "About me"
 divID: "aboutMe"
 subtitle: ""
 width: 665
@@ -7,15 +7,12 @@ date: 2018-01-07
 moreStyles:
 ---
 
-Will He, Archy Will He (also: Archy Wilhes).
+He, Archy Will He (also: Archy Wilhes, Archy Jiahao He).
 
-姓何 (ｈｅ)，名[阿奇 (ａｒｃｈｙ)](\351\230\277\345\245\207.txt") ，字魏 (ｗｉｌｌ)。
+姓何 (ｈｅ)， 字魏 (ｗｉｌｌ)， 名[家豪](https://wiki.mbalib.com/wiki/%E5%AE%B6%E8%B1%AA%E5%A8%81%E5%A3%AB%E5%BF%8C) (ｊｉａｈａｏ)， 号[阿奇 (ａｒｃｈｙ)](https://0a.io/%E9%98%BF%E5%A5%87.txt)。
 
-Communicator. System Architect. Functional Programmer. Product Designer. Mathematician.
+Creator of [The Archy Podcast / 阿奇说 ](https://archy.sh)。 Co-founder and CTO of [Castella](https://castella.art).
 
-Co-founder & CTO of [Castella](http://castella.art/).
-
-23 years of age. With 11 years of experience in wiring up websites and apps.
 
 <a style="margin-right:20px" target="_blank" href="https://arxiv.org/search/?query=Wilhes%2C+Archy&searchtype=author&order=-announced_date_first&size=50">Arxiv
 </a>
