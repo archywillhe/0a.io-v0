@@ -1,8 +1,8 @@
 ---
 title: "Wastomi"
 subtitle: "Flughand"
-customForwardUrl: "https://www.youtube.com/watch?v=ufhYfTbRSYEFlughand"
-displayImg: "https://img.youtube.com/vi/ufhYfTbRSYEFlughand/0.jpg"
+customForwardUrl: "https://www.youtube.com/watch?v=ulVvoLRTJ-0"
+displayImg: "https://img.youtube.com/vi/ulVvoLRTJ-0/0.jpg"
 date: "2018-01-03"
 newTab: true 
 ---
