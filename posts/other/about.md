@@ -7,11 +7,11 @@ date: 2018-01-07
 moreStyles:
 ---
 
-He, Archy Will He (also: Archy Wilhes, Archy Jiahao He).
+He, Archy Will He (also: Archy Wilhes, 魏何吖奇).
 
-姓何 (ｈｅ)， 字魏 (ｗｉｌｌ)， 名[家豪](https://wiki.mbalib.com/wiki/%E5%AE%B6%E8%B1%AA%E5%A8%81%E5%A3%AB%E5%BF%8C) (ｊｉａｈａｏ)， 号[吖奇 (ａｒｃｈｙ)](https://0a.io/%E9%98%BF%E5%A5%87.txt)。
+姓何 (ｈｅ)， 字魏 (ｗｉｌｌ)， 号[吖奇 (ａｒｃｈｙ)](https://0a.io/%E5%90%96%E5%A5%87.txt)。
 
-Creator of [The Archy Podcast / 吖奇说 ](https://archy.sh)。 Co-founder and CTO of [Castella](https://castella.art).
+Creator of [吖奇说 (ARCHY SHUō) ](https://archy.sh)。 Co-founder and CTO of [Castella](https://castella.art).
 
 
 <a style="margin-right:20px" target="_blank" href="https://arxiv.org/search/?query=Wilhes%2C+Archy&searchtype=author&order=-announced_date_first&size=50">Arxiv
@@ -19,5 +19,5 @@ Creator of [The Archy Podcast / 吖奇说 ](https://archy.sh)。 Co-founder and 
 <a style="margin-right:20px" target="_blank" href="http://github.com/archywillhe">Github</a>
 <a style="margin-right:20px" target="_blank" href="https://stackoverflow.com/users/2041954/archy-wilhes-%E9%AD%8F%E4%BD%95">StackOverflow</a>
 <a style="margin-right:20px" target="_blank" href="http://0a.io/mail.txt">Email</a>
-<a style="margin-right:20px" target="_blank" href="http://twitter.com/archyshuo">Twitter</a>
-<a style="margin-right:20px" target="_blank" href="http://instagram.com/arrchyy">Instagram</a>
+<a style="margin-right:20px" target="_blank" href="http://twitter.com/archyisnotdead">Twitter</a>
+<a style="margin-right:20px" target="_blank" href="http://instagram.com/n0tdrunk">Instagram</a>

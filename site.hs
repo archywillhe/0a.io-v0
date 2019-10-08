@@ -59,13 +59,15 @@ teaserFieldWithSeparatorNoHTML separator key snapshot = field key $ \item -> do
 teaserFieldNOHTEML = teaserFieldWithSeparatorNoHTML "<!--more-->"
 ---------------
 
+allPosts = ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/featured/*" .||. "posts/chapter2/more/*" .||. "posts/chapter1.5/*" .||. "posts/old-blog/*" .||. "posts/pretentious-reviews/film/*")
+
 main :: IO ()
 main = do
     updateArtworkInfo
     updateMusicDir
     musicInnerDirs <- listDirectory "music-for-work"
     hakyll $ do
-        match ("archy.asc" .||. "阿奇.txt" .||. "mail.txt" .||. "img/*" .||. "img/*/*" .||. "fonts/*" .||. "js/*") $ do
+        match ("archy.asc" .||. "吖奇.txt" .||. "mail.txt" .||. "img/*" .||. "img/*/*" .||. "fonts/*" .||. "js/*") $ do
           route   idRoute
           compile copyFileCompiler
         match ("GET-REKTED.txt") $ do
@@ -79,7 +81,7 @@ main = do
             route   $ setExtension "css"
             compile compressScssCompiler
 
-        match ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/featured/*" .||. "posts/chapter2/more/*" .||. "posts/chapter1.5/*" .||. "posts/old-blog/*" .||. "posts/pretentious-reviews/film/*") $ do
+        match allPosts $ do
             route $ setExtension "html"
                 `composeRoutes` gsubRoute "(posts/|[0-9]+-[0-9]+-[0-9]+-|featured/|more/)" (const "")
             compile $ pandocCompilerWith defaultHakyllReaderOptions pandocOptions
@@ -98,13 +100,13 @@ main = do
             compile $ pandocCompiler
                 >>= relativizeUrls
 
-        createRowOf3Session "2018-01-02-chapter2.html" "posts/chapter2/featured/*" "Chapter 1" "jan 2018 ~ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" "1001"
+        createRowOf3Session "2018-01-02-chapter2.html" "posts/chapter2/featured/*" "Chapter 1" "jan 2018 ~ oct 2019" "1001"
         createRowOf3Session "2018-01-01-chapter1.5.html" "posts/chapter1.5/*" "Chapter 0.5" "" "1001"
         createRowOf3Session "2014-09-01-chapter1.html" "posts/chapter1/featured/*" "Chapter 0" "sep 2014 ~ nov 2015" "1001"
         createRowOf3Session "2014-09-01-more-from-chapter0.html" "posts/chapter1/more/*" "More from Chapter 0" "those that didn't make it to the home page" "1001"
         createRowOf3Session "2019-08-01-more-from-chapter1.html" "posts/chapter2/more/*" "More from Chapter 1" "those that didn't make it to the home page" "1001"
         createRowOf3SessionWithoutTimeCtx "2018-01-01-artwork.html" "artwork-info/*" "Artwork Info" "" "1040"
-        createRowOf3Session "2018-04-04-film.html" "posts/pretentious-reviews/film/*" "Pretentious Reviews on Movies (no spoilers!)" "" "1001"
+        createRowOf3Session "2018-04-04-film.html" "posts/pretentious-reviews/film/*" "Pretentious Reviews (no spoilers!)" "" "1001"
 
         -- create ["index.html"] $ page "home" "isTech" "Tech" ["posts/other/coming-soon.html"]
         create ["index.html"] $ page "home" "isBlog" "" ["2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
@@ -141,6 +143,22 @@ main = do
                                   ]
                  makeItem ""
                   >>= loadAndApplyTemplate "templates/sitemap.xml" sitemapCtx
+
+        create ["atom.xml"] $ do
+              route idRoute
+              compile $ do
+                  let feedCtx = (paintingInfo `mappend` timedWithEspImgCtx) `mappend` bodyField "description"
+                  posts <- fmap (take 10) . recentFirst =<<
+                      loadAllSnapshots allPosts "content"
+                  renderAtom myFeedConfiguration feedCtx posts
+        create ["rss.xml", "feed.xml"] $ do
+              route idRoute
+              compile $ do
+                  let feedCtx = (paintingInfo `mappend` timedWithEspImgCtx) `mappend` bodyField "description"
+                  posts <- fmap (take 10) . recentFirst =<<
+                      loadAllSnapshots allPosts "content"
+                  renderRss myFeedConfiguration feedCtx posts
+
 
 
 -----
@@ -282,6 +300,15 @@ empty dir = do
     putStr ("Emptying directory " ++ dir ++"\n")
 
 paintingUrl = purl
+
+myFeedConfiguration :: FeedConfiguration
+myFeedConfiguration = FeedConfiguration
+    { feedTitle       = "0a.io"
+    , feedDescription = "latest on 0a.io"
+    , feedAuthorName  = "Archy Will He"
+    , feedAuthorEmail = "a@0a.io"
+    , feedRoot        = "https://0a.io"
+    }
 
 purl :: String -> String -> String
 purl _ "Mary Pratt" = "http://thechronicleherald.ca/heraldmagazine/1254755-the-life-and-art-of-painter-mary-pratt"

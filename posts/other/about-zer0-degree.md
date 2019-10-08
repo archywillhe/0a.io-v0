@@ -4,9 +4,9 @@ subtitle: ""
 width: 665
 date: 2018-01-08
 ---
-[0a.io](http://0a.io/) is a blog about life and stuff. Started in 2014.
+[0a.io](http://0a.io/) is a blog. Started in 2014.
 
-Info on artworks featured is available on [the Artwork Info page](https://0a.io/artwork-info.html).
+Info on artworks featured is available on [the Artwork Info page](https://0a.io/artwork-info.html). Music I listened to during work available on [the Music for Work page](https://0a.io/music-for-work.html).
 
 The current version is handcrafted in Haskell using [Hakyll](https://jaspervdj.be/hakyll/). Source code [available on Github](https://github.com/archywillhe/0a.io).
 
