@@ -1,5 +1,5 @@
 ---
-readingTime: 5min
+readingTime: 3min
 layout: post
 title: "New Year's Resolution"
 coverPainting: Untitled from 9x5 Konkret Portfolio, 1973, Ludwig Wilding

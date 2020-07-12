@@ -456,6 +456,19 @@ h2{
     margin-top: 63px;
     font-family: 'tt-regular','Helvetica Neue',Helvetica,Arial,sans-serif;
 
+    @media (max-width: $mobile-device-regular) {
+        max-width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (max-width: $mobile-device-regular) {
+      margin-top:40px
+    }
+
+    @media (max-width: $mobile-device-small) {
+      margin-top:20px
+    }
+    
     line-height: 1.45;
     font-size: 1.06em;
     @media (max-width: $mobile-device-regular) {

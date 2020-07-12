@@ -18,8 +18,8 @@ Perhaps the word _meaning_ is as empty as emptiness is.
 <br>
 <br>
 
-感觉好像很多事情都看透了，<br>
-然而自己還是好不成熟。
+感觉好像很多事情都看清了，<br>
+然而好像還是很迷茫。
 
 已经没法回去了，<br>
 起碼終於意識到。

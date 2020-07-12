@@ -43,7 +43,7 @@ $else$
 <meta property="og:image" content="http://0a.io/img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
 $endif$
 $if(isBlog)$
-<meta name="description" content="0a.io is a blog about mathematics, life and stuff.">
+<meta name="description" content="0a.io is a blog.">
 $else$
 $if(isPReview)$
 <meta name="description" content="Pretentous Review: a commentary series">
@@ -99,17 +99,20 @@ $endif$
             <a href="/">&nbsp;&nbsp;</a>
         </div>
         <div class="description show-if-smaller-than-mobile-device-large">
-            <a href="/">0a.io</a>$if(isPReview)$<a href="/pretentious-reviews.html">: Pretentious Reviews</a>$endif$
+            <!-- <a href="/">0a.io</a>$if(isPReview)$<a href="/pretentious-reviews.html">: Pretentious Reviews</a>$endif$ -->
         </div>
       </h1>
 
       <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
       <h2 class="zeroDegreeName">
-        <a href="/">0a.io</a>$if(isPReview)$<a href="/pretentious-reviews.html">: Pretentious Reviews</a>$endif$$if(isMusicForWork)$<a href="/music-for-work.html">: Music for Work</a>$endif$$if(isArtworkInfo)$<a href="/artwork-info.html">: Artwork Info</a>$endif$<br />
+        <a href="/">0a.io</a>
+        <!-- $if(isPReview)$<a href="/pretentious-reviews.html">: Pretentious Reviews</a>$endif$ -->
+        $if(isMusicForWork)$<a href="/music-for-work.html">: Music for Work</a>$endif$$if(isArtworkInfo)$<a href="/artwork-info.html">: Artwork Info</a>$endif$<br />
         <!-- <a target="_blank" href="https://arxiv.org/search/?query=Wilhes%2C+Archy&searchtype=author&order=-announced_date_first&size=50"><i class="social-icon ion-ios-paper"></i></a> -->
-
-        <a target="_blank" href="https://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
-        <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+          <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+        <a target="_blank" href="https://archy.sh/about.html"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+          <!-- <a target="_blank" href="https://twitter.com/archywillhe"><i class="social-icon ion-social-twitter"></i></a> -->
+        <!-- <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a> -->
         <a href="/about.html"><small style="font-size: 50%; margin-left:5px;top:-1px;position:relative">ABOUT</small></a>
       </h2>
       <div class="zeroDegreeDescription"> <br/> </div>
@@ -149,17 +152,18 @@ $endif$
 
         </h5>
         <h3>
-
-            <a target="_blank" href="http://archy.sh"><i class="social-icon ion-erlenmeyer-flask"></i></a>
               <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+            <a target="_blank" href="https://archy.sh/about.html"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+
+
         </h3>
         </div>
 </div>
 </div>
     <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
     <h3 class="zeroDegreeName" style="color:#fff">
-      0a.io: handcrafted by <a href="/about.html">Archy</a> <br />
-          <small><a href="https://github.com/archywillhe/0a.io">vi3w_s0urce <i class="ion-beer"></i></a></small>
+      0a.io: _ <br />
+          <small><a href="https://github.com/archywillhe/0a.io">vi3w_s0urce (Haskell on Hakyll) <i class="ion-beer"></i></a></small>
   </h3>
     <div class="zeroDegreeDescription">
           <br>

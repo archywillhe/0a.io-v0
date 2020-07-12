@@ -42,7 +42,7 @@ In contrast to remote collaboration, working (or if possible _living_) under the
 
 In retrospect it is perhaps natural that we screwed up. This was our first time pitching to investors/accelerators after all.
 
-We are still waiting for YC to get back to us, but we are quite sure it is a no<sup>[4]</sup>. We are just super grateful that this whole thing has happened because we have learnt so much from it. After meeting with Qi Lu and 4 YC partners in real-life and experiencing first-hand a screw-up like this so surrealistic in nature.
+We are still waiting for YC to get back to us, but we are quite sure it is a no<sup>[4]</sup>. We are just super grateful that this whole thing has happened because we have learnt so much from it. After meeting with Qi Lu and 4 YC partners in real-life and experiencing first-hand a screw-up like this is very surrealistic in nature.
 
 We'll stay focus and keep shipping. [It's gonna be a long trip.](https://www.youtube.com/watch?v=V5YOhcAof8I)
 
@@ -50,7 +50,7 @@ We'll stay focus and keep shipping. [It's gonna be a long trip.](https://www.you
 
 ><span id="a0">[0]</span> or zeroth if you are a computer scientist.
 >
-><span id="a1">[1]</span> It must have been an unpleasant surprise for anyone involved. We're super sorry about that.
+><span id="a1">[1]</span> It must have been an unpleasant surprise for anyone involved. We're deeply sorry about that.
 >
 >
 ><span id="a2">[3]</span> just make sure you kick the right person's.

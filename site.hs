@@ -59,7 +59,7 @@ teaserFieldWithSeparatorNoHTML separator key snapshot = field key $ \item -> do
 teaserFieldNOHTEML = teaserFieldWithSeparatorNoHTML "<!--more-->"
 ---------------
 
-allPosts = ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/featured/*" .||. "posts/chapter2/more/*" .||. "posts/chapter1.5/*" .||. "posts/old-blog/*" .||. "posts/pretentious-reviews/film/*")
+allPosts = ("posts/chapter1/featured/*" .||. "posts/chapter1/more/*" .||. "posts/chapter2/featured/*" .||. "posts/chapter2/more/*" .||.  "posts/chapter3/*" .||. "posts/chapter1.5/*" .||. "posts/old-blog/*" .||. "posts/pretentious-reviews/film/*")
 
 main :: IO ()
 main = do
@@ -100,6 +100,7 @@ main = do
             compile $ pandocCompiler
                 >>= relativizeUrls
 
+        createRowOf3Session "2020-07-04-chapter3.html" "posts/chapter3/*" "Chapter 2" "jul 2020 ~ &nbsp;&nbsp;&nbsp;" "1001"
         createRowOf3Session "2018-01-02-chapter2.html" "posts/chapter2/featured/*" "Chapter 1" "jan 2018 ~ oct 2019" "1001"
         createRowOf3Session "2018-01-01-chapter1.5.html" "posts/chapter1.5/*" "Chapter 0.5" "" "1001"
         createRowOf3Session "2014-09-01-chapter1.html" "posts/chapter1/featured/*" "Chapter 0" "sep 2014 ~ nov 2015" "1001"
@@ -109,7 +110,8 @@ main = do
         createRowOf3Session "2018-04-04-film.html" "posts/pretentious-reviews/film/*" "Pretentious Reviews (no spoilers!)" "" "1001"
 
         -- create ["index.html"] $ page "home" "isTech" "Tech" ["posts/other/coming-soon.html"]
-        create ["index.html"] $ page "home" "isBlog" "" ["2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
+        create ["index.html"] $ page "home" "isBlog" "" ["2020-07-04-chapter3.html","2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
+        -- create ["index.html"] $ page "home" "isBlog" "" ["2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
         create ["pretentious-reviews.html"] $ page "home" "isPReview" "0a: Pretentious Reviews (no spoilers!)" ["2018-04-04-film.html"]
 
         create ["chapter1/index.html"] $ page "home" "isBlog" "Chapter 0" ["2014-09-01-chapter1.html","2014-09-01-more-from-chapter1.html"]
