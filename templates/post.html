@@ -8,14 +8,14 @@ $else$
     $if(filmName)$
     <img src="/img/covers/Burring Brook, XIX-XX cent., Laszlo Mednyanszky.jpg"/>
     $else$
+    $if(coverImg)$
+        <img src="$coverImg$"/>
+    $else$
     $if(coverPainting)$
         <img src="/img/covers/$coverPainting$.jpg"/>
     $else$
     $if(filmName)$
         <img src="/img/films/$filmName$.jpg"/>
-    $else$
-    $if(coverImg)$    
-        <img src="$coverImg$"/>
     $endif$
     $endif$
     $endif$
@@ -36,6 +36,9 @@ $else$
 <div class="container content">
 <article style="$if(width)$max-width:$width$px;$endif$ $if(isPReview)$filmNight$endif$">
     <div class="coverPainting">
+      $if(coverImg)$
+      <img src="$coverImg$"/>
+      $else$
     $if(coverPainting)$
         <img src="/img/covers/$coverPainting$.jpg"/>
           <div class="thickRaleway paintingInfoContainer">
@@ -49,12 +52,10 @@ $else$
     $else$
     $if(filmName)$
         <img src="/img/films/$filmName$.jpg"/>
-    $else$
-    $if(coverImg)$
-        <img src="$coverImg$"/>
     $endif$
     $endif$
     $endif$
+
     </div>
     <div class="everythingElse">
         $if(filmName)$
@@ -74,7 +75,7 @@ $else$
         <h2 class="title">
             $title$
         </h2>
-        <span class="author">
+        <span class="author" style="display:none">
         by <a href="https://0a.io/about">Archy Will He 何魏奇</a>
         </span>
         <div class="text">

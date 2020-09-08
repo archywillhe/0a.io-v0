@@ -8,13 +8,18 @@
     $if(newTab)$ target="_blank" $endif$
   >
   $endif$
+    $if(coverImg)$
+    <img class="ArchyItemImg" src="$coverImg$"/>
+    $else$
      $if(coverPainting)$
      <img class="ArchyItemImg" src="/img/covers/$coverPainting$.jpg"/>
      $else$
      $if(filmName)$
      <img class="ArchyItemImg" src="/img/films/$filmName$.jpg"/>
      $else$
+
      <img class="ArchyItemImg" src="$displayImg$"/>
+     $endif$
      $endif$
      $endif$
      $if(noURL)$
