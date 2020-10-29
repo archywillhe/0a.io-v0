@@ -1,89 +1,93 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-                <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
-                <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
-                <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
-                <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
-                <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
-                <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
-                <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
-                <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
-                <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
-                <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicons/android-icon-192x192.png">
-                <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
-                <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
-                <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
-                <link rel="manifest" href="/img/favicons/manifest.json">
-                 <meta name="author" content="archywillhe">
-                 <meta name="keywords" content="archywillhe, 0a">
-                <meta name="msapplication-TileColor" content="#ffffff">
-                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-                <meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="/css/bootstrap.4.0.0-beta3.min.css" />
-<link href="/css/ionicons.2.0.1.min.css" rel="stylesheet">
-<link href="/css/main.css?v=420" rel="stylesheet">
-<link href="/css/fonts.css" rel="stylesheet">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicons/manifest.json">
+  <meta name="author" content="archywillhe">
+  <meta name="keywords" content="archywillhe, 0a">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="/css/bootstrap.4.0.0-beta3.min.css" />
+  <link href="/css/ionicons.2.0.1.min.css" rel="stylesheet">
+  <link href="/css/main.css?v=420" rel="stylesheet">
+  <link href="/css/fonts.css" rel="stylesheet">
 
 
 
 
-$if(containsCode)$
-<link href="/css/highlight.css" rel="stylesheet">
-$endif$
-<meta property="og:url" content="http://0a.io/$url$" />
-$if(coverPainting)$
-<meta property="og:type" content="article" />
-$endif$
-$if(coverPainting)$
-<meta property="og:title" content="$if(Title)$$Title$$else$$title$$endif$" />
+  $if(containsCode)$
+  <link href="/css/highlight.css" rel="stylesheet">
+  $endif$
+  <meta property="og:url" content="http://0a.io/$url$" />
+  $if(coverPainting)$
+  <meta property="og:type" content="article" />
+  $endif$
+  $if(coverPainting)$
+  <meta property="og:title" content="$if(Title)$$Title$$else$$title$$endif$" />
 
-<!-- <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@archy_SH">
+  <!-- <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Al2CHY">
 <meta name="twitter:creator" content="@ArchyWillHe">
 <meta name="twitter:title" content="">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content=""> -->
 
 
-$else$
-<meta property="og:title" content="a blog about mathematics, life and stuff" />
-$endif$
-$if(imgEscURL)$
-<meta property="og:image" content="http://0a.io/img/covers/$imgEscURL$.jpg" />
-$else$
-<meta property="og:image" content="http://0a.io/img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
-$endif$
-$if(isBlog)$
-<meta name="description" content="0a.io is a blog.">
-$else$
-$if(isPReview)$
-<meta name="description" content="Pretentous Review: a commentary series">
-$else$
-$if(teaser)$
-<meta property="og:description" content="$teaser$" />
-<meta name="description" content="$teaser$" />
-$endif$
-$endif$
-$endif$
+  $else$
+  <meta property="og:title" content="a blog about mathematics, life and stuff" />
+  $endif$
+  $if(imgEscURL)$
+  <meta property="og:image" content="http://0a.io/img/covers/$imgEscURL$.jpg" />
+  $else$
+  <meta property="og:image" content="http://0a.io/img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
+  $endif$
+  $if(isBlog)$
+  <meta name="description" content="0a.io is a blog.">
+  $else$
+  $if(isPReview)$
+  <meta name="description" content="Pretentous Review: a commentary series">
+  $else$
+  $if(teaser)$
+  <meta property="og:description" content="$teaser$" />
+  <meta name="description" content="$teaser$" />
+  $endif$
+  $endif$
+  $endif$
 
 
-<title> $if(isBlog)$$else$$if(Title)$$Title$$else$$title$$endif$ - $endif$0a.io -</title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?class=UA-112409544-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <title> $if(isBlog)$$else$$if(Title)$$Title$$else$$title$$endif$ - $endif$0a.io -</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?class=UA-112409544-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-112409544-1');
-</script>
-$if(containsMaths)$
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112409544-1');
+  </script>
+  $if(containsMaths)$
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
     jax: ["input/TeX", "output/HTML-CSS"],
     tex2jax: {
       inlineMath: [ ['$$','$$'], ["\\(","\\)"] ],
@@ -93,122 +97,124 @@ $if(containsMaths)$
     "HTML-CSS": { availableFonts: ["TeX"], minScaleAdjust: 100}
   });
 </script>
-<script type="text/javascript"
-   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-$endif$
-  </head>
-  <body>
-      <div id="body-wrapper" $if(isPhoneAbout)$class="isPhoneAboutPage"$endif$><div id="body">
-    <div class="cover-image $if(isBlog)$$else$cover-image-short$endif$">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  $endif$
+</head>
 
-    <img class="hide-if-smaller-than-mobile-device-large" src="/img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
-    <img class="show-if-smaller-than-mobile-device-large-and-hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
-    <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/ian-espinosa-311604-unsplash-mobile.jpg" />
+<body>
+  <div id="body-wrapper" $if(isPhoneAbout)$class="isPhoneAboutPage" $endif$>
+    <div id="body">
+      <div class="cover-image $if(isBlog)$$else$cover-image-short$endif$">
 
-    <!-- <div style="" class="whiteOverlay2 hide-if-smaller-than-mobile-device-large"></div> -->
-    <div class="cover-image-text-wrapper">
-    <div class="cover-image-text">
-      <h1 class="zeroDegreeLogo centerFlex">
-        <div>
-            <a href="/">&nbsp;&nbsp;</a>
+        <img class="hide-if-smaller-than-mobile-device-large" src="/img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
+        <img class="show-if-smaller-than-mobile-device-large-and-hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/ian-espinosa-311604-unsplash.jpg" />
+        <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/ian-espinosa-311604-unsplash-mobile.jpg" />
+
+        <!-- <div style="" class="whiteOverlay2 hide-if-smaller-than-mobile-device-large"></div> -->
+        <div class="cover-image-text-wrapper">
+          <div class="cover-image-text">
+            <h1 class="zeroDegreeLogo centerFlex">
+              <div>
+                <a href="/">&nbsp;&nbsp;</a>
+              </div>
+              <div class="description show-if-smaller-than-mobile-device-large">
+                <!-- <a href="/">0a.io</a>$if(isPReview)$<a href="/pretentious-reviews.html">: Pretentious Reviews</a>$endif$ -->
+              </div>
+            </h1>
+
+            <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
+              <h2 class="zeroDegreeName">
+                <a href="/">0a.io</a>
+                <!-- $if(isPReview)$<a href="/pretentious-reviews.html">: Pretentious Reviews</a>$endif$ -->
+                $if(isMusicForWork)$<a href="/music-for-work.html">: Music for Work</a>$endif$$if(isArtworkInfo)$<a href="/artwork-info.html">: Artwork Info</a>$endif$
+                <br />
+                <a target="_blank" href="https://lo.fish"><i style="margin-right:1px;" class="social-icon ion-erlenmeyer-flask"></i></a>
+                <a target="_blank" href="https://mailing-list.xn--nqr.xn--fiqs8s/0a.io"><i class="social-icon ion-social-rss"></i></a>
+                <!-- <a target="_blank" href="https://arxiv.org/search/?query=Wilhes%2C+Archy&searchtype=author&order=-announced_date_first&size=50"><i class="social-icon ion-ios-paper"></i></a> -->
+                <!-- <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a> -->
+                <!-- <a target="_blank" href="https://twitter.com/archywillhe"><i class="social-icon ion-social-twitter"></i></a> -->
+                <!-- <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a> -->
+                <a href="/about.html"><small style="font-size: 50%; margin-left:3px;top:-1px;position:relative">ABOUT</small></a>
+              </h2>
+              <div class="zeroDegreeDescription"> <br /> </div>
+            </div>
+          </div>
+          <h2 class="stayCool thickRaleway hide-if-smaller-than-mobile-device-large">
+
+          </h2>
+          <h3 class="stayCool thickRaleway show-iff-mobile-device-large">
+            <a href="/about.html">About</a>
+            <span style="font-size:1.5em;margin-left:10px">
+              <a target="_blank" href="https://mailing-list.xn--nqr.xn--fiqs8s/0a.io"><i class="social-icon ion-social-rss"></i></a>
+            </span>
+          </h3>
+          <h2 class="stayCool thickRaleway show-if-smaller-than-mobile-device-medium">
+            <a href="/about-0a.html">About</a>
+            <span style="font-size:1.5em;margin-left:10px">
+              <a target="_blank" href="https://mailing-list.xn--nqr.xn--fiqs8s/0a.io"><i class="social-icon ion-social-rss"></i></a>
+            </span>
+          </h2>
         </div>
-        <div class="description show-if-smaller-than-mobile-device-large">
-            <!-- <a href="/">0a.io</a>$if(isPReview)$<a href="/pretentious-reviews.html">: Pretentious Reviews</a>$endif$ -->
-        </div>
-      </h1>
-
-      <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-large-but-flex" style="margin-left:20px">
-      <h2 class="zeroDegreeName">
-        <a href="/">0a.io</a>
-        <!-- $if(isPReview)$<a href="/pretentious-reviews.html">: Pretentious Reviews</a>$endif$ -->
-        $if(isMusicForWork)$<a href="/music-for-work.html">: Music for Work</a>$endif$$if(isArtworkInfo)$<a href="/artwork-info.html">: Artwork Info</a>$endif$
-        <br />
-        <a target="_blank" href="https://lo.fish"><i style="margin-right:1px;" class="social-icon ion-erlenmeyer-flask"></i></a>
-        <a target="_blank" href="https://mailing-list.xn--nqr.xn--fiqs8s/0a.io"><i class="social-icon ion-social-rss"></i></a>
-        <!-- <a target="_blank" href="https://arxiv.org/search/?query=Wilhes%2C+Archy&searchtype=author&order=-announced_date_first&size=50"><i class="social-icon ion-ios-paper"></i></a> -->
-          <!-- <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a> -->
-          <!-- <a target="_blank" href="https://twitter.com/archywillhe"><i class="social-icon ion-social-twitter"></i></a> -->
-        <!-- <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a> -->
-        <a href="/about.html"><small style="font-size: 50%; margin-left:3px;top:-1px;position:relative">ABOUT</small></a>
-      </h2>
-      <div class="zeroDegreeDescription"> <br/> </div>
       </div>
-    </div>
-    <h2 class="stayCool thickRaleway hide-if-smaller-than-mobile-device-large">
+      <div style="position:relative">
+        $body$
+      </div>
+      <div class="cover-image">
+        <img style="position:absolute;bottom:0" class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/irina-568205-unsplash.jpg" />
+        <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/irina-568205-unsplash-mobile.jpg" />
 
-    </h2>
-    <h3 class="stayCool thickRaleway show-iff-mobile-device-large">
-      <a href="/about.html">About</a>
-      <span style="font-size:1.5em;margin-left:10px">
-      <a target="_blank" href="https://mailing-list.xn--nqr.xn--fiqs8s/0a.io"><i class="social-icon ion-social-rss"></i></a>
-    </span>
-  </h3>
-  <h2 class="stayCool thickRaleway show-if-smaller-than-mobile-device-medium">
-    <a href="/about-0a.html">About</a>
-    <span style="font-size:1.5em;margin-left:10px">
-    <a target="_blank" href="https://mailing-list.xn--nqr.xn--fiqs8s/0a.io"><i class="social-icon ion-social-rss"></i></a>
-  </span>
-  </h2>
-    </div>
-  </div>
-  <div style="position:relative">
-  $body$
-    </div>
-  <div class="cover-image">
-  <img style="position:absolute;bottom:0" class="hide-if-smaller-than-mobile-device-regular" src="/img/backgrounds/irina-568205-unsplash.jpg" />
-  <img class="show-if-smaller-than-mobile-device-regular" src="/img/backgrounds/irina-568205-unsplash-mobile.jpg" />
+        <div class="cover-image-text-wrapper">
+          <div class="cover-image-text">
+            <h1 class="zeroDegreeLogo centerFlex hide-if-smaller-than-mobile-device-regular-but-flex" style="background:none">
+            </h1>
+            <div class="show-if-smaller-than-mobile-device-regular">
+              <div class="centerFlex footer-info-block">
+                <div>
+                  <h5 class="hide-if-smaller-than-mobile-device-small">
+                    <br />
+                    <br><br>
+                  </h5>
+                  <h5 class="show-if-smaller-than-mobile-device-small">
+                    <br><br>
 
- <div class="cover-image-text-wrapper">
-  <div class="cover-image-text">
-    <h1 class="zeroDegreeLogo centerFlex hide-if-smaller-than-mobile-device-regular-but-flex" style="background:none">
-    </h1>
-    <div class="show-if-smaller-than-mobile-device-regular">
-    <div class="centerFlex footer-info-block">
-        <div>
-        <h5 class="hide-if-smaller-than-mobile-device-small">
-            <br/>
-            <br><br>
-        </h5>
-        <h5 class="show-if-smaller-than-mobile-device-small">
-            <br><br>
-
-        </h5>
-        <h3>
-              <!-- <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a> -->
-            <a target="_blank" href="https://archy.sh/"><i class="social-icon ion-erlenmeyer-flask"></i></a>
-            <a target="_blank" href="http://github.com/archywillhe/0a.io"><i class="social-icon ion-social-github"></i></a>
+                  </h5>
+                  <h3>
+                    <!-- <a target="_blank" href="https://castella.art"><i class="social-icon ion-erlenmeyer-flask"></i></a> -->
+                    <a target="_blank" href="https://lo.fish/"><i class="social-icon ion-erlenmeyer-flask"></i></a>
+                    <a target="_blank" href="http://github.com/archywillhe/0a.io"><i class="social-icon ion-social-github"></i></a>
 
 
-        </h3>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
+              <h3 class="zeroDegreeName" style="color:#fff">
+                <small>0a.io is handcrafted by Archy <i style="position:absolute; left:4200px ">archywilhes Will He</i></small> <br />
+                <small><a href="https://github.com/archywillhe/0a.io">vi3w_s0urce (Haskell on Hakyll) <i class="ion-beer"></i></a></small>
+              </h3>
+              <div class="zeroDegreeDescription">
+                <br>
+                <br>
+
+              </div>
+            </div>
+          </div>
+          <h3 class="stayCool thickRaleway" style="color:#fff;">
+            _
+          </h3>
         </div>
-</div>
-</div>
-    <div class="zeroDegreeNameAndDescription hide-if-smaller-than-mobile-device-regular-but-flex" style="margin-left:20px">
-    <h3 class="zeroDegreeName" style="color:#fff">
-      <small>0a.io is handcrafted by Archy <i style="position:absolute; left:4200px ">archywilhes Will He</i></small>  <br />
-          <small><a href="https://github.com/archywillhe/0a.io">vi3w_s0urce (Haskell on Hakyll) <i class="ion-beer"></i></a></small>
-  </h3>
-    <div class="zeroDegreeDescription">
-          <br>
-          <br>
+      </div>
+
 
     </div>
-    </div>
   </div>
-  <h3 class="stayCool thickRaleway" style="color:#fff;">
-        _
-  </h3>
-  </div>
-  </div>
-
-
-</div></div>
-$if(footBlock)$
-$footBlock$
-$endif$
-<script src="/js/underscore-min.js"></script>
-<script src="/js/main.js"></script>
+  $if(footBlock)$
+  $footBlock$
+  $endif$
+  <script src="/js/underscore-min.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>
