@@ -15,7 +15,7 @@ containsCode: true
 
 ### General Overview <small class="wordCount">267&nbsp;words</small>
 
-[Jekyll](https://github.com/Jekyll/Jekyll) is a tool to build static website that exists as merely a directory of files. That said, you can only use it to create websites that don’t have run-time logic in the backend. (such as [a simple content-based website or a blog](http://0a.io/)) In other words, it is a web-pages generator.
+[Jekyll](https://github.com/Jekyll/Jekyll) is a tool to build static website that exists as merely a directory of files. That said, you can only use it to create websites that don’t have run-time logic in the backend. (such as [a simple content-based website or a blog](https://0a.io/)) In other words, it is a web-pages generator.
 
 With a Github acc, anyone can [set up his or her Github Page for free with ease](https://pages.github.com). A Github Page is a static website hosted by Github. GitHub Pages&trade; has built-in support of Jekyll (So just push the code and you’ll have a website).
 
@@ -232,4 +232,4 @@ in order for ```html{{}}``` to show up when the broswer downloads the html. Also
 >
 >Despite advocating for Jekyll 3.0 & Angular, I built this site of mine using Jekyll 2.4, without any JS framework or heavy library (jQuery is used only by 2 articles because they rely on a small jQuery widget I wrote some time ago). I just want to keep things lightweight & simple (although I do have some really messy code in my templating files as a consequence of a pointless challenge I gave myself to hack around under the limitation imposed by the GitHub Pages&trade; Jekyll). So I'm considering using Angular.
 >
-> Update (early July): a part of the [home page](http://0a.io/) now uses angular.
+> Update (early July): a part of the [home page](https://0a.io/) now uses angular.

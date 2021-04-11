@@ -69,7 +69,7 @@ Now if you put 2 into this function you will get 12 in return.
 
 $$f(2) = 12$$
 
->The set of numbers that you can put into a function is known as the <a target="_blank" href="http://en.wikipedia.org/wiki/Domain_of_a_function">domain</a> of the function. If you'd like to have a more in-depth understanding of function (e.g. its formal definition), check out <a href="http://0a.io/0a-explains-set-theory-and-axiomatic-systems-with-pics-and-gifs">my article on set theory</a>. (You will probably love it!)
+>The set of numbers that you can put into a function is known as the <a target="_blank" href="http://en.wikipedia.org/wiki/Domain_of_a_function">domain</a> of the function. If you'd like to have a more in-depth understanding of function (e.g. its formal definition), check out <a href="https://0a.io/0a-explains-set-theory-and-axiomatic-systems-with-pics-and-gifs">my article on set theory</a>. (You will probably love it!)
 
 <br/>
 <h3 class="_index to_limit">2.&nbsp;What is a limit?</h3>

@@ -14,11 +14,11 @@ coverPainting: "Untitled (Lettres), 1998, Moon Pil Shim"
 <p class="_index"></p>
 
 >
->I’ve never imagined that [writing an essay](http://0a.io/chapter1/calculus-explained.html) on calculus and making some animated gifs can have such a huge impact in my life.
+>I’ve never imagined that [writing an essay](https://0a.io/chapter1/calculus-explained.html) on calculus and making some animated gifs can have such a huge impact in my life.
 >
 >I left school at the age of 16 to pursue what I wanted to do in life. I had ambitious dreams. But throughout the years I learnt to be conscious of my naivety and ignorance. I understand that it is perfectly normal if it turns out that all this time I have been living in a delusional state. So far every project I started had failed. Things have not once gone as planned.
 >
->Now and then I would wonder if I was nothing more than a pathetic idealist, kidding himself along on a senseless odyssey. So I was greatly surprised when I learnt that 30 thousand people had visited my website in a day because of something I wrote. The link to the essay had got good number of upvotes on both [Reddit](http://0a.io/0a-explains-calculus) and [HackerNews](https://news.ycombinator.com/item?id=8523150). Some commented and told me it was good. Certainly this was nothing comparing to, say, getting into MIT, but I think I had never been this happy in my life before. The joy I felt - that could not be described in words.
+>Now and then I would wonder if I was nothing more than a pathetic idealist, kidding himself along on a senseless odyssey. So I was greatly surprised when I learnt that 30 thousand people had visited my website in a day because of something I wrote. The link to the essay had got good number of upvotes on both [Reddit](https://0a.io/0a-explains-calculus) and [HackerNews](https://news.ycombinator.com/item?id=8523150). Some commented and told me it was good. Certainly this was nothing comparing to, say, getting into MIT, but I think I had never been this happy in my life before. The joy I felt - that could not be described in words.
 >
 >Once again, thank you all for the support. You had brightened my days up. And with a positive mind, gradually, I made the decision to be less of a shut-in and start going for meet-ups and conferences. I got to know many cool people and made some new friends.
 >

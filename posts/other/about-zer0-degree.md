@@ -1,10 +1,9 @@
 ---
-maintitle: "About 0a.io"
+maintitle: "-"
 subtitle: ""
 width: 665
 date: 2018-01-08
 ---
-[0a.io](http://0a.io/) is a blog. Started in 2014.
 
 Info on artworks featured is available on [the Artwork Info page](https://0a.io/artwork-info.html). Music I listened to during work available on [the Music for Work page](https://0a.io/music-for-work.html).
 

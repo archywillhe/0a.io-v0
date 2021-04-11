@@ -4,7 +4,7 @@ https://keybase.io/archywilhes
 
 I hereby claim:
 
-  * I am an admin of http://0a.io
+  * I am an admin of https://0a.io
   * I am archywilhes (https://keybase.io/archywilhes) on keybase.
   * I have a public key ASCDDp5FymVWKlXJCRDmNQMLxjtJoKHyOhFeKpQH18Vpiwo
 

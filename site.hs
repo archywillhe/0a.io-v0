@@ -110,7 +110,7 @@ main = do
         createRowOf3Session "2018-04-04-film.html" "posts/pretentious-reviews/film/*" "Pretentious Reviews (no spoilers!)" "" "1001"
 
         -- create ["index.html"] $ page "home" "isTech" "Tech" ["posts/other/coming-soon.html"]
-        create ["index.html"] $ page "home" "isBlog" "" ["2020-07-04-chapter3.html","2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
+        create ["post.html"] $ page "home" "isBlog" "" ["2020-07-04-chapter3.html","2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
         -- create ["index.html"] $ page "home" "isBlog" "" ["2018-01-02-chapter2.html","2018-01-01-chapter1.5.html", "2014-09-01-chapter1.html"]
         create ["pretentious-reviews.html"] $ page "home" "isPReview" "0a: Pretentious Reviews (no spoilers!)" ["2018-04-04-film.html"]
 
@@ -120,8 +120,9 @@ main = do
         create ["more-from-chapter1/index.html"] $ page "home-sub" "" "More From Chapter 1" ["2019-08-01-more-from-chapter1.html"]
         create ["artwork-info.html"] $ page "home"  "isArtworkInfo" "Artwork Info" ["2018-01-01-artwork.html"]
         createPageOfSessionsBasedOnDirectoryStructure "home" "isMusicForWork" "music-for-work" "Music For Work" musicInnerDirs
-        create ["about.html"] $ page "home-sub" "" "About me" [ "posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
-        create ["about-0a.html"] $ page "home-sub" "isPhoneAbout" "About 0a.io" ["posts/other/quote.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
+        create ["index.html"] $ page "home-sub" "isHome" "" [ "posts/other/about.md"]
+        create ["questions/index.html"] $ page "home-sub" "" "Questions" [ "posts/other/questions.md"]
+        -- create ["about-0a.html"] $ page "home-sub" "isPhoneAbout" "About 0a.io" ["posts/other/quote.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
 
         match "templates/*" $ compile templateBodyCompiler
 

@@ -1,97 +1,96 @@
-
 $if(customForwardUrl)$
 <script>
-window.location = window.location.hostname + "$customForwardUrl$"
+  window.location = window.location.hostname + "$customForwardUrl$"
 </script>
 $else$
 <div class="show-if-smaller-than-mobile-device-large post-front-cover-for-mobile">
-    $if(filmName)$
-    <img src="/img/covers/Burring Brook, XIX-XX cent., Laszlo Mednyanszky.jpg"/>
-    $else$
-    $if(coverImg)$
-        <img src="$coverImg$"/>
-    $else$
-    $if(coverPainting)$
-        <img src="/img/covers/$coverPainting$.jpg"/>
-    $else$
-    $if(filmName)$
-        <img src="/img/films/$filmName$.jpg"/>
-    $endif$
-    $endif$
-    $endif$
-    $endif$
-    <div class="dark-overlay">
-    </div>
+  $if(filmName)$
+  <img src="/img/covers/Burring Brook, XIX-XX cent., Laszlo Mednyanszky.jpg" />
+  $else$
+  $if(coverImg)$
+  <img src="$coverImg$" />
+  $else$
+  $if(coverPainting)$
+  <img src="/img/covers/$coverPainting$.jpg" />
+  $else$
+  $if(filmName)$
+  <img src="/img/films/$filmName$.jpg" />
+  $endif$
+  $endif$
+  $endif$
+  $endif$
+  <div class="dark-overlay">
+  </div>
 </div>
 <input type="text" value="https://0a.io$url$" id="currrentLink" />
- <h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
-     <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
-     $if(filmName)$
-     <a href="/pretentious-reviews.html" class="menu-item">More Pretentious Reviews</a>
-     $else$
-     <a href="/" class="menu-item">Back to Home Page</a>
-     $endif$
+<h2 class="thickRaleway menu truns-white-if-smaller-than-mobile-device-large">
+  <a href="javascript:window.copyCurrentURL();" class="menu-item">Copy Link</a>
+  $if(filmName)$
+  <a href="/pretentious-reviews.html" class="menu-item">More Pretentious Reviews</a>
+  $else$
+  <!-- <a href="/" class="menu-item">Back to Home Page</a> -->
+  $endif$
 </h2>
 
 <div class="container content">
-<article style="$if(width)$max-width:$width$px;$endif$ $if(isPReview)$filmNight$endif$">
+  <article style="$if(width)$max-width:$width$px;$endif$ $if(isPReview)$filmNight$endif$">
     <div class="coverPainting">
       $if(coverImg)$
-      <img src="$coverImg$"/>
+      <img src="$coverImg$" />
       $else$
-    $if(coverPainting)$
-        <img src="/img/covers/$coverPainting$.jpg"/>
-          <div class="thickRaleway paintingInfoContainer">
-              <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
-              <a target="_blank" href="$paintingUrl$" class="paintingInfo">
-                  $paintingTitle$ ($paintingYear$)
-                  by
-                  $paintingArtistName$
-              </a>
-          </div>
-    $else$
-    $if(filmName)$
-        <img src="/img/films/$filmName$.jpg"/>
-    $endif$
-    $endif$
-    $endif$
+      $if(coverPainting)$
+      <img src="/img/covers/$coverPainting$.jpg" />
+      <div class="thickRaleway paintingInfoContainer">
+        <!-- <span class="hide-if-smaller-than-mobile-device-large">Featuring</span> -->
+        <a target="_blank" href="$paintingUrl$" class="paintingInfo">
+          $paintingTitle$ ($paintingYear$)
+          by
+          $paintingArtistName$
+        </a>
+      </div>
+      $else$
+      $if(filmName)$
+      <img src="/img/films/$filmName$.jpg" />
+      $endif$
+      $endif$
+      $endif$
 
     </div>
     <div class="everythingElse">
-        $if(filmName)$
-        $else$
-        <div class="info">
-            <span class="date">$date$</span>
-            $if(readingTime)$
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <span class="readingTime"  >$readingTime$ read</span>
-            $endif$
-            &nbsp;&nbsp;&nbsp;&nbsp;
-        </div>
+      $if(filmName)$
+      $else$
+      <div class="info">
+        <span class="date">$date$</span>
+        $if(readingTime)$
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="readingTime">$readingTime$ read</span>
         $endif$
-        <!-- <h4 class="date">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+      $endif$
+      <!-- <h4 class="date">
         <span class="datee">$date$</span>
         </h4> -->
-        <h2 class="title">
-            $title$
-        </h2>
-        <span style="width:0;height:1px;overflow:hidden;display:block">
+      <h2 class="title">
+        $title$
+      </h2>
+      <span style="width:0;height:1px;overflow:hidden;display:block">
         <span class="author">
-        by <a href="https://0a.io/about">archywillhe</a>
+          by <a href="https://0a.io/about">archywillhe</a>
         </span>
-        </span>
-        <div class="text">
-            $body$
-        </div>
+      </span>
+      <div class="text">
+        $body$
+      </div>
     </div>
-</article>
-$if(filmName)$
-$else$
-$endif$
+  </article>
+  $if(filmName)$
+  $else$
+  $endif$
 </div>
 <div>
   <h2 class="thickRaleway menu-bottom">
 
-</h2>
+  </h2>
 </div>
 $endif$

@@ -14,7 +14,7 @@ or (if you are using bundler)
 bundler exec jekyll serve
 ```
 
-If you are new to Jekyll & have 3 minutes to spare & want to make a customized github page, you would probably find this useful: *[Jekyll in 3 minutes](http://0a.io/Jekyll-in-3min-for-your-GitHub-page/)*.
+If you are new to Jekyll & have 3 minutes to spare & want to make a customized github page, you would probably find this useful: *[Jekyll in 3 minutes](https://0a.io/Jekyll-in-3min-for-your-GitHub-page/)*.
 
 No JavaScript library or framework are used in 0a.io (besides its home page which uses a bit of Angular and with the exceptions of a few articles that rely on some old jQuery widget I wrote).
 

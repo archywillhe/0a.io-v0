@@ -1,9 +1,9 @@
 _.each(document.getElementsByClassName("zeroDegreeLogo"), function(l){
 l.addEventListener("click",function(){
-    window.location.href = "http://0a.io"
+    window.location.href = "https://0a.io"
 })
 l.addEventListener("touchstart",function(){
-    window.location.href = "http://0a.io"
+    window.location.href = "https://0a.io"
 })
 
 })

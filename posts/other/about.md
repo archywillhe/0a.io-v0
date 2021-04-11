@@ -1,23 +1,35 @@
 ---
-maintitle: "About me"
+maintitle: ""
 divID: "aboutMe"
 subtitle: ""
 width: 665
-date: 2018-01-07
+date: 2021-04-10
 moreStyles:
 ---
 
-He, Archy Will He.
+<div style="position:relative">
+<div style="overflow:hidden; height:280px; margin-bottom:10px">
+<video id="yeah-iz-a-video-lol" src="/img/archy.mp4" playsinline autoplay muted loop style="width:300px; position:relative; left:-60px" />
+</div>
+<img src="/img/archy.jpg" style="position:absolute; opacity:0; top:-80px;width:300px; left:-60px;">
+</div>
+<b>Hi, I’m Archy Will He</b>. I'm a Gen Z school drop-out. Currently working as an engineer at <a target="_blank" href="https://debuild.co">Debuild</a>, and part-time making <a target="_blank" href="https://lo.fish">lo.fish</a>, an open-source clubhouse alternative with 90s vibe.
 
-姓何 (ｈｅ)， 字魏 (ｗｉｌｌ)， 号[奇 (ａｒｃｈｙ)](https://0a.io/%E5%90%96%E5%A5%87.txt)。
+In my free time I write about coding, languages, and consciousness, and try to figure out how to tackle [these questions](/questions/).
 
-Co-founder & CEO at [Castella](https://castella.art). Building [lo.fish](https://lo.fish).
+I live in Singapore and Shanghai, and will move to San Francisco soon. My Twitter is <a target="_blank" href="http://twitter.com/ArchyWillHe">@ArchyWillHe</a> and my email is a@0a.io (I respond to every email!)
 
-<a style="margin-right:20px" target="_blank" href="https://arxiv.org/search/?query=He%2C+Archy&searchtype=author&order=-announced_date_first&size=50">Arxiv
-</a>
-<a style="margin-right:20px" target="_blank" href="http://github.com/archywillhe">Github</a>
-<a style="margin-right:20px" target="_blank" href="https://stackoverflow.com/users/2041954/archy-wilhes-%E9%AD%8F%E4%BD%95">StackOverflow</a>
-<a style="margin-right:20px" target="_blank" href="http://0a.io/mail.txt">Email</a>
-<a style="margin-right:20px" target="_blank" href="https://news.ycombinator.com/user?id=archibaldJ">HN</a>
-<a style="margin-right:20px" target="_blank" href="http://instagram.com/n0tdrunk">Instagram</a>
-<a style="margin-right:20px" target="_blank" href="http://twitter.com/A12CHY">Twitter</a>
+My aim in life is to be an astronaut and settle down on Mars.
+
+<br/>
+<br/>
+
+<!-- <blockquote>
+
+0a.io is handcrafted on top of Hakyll (Haskell). View source [here](https://github.com/archywillhe/0a.io).
+
+my profile image is animated using [pychubby](https://github.com/jankrepl/pychubby).
+
+[Here](https://0a.io/artwork-info.html) is a list containing all curated artwork.
+
+</blockquote> -->
