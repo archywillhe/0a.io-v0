@@ -122,6 +122,7 @@ main = do
         createPageOfSessionsBasedOnDirectoryStructure "home" "isMusicForWork" "music-for-work" "Music For Work" musicInnerDirs
         create ["index.html"] $ page "home-sub" "isHome" "" [ "posts/other/about.md"]
         create ["questions/index.html"] $ page "home-sub" "" "Questions" [ "posts/other/questions.md"]
+        create ["research/index.html"] $ page "home-sub" "" "Research" [ "posts/other/research.md"]
         -- create ["about-0a.html"] $ page "home-sub" "isPhoneAbout" "About 0a.io" ["posts/other/quote.md","posts/other/about-zer0-degree.md", "posts/other/about.md","posts/other/other-stuff.md"]
 
         match "templates/*" $ compile templateBodyCompiler

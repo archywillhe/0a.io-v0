@@ -3,7 +3,7 @@ $mobile-device-regular: 575px;
 $mobile-device-medium: 735px;
 $mobile-device-large: 800px;
 
-$lovelyPink: #ff0063;
+$lovelyPink: #4a10f9;
 
 * {
   -webkit-box-sizing: border-box;
@@ -451,7 +451,11 @@ h2 {
   }
 }
 .content {
-  margin-top: 42px;
+  margin-top: 98px;
+
+  @media (max-width: 900px) {
+    margin-top: 42px !important;
+  }
 
   @media (max-width: $mobile-device-regular) {
     max-width: 99%;
@@ -474,14 +478,20 @@ h2 {
     margin-right: auto;
   }
   a {
-    color: #217cf5;
+    color: #4a10f9;
   }
-  p {
-    // margin-bottom: 20px;
+  a:hover {
+    text-decoration: underline;
   }
+  // p {
+  // margin-bottom: 20px;
+  // }
 
   .sessionContainer {
     margin: 0 auto;
+    @media (min-width: 900px) {
+      margin-left: 200px !important;
+    }
     // overflow: hidden;
     padding-bottom: 30px;
     .sessionTitle {
@@ -883,9 +893,31 @@ blockquote {
 }
 
 .leftPanel2021 {
-  padding-top: 40px;
-  margin-left: 20px;
+  position: fixed;
+  z-index: 999;
+  top: 111px;
+  margin-left: 58px;
   width: 200px;
 
+  @media (max-width: 900px) {
+    display: none;
+  }
+
   font-family: Helvetica, sans-serif;
+  div {
+    margin-bottom: 21px;
+    a {
+      color: #4a10f9;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
 }
+
+// h3 {
+//   font-weight: 700;
+//   padding-bottom: 20px;
+//   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+//     Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif !important;
+// }
